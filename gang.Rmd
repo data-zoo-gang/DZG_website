@@ -19,7 +19,7 @@ editor_options:
 
 - [Colin Vullioud](https://de.linkedin.com/in/colin-vullioud-a7a500186)🇨🇭 (member 20XX-20XX) came to us after getting fed up with social science research, learned R with us, turned social behavior into algorithms and left as a full fledged data scientist currently working as a free lancer in Berlin, Germany. He also created the R package {torpor} and contributed to {hyenaR}.
 
-- [Elisa Donati](https://www.researchgate.net/profile/Elisa-Donati)🇮🇹 (member 2020) came to programs virtual hyenas and to work our R package {hyneaR} between a master on lizards and an upcoming PhD student in Italy.
+- [Elisa Donati](https://www.researchgate.net/profile/Elisa-Donati)🇮🇹 (member 2020) came to program virtual hyenas and to work on our R package {hyneaR} between a master on lizards and an upcoming PhD student in Italy.
 
 - Louise Chevalier🇫🇷 (member 2019) came for a few months during her PhD to do something else for a while. She worked with us on adding genetics to a simulation model about hyenas. Now a circus artist in France.
 
