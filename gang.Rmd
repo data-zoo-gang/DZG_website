@@ -34,7 +34,7 @@ editor_options:
 <aside>
 ![Colin](images/colin_vullioud.jpg)
 ![Elisa](images/unknown.jpg)
-![Ian](images/unknown.jpg)
+![Ian](images/ian_rickard.jpg)
 ![Louise](images/louise_chevalier.jpg)
 ![Robert](images/unknown.jpg)
 ![Camille](images/unknown.jpg)
