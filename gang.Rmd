@@ -49,7 +49,7 @@ Not quite members, not quite collaborators, but very close to us all the same!
 
 - [Matthias Gallipaud](https://ch.linkedin.com/in/matthias-galipaud-980a241a1)🇫🇷 is a long standing idea bouncer for the DZG, currently data scientist based in Zurich, Switzerland.
 
-- [Zimai Li](https://www.ulrichlab.com/zimai-li)🇨🇳 worked quite a bit with us on our R package {hyneaR} while doing an internship with colleagues.
+- [Zimai Li](https://www.ulrichlab.com/zimai-li)🇨🇳 worked quite a bit with us on our R package {hyneaR} while doing an internship with colleagues from the [hyena project](https://hyena-project.com) on mate choice in spotted hyenas.
 
 <aside>
 ![Ilja](images/unknown.jpg)
