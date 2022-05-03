@@ -6,9 +6,9 @@ editor_options:
 
 ## Current members
 
-- [Alexandre Courtiol](https://www.izw-berlin.de/en/alex-courtiol-en.html)🇫🇷 (member since 2011)[<i class='fa fa-twitter'></i> perso](https://twitter.com/alexcourtiol), [<i class='fa fa-twitter'></i> R](https://twitter.com/rdataberlin). Senior researcher, lecturer. Initially trained as an evolutionary biologist with a solid formation in applied statistics, Alex has adopted ecology and demography after his PhD. He is mostly interested in humans, wild mammals and birds. His favorite research projects are those revealing unexpected outcomes. His focus is on questions related to life history and behaviour, but he is always open to new exciting collaborations. He likes programming and teaching R.
+- [Alexandre Courtiol](https://www.izw-berlin.de/en/alex-courtiol-en.html) 🇫🇷 (member since 2011)[<i class='fa fa-twitter'></i> perso](https://twitter.com/alexcourtiol), [<i class='fa fa-twitter'></i> R](https://twitter.com/rdataberlin). Senior researcher, lecturer. Initially trained as an evolutionary biologist with a solid formation in applied statistics, Alex has adopted ecology and demography after his PhD. He is mostly interested in humans, wild mammals and birds. His favorite research projects are those revealing unexpected outcomes. His focus is on questions related to life history and behaviour, but he is always open to new exciting collaborations. He likes programming and teaching R.
 
-- [Liam Bailey](https://www.liamdbailey.com)🇦🇺 (member since 2018) [<i class='fa fa-twitter'></i>](https://twitter.com/ldbailey255). Postdoc. SHORT 3rd PERSON DESCRIPTION TODO.
+- [Liam Bailey](https://www.liamdbailey.com) 🇦🇺 (member since 2018) [<i class='fa fa-twitter'></i>](https://twitter.com/ldbailey255). Postdoc. SHORT 3rd PERSON DESCRIPTION TODO.
 
 <aside>
 ![Alex](images/alex_courtiol.jpg)
@@ -17,19 +17,19 @@ editor_options:
 
 ## Past members
 
-- [Colin Vullioud](https://de.linkedin.com/in/colin-vullioud-a7a500186)🇨🇭 (member 20XX-20XX) came to us after getting fed up with social science research, learned R with us, turned social behavior into algorithms and left as a full fledged data scientist currently working as a free lancer in Berlin, Germany. He also created the R package {torpor} and contributed to {hyenaR}.
+- [Colin Vullioud](https://de.linkedin.com/in/colin-vullioud-a7a500186) 🇨🇭 (member 20XX-20XX) came to us after getting fed up with social science research, learned R with us, turned social behavior into algorithms and left as a full fledged data scientist currently working as a free lancer in Berlin, Germany. He also created the R package {torpor} and contributed to {hyenaR}.
 
-- [Elisa Donati](https://www.researchgate.net/profile/Elisa-Donati)🇮🇹 (member 2020) came to program virtual hyenas and to work on our R package {hyneaR} between a master on lizards and an upcoming PhD student in Italy.
+- [Elisa Donati](https://www.researchgate.net/profile/Elisa-Donati) 🇮🇹 (member 2020) came to program virtual hyenas and to work on our R package {hyneaR} between a master on lizards and an upcoming PhD student in Italy.
 
-- Louise Chevalier🇫🇷 (member 2019) came for a few months during her PhD to do something else for a while. She worked with us on adding genetics to a simulation model about hyenas. Now a circus artist in France.
+- Louise Chevalier 🇫🇷 (member 2019) came for a few months during her PhD to do something else for a while. She worked with us on adding genetics to a simulation model about hyenas. Now a circus artist in France.
 
-- [Ian Rickard](https://uk.linkedin.com/in/ianjaric)🇬🇧 (member 2017-2018) came for a sabbatical from Durham University to study how twinning connects to fertility in humans, then switched career to become a data scientist for the ministry of justice in the UK.
+- [Ian Rickard](https://uk.linkedin.com/in/ianjaric) 🇬🇧 (member 2017-2018) came for a sabbatical from Durham University to study how twinning connects to fertility in humans, then switched career to become a data scientist for the ministry of justice in the UK.
 
-- [Robert Schwieger](https://de.linkedin.com/in/robert-schwieger-431ab4197)🇩🇪 (member 2015-2016) came to do maths for fun on inference problems about mate choice before doing a PhD in mathematics. Now working at [CENTOGENE](https://www.centogene.com) in Berlin, Germany.
+- [Robert Schwieger](https://de.linkedin.com/in/robert-schwieger-431ab4197) 🇩🇪 (member 2015-2016) came to do maths for fun on inference problems about mate choice before doing a PhD in mathematics. Now working at [CENTOGENE](https://www.centogene.com) in Berlin, Germany.
 
-- [Camille Martinez](https://www.researchgate.net/profile/Camille-Martinez-Almoyna)🇫🇷 (member 2015-2016) did a joint-internship here and in Montpellier developing stats methods to draw inference using simulation before starting her PhD. Currently doing a postdoc in Grenoble, France.
+- [Camille Martinez](https://www.researchgate.net/profile/Camille-Martinez-Almoyna) 🇫🇷 (member 2015-2016) did a joint-internship here and in Montpellier developing stats methods to draw inference using simulation before starting her PhD. Currently doing a postdoc in Grenoble, France.
 
-- Loïc Etienne🇫🇷 (member 2010-2014) did his PhD with us doing modelling about the evolution of mutual mate choice. Now a musician in France.
+- Loïc Etienne 🇫🇷 (member 2010-2014) did his PhD with us doing modelling about the evolution of mutual mate choice. Now a musician in France.
 
 <aside>
 ![Colin](images/colin_vullioud.jpg)
@@ -45,11 +45,11 @@ editor_options:
 
 Not quite members, not quite collaborators, but very close to us all the same!
 
-- Ilja Heckmann🇰🇿🇩🇪 is a biologist colleague turned full time python programmer and Linux admin from whom we never stop learning.
+- Ilja Heckmann 🇰🇿🇩🇪 is a biologist colleague turned full time python programmer and Linux admin from whom we never stop learning.
 
-- [Matthias Gallipaud](https://ch.linkedin.com/in/matthias-galipaud-980a241a1)🇫🇷 is a long standing idea bouncer for the DZG, currently data scientist based in Zurich, Switzerland.
+- [Matthias Gallipaud](https://ch.linkedin.com/in/matthias-galipaud-980a241a1) 🇫🇷 is a long standing idea bouncer for the DZG, currently data scientist based in Zurich, Switzerland.
 
-- [Zimai Li](https://www.ulrichlab.com/zimai-li)🇨🇳 worked quite a bit with us on our R package {hyneaR} while doing an internship with colleagues from the [hyena project](https://hyena-project.com) on mate choice in spotted hyenas.
+- [Zimai Li](https://www.ulrichlab.com/zimai-li) 🇨🇳 worked quite a bit with us on our R package {hyneaR} while doing an internship with colleagues from the [hyena project](https://hyena-project.com) on mate choice in spotted hyenas.
 
 <aside>
 ![Ilja](images/unknown.jpg)
@@ -60,19 +60,19 @@ Not quite members, not quite collaborators, but very close to us all the same!
 
 ## Main collaborators
 
-- [François Rousset](https://kimura.univ-montp2.fr/~rousset)🇫🇷, theoretical biologist at the [Institut des Science de l'Evolution in Montpellier](https://isem-evolution.fr), France, turned hardcore statistician, author of R package {spaMM} without which we could not do half the work we do.
+- [François Rousset](https://kimura.univ-montp2.fr/~rousset) 🇫🇷, theoretical biologist at the [Institut des Science de l'Evolution in Montpellier](https://isem-evolution.fr), France, turned hardcore statistician, author of R package {spaMM} without which we could not do half the work we do.
 
-- [Oliver Höner](https://www.izw-berlin.de/en/oliver-patrick-hoener-en.html)🇨🇭🇧🇷, PI behind the [hyena project](https://hyena-project.com), behavioral ecologist and field biologist turning anything hyena related into high quality datasets. Based in the department of Evolutionary Ecology at the [IZW](https://www.izw-berlin.de/en/home.html).
+- [Oliver Höner](https://www.izw-berlin.de/en/oliver-patrick-hoener-en.html) 🇨🇭🇧🇷, PI behind the [hyena project](https://hyena-project.com), behavioral ecologist and field biologist turning anything hyena related into high quality datasets. Based in the department of Evolutionary Ecology at the [IZW](https://www.izw-berlin.de/en/home.html).
 
-- [Viktoriia Radchuk](https://www.izw-berlin.de/en/viktoriia-radchuk-en-2.html)🇺🇦, individual-based modeler and big collaborative meta-analysis producer, like us she flourishes at the interface between field and theory. She is a key member of the department [Ecological Dynamics](https://ecological-dynamics-izw.com/) at the [IZW](https://www.izw-berlin.de/en/home.html).
+- [Viktoriia Radchuk](https://www.izw-berlin.de/en/viktoriia-radchuk-en-2.html) 🇺🇦, individual-based modeler and big collaborative meta-analysis producer, like us she flourishes at the interface between field and theory. She is a key member of the department [Ecological Dynamics](https://ecological-dynamics-izw.com/) at the [IZW](https://www.izw-berlin.de/en/home.html).
 
-- [Stephanie Kramer-Schadt](https://www.izw-berlin.de/en/stephanie-kramer-schadt-en.html)🇩🇪, head of the excellent department [Ecological Dynamics](https://ecological-dynamics-izw.com/) at the [IZW](https://www.izw-berlin.de/en/home.html) who is composed, almost exclusively, of great young scientists and students with strong quantitative skills.
+- [Stephanie Kramer-Schadt](https://www.izw-berlin.de/en/stephanie-kramer-schadt-en.html) 🇩🇪, head of the excellent department [Ecological Dynamics](https://ecological-dynamics-izw.com/) at the [IZW](https://www.izw-berlin.de/en/home.html) who is composed, almost exclusively, of great young scientists and students with strong quantitative skills.
 
-- [Kseniia Kravchenko](https://www.researchgate.net/profile/Kseniia-Kravchenko)🇺🇦, who has freshly finished her PhD at the [BatLab](https://www.batlab.de) from the [IZW](https://www.izw-berlin.de/en/home.html). She is a batwomen with whom we try to predict the future distribution of hibernation niches by combining physiology and climate change.
+- [Kseniia Kravchenko](https://www.researchgate.net/profile/Kseniia-Kravchenko) 🇺🇦, who has freshly finished her PhD at the [BatLab](https://www.batlab.de) from the [IZW](https://www.izw-berlin.de/en/home.html). She is a batwomen with whom we try to predict the future distribution of hibernation niches by combining physiology and climate change.
 
-- [Christian Voigt](https://www.izw-berlin.de/en/christian-voigt-en.html)🇩🇪, head of the department of Evolutionary Ecology at the [IZW](https://www.izw-berlin.de/en/home.html) and head of the [BatLab](https://www.batlab.de).
+- [Christian Voigt](https://www.izw-berlin.de/en/christian-voigt-en.html) 🇩🇪, head of the department of Evolutionary Ecology at the [IZW](https://www.izw-berlin.de/en/home.html) and head of the [BatLab](https://www.batlab.de).
 
-- [Virpi Lummaa](https://www.utu.fi/en/people/virpi-lummaa)🇫🇮, life history data queen who has produced two of the very best demographic datasets that exist (one on pre-industrial humans and one on Asian Elephants). Head of the [human life history science group](https://human-life-history.science) and of the [Myanmar Timber Elephant Project] (https://elephant-project.science) at the [University of Turku](https://www.utu.fi/en) in Finland.
+- [Virpi Lummaa](https://www.utu.fi/en/people/virpi-lummaa) 🇫🇮, life history data queen who has produced two of the very best demographic datasets that exist (one on pre-industrial humans and one on Asian Elephants). Head of the [human life history science group](https://human-life-history.science) and of the [Myanmar Timber Elephant Project] (https://elephant-project.science) at the [University of Turku](https://www.utu.fi/en) in Finland.
 
 <aside>
 ![Oliver Höner](images/unknown.jpg)
@@ -83,4 +83,4 @@ Not quite members, not quite collaborators, but very close to us all the same!
 
 ## Collaborators wishlist
 
-They never worked with us, but are a very much like us, so we hope to work with them one day: [Sarah Cubaynes](https://sarahcubaynes144031551.wordpress.com/about)🇫🇷, [Olivier Gimenez](https://oliviergimenez.github.io)🇫🇷, [Samuel Pavard](https://www.ecoanthropologie.fr/fr/annuaire/pavard-samuel-6078)🇫🇷, [François Xavier Dechaume-Moncharmont](http://www.fxdm.org)🇫🇷.
+They never worked with us, but are a very much like us, so we hope to work with them one day: [Sarah Cubaynes](https://sarahcubaynes144031551.wordpress.com/about) 🇫🇷, [Olivier Gimenez](https://oliviergimenez.github.io) 🇫🇷, [Samuel Pavard](https://www.ecoanthropologie.fr/fr/annuaire/pavard-samuel-6078) 🇫🇷, [François Xavier Dechaume-Moncharmont](http://www.fxdm.org) 🇫🇷.
