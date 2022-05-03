@@ -1,0 +1,11 @@
+---
+title: "About this site"
+---
+
+We created this website using the R package [{distill}](https://rstudio.github.io/distill/) (check the [distillery](https://distillery.rbind.io/) for other websites created in the same way).
+
+This is a very simple system to create a very simple website for those who know R and markdown.
+
+We are fully aware that R is not the best tool for creating a proper website, but we only do a few things properly besides data analyses.
+
+We also don't have the man power or the desire to spend much time working on our website.

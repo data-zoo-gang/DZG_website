@@ -1,0 +1,64 @@
+---
+title: "Consulting"
+description: |
+   We offer training and consulting about R, statistics, data visualisation and anything else we know for everyone.
+---
+
+## Outside academia
+
+We do a fair a bit of training and consulting outside academia.
+We do this because for two main reasons:
+
+- we rely on some of our consulting fees to finance our research activities.
+- we are well aware that conservation involves many actors that do not belong to universities or public research institutes.
+
+If you are interested, please [contact us](mailto: courtiol@izw-berlin.de).
+
+### Topics
+
+Our technical expertise lies in *R programming* (from introduction to R package development), *data manipulation* (in R), *data visualisation* (with or without R) and *data analysis* (in particular: traditional statistical tests, generalised linear models, mixed models, spatial analyses, survival analyses, random forests, individual-based simulations).
+
+Yet, as long as we feel competent enough to be useful, we are happy to offer consulting or training on any topic.
+
+We always highly customise the content of training sessions to match the task and requirement of the client.
+
+Here are some representative examples of the training & consulting we are currently providing:
+
+- workshop for data visualisation organised by XXX.
+
+- development of R packages and advanced R training for all data scientists at [Factworks](https://www.factworks.com), a market research and analytic company.
+
+- support in statistical analyses for the Nature and Biodiversity Conservation Union in Germany ([NABU](https://en.nabu.de)), the World Wildlife Foundation ([WWF](https://www.worldwildlife.org/)) and the conservation NGO [rewild](https://www.rewild.org).
+
+Just [write to us](mailto: courtiol@izw-berlin.de) and we will happily put you in contact with people we worked with for you to get direct feedback on how they perceived our work.
+
+
+### Pricing and the Robin Hood model {#robinhood}
+
+Our pricing depends on the content, as well as on the number and identity of both the members from our team and the client(s).
+
+If the work is for a for profit company, our default protocol is to request the company to either pay our hosting institution (the [IZW](https://www.izw-berlin.de/en/home.html)) or to pay one of the non-profit foundations we work with.
+In both cases, the money is used by us as a third party support to our research.
+We call this the *Robin Hood model*, but this is hardly stealing: we remain very competitive compared to fees required by equally qualified free lancers out there.
+
+If the work is related to wildlife conservation or other activities we consider as highly beneficial to society as a whole, we try to be as cheap as we can.
+
+For a quote, please [contact us](mailto: courtiol@izw-berlin.de).
+
+
+### Availability
+
+Our availability is what constrains the amount of consulting we do.
+We can arrange regular short consultations or block consulting for duration of up to 10 days, but we cannot offer more.
+If you need more, just [contact us](mailto: courtiol@izw-berlin.de) and we will attempt to connect you to former members of the group and other people we know and trust who have become free lancers.
+
+
+## Within academia
+
+We do not consult within academia with the exception of our local colleagues and students, as well as users of the methods we develop.
+
+Instead, we favour genuine collaborations where our role is not limited to performing the data analysis of someone else project.
+
+If you are interested, please [contact us](mailto: courtiol@izw-berlin.de).
+
+We also teach both at the [IZW](https://www.izw-berlin.de/en/home.html) and at the [FU](https://www.fu-berlin.de/en/index.html) (see [teaching](teaching.html) for details).
