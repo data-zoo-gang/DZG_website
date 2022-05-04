@@ -4,8 +4,10 @@ bibliography: publications.bib
 csl: apa.csl
 ---
 
-Publications are here sorted by multiple criterion ([most recent](#recent), [best of](#best), [by themes](#themes), [by taxonomic groups](#taxons)).
+Publications are here sorted by multiple criterion: you can jump to categories [most recent](#recent), [best of](#best), [by themes](#themes), [by taxonomic groups](#taxons).
+
 Just hover on top of a publication to reveal its details.
+
 Only publications created while being part of the Data Zoo Gang are listed here.
 For the full list of publications of a given team member, please use instead: 
 
@@ -25,9 +27,9 @@ For the full list of publications of a given team member, please use instead:
 
 Our last 5 publications are:
 
-- @dayaram_seasonal_2021
-- @tonnabel_sexspecific_2021
-- @kruszynski_identifying_2021
+- @dayaram_seasonal_2021 shows that equine herpes viruses may be transmitted through the water, and thus could be keep to understand disease dynamics in dry environments where ungulates drink from the same water hole.
+- @tonnabel_sexspecific_2021 is a thorough study measuring natural and sexual selection in a wild population of plants from the South African Fynbos (trivia: Alex did a fair amount of field work for that particular project, although many years ago).
+- @kruszynski_identifying_2021 is a study on migratory bats attempting to infer which migration corridor the bats are using based on two different stable isotopes.
 
 
 ## best of {#best}
