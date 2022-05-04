@@ -42,7 +42,7 @@ We call our team, the *Data Zoo Gang* or DZG (pronounced "deezeegee") for short.
 - we think that developing methods is a scientific activity on its own right, which should be better recognized and funded as such.
 - we think that most null hypothesis testing is dull.
 - we show no mercy to data, flimsy ideas (no matter how established) and computers.
-- one past team member unconditionally wore baseball caps and there is also a somewhat anti-capitalist vibe within the group but remain tolerant and professional, especially since we consult for profit companies under a [Robin Hood model](consulting.html#robinhood).
+- one past team member unconditionally wore a baseball cap and there is also a somewhat anti-capitalist vibe within the group; but we remain tolerant and professional, especially since we consult for profit companies under a [Robin Hood model](consulting.html#robinhood).
 
 All the same, we love collaborating with field biologists, NGOs, or geeks from any background.
 
