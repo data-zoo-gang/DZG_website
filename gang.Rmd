@@ -39,7 +39,7 @@ Postdoc. SHORT 3rd PERSON DESCRIPTION TODO.
 <img src="images/colin_vullioud.jpg" width="200px">
 
 ### [Colin Vullioud](https://de.linkedin.com/in/colin-vullioud-a7a500186) 🇨🇭
-Member 20XX-20XX.
+Member 2017-2021.
 Colin came to us after getting fed up with social science research, learned R with us, turned social behavior into algorithms and left as a full fledged data scientist currently working as a free lancer in Berlin, Germany.
 He also created the R package {torpor} and contributed to {hyenaR}.
 :::
