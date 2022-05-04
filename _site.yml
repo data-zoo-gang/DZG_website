@@ -19,4 +19,7 @@ navbar:
       href: consulting.html
     - text: "About"
       href: about.html
-output: distill::distill_article
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 2
