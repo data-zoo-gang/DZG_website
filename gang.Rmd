@@ -40,8 +40,10 @@ Postdoc. SHORT 3rd PERSON DESCRIPTION TODO.
 
 ### [Colin Vullioud](https://de.linkedin.com/in/colin-vullioud-a7a500186) 🇨🇭
 Member 2017-2021.
-Colin came to us after getting fed up with social science research, learned R with us, turned social behavior into algorithms and left as a full fledged data scientist currently working as a free lancer in Berlin, Germany.
+Colin came to us after getting fed up with social science research, learned R with us, turned social behavior into algorithms.
 He also created the R package {torpor} and contributed to {hyenaR}.
+He left the DZG as a full fledged data scientist currently working as a free lancer in Berlin, Germany.
+He is also an artist who has started to include R in his projects.
 :::
 
 :::float-right
@@ -49,7 +51,8 @@ He also created the R package {torpor} and contributed to {hyenaR}.
 
 ### [Elisa Donati](https://www.researchgate.net/profile/Elisa-Donati) 🇮🇹
 Member 2020. 
-Elisa came to program virtual hyenas and to work on our R package {hyneaR} between a master on lizards and an upcoming PhD student in Italy.
+Elisa came to program virtual hyenas and to work on our R package {hyneaR}. She did this in-between a master on lizards and a research project that involved setting up a complex simulation platform so as to model the coastal ecosystem of Venice, in view of sustainable exploitation by humans.
+She is now looking for a PhD in Italy (too bad for us, otherwise we would have kept her here in Berlin!).
 :::
 
 :::float-left
@@ -57,7 +60,7 @@ Elisa came to program virtual hyenas and to work on our R package {hyneaR} betwe
 
 ### Louise Chevalier 🇫🇷
 Member 2019.
-Louise came for a few months during her PhD to do something else for a while. She worked with us on adding genetics to a simulation model about hyenas. Now a circus artist in France.
+Louise came for a few months during her PhD to do something else for a while. She worked with us on adding genetics to a simulation model about hyenas. Then, she finished her PhD building fancy demo-genetics models to better understand the role of demography and genomic constraints on the evolution of mate choice. Now a circus artist in France.
 :::
 
 :::float-right
@@ -65,7 +68,7 @@ Louise came for a few months during her PhD to do something else for a while. Sh
 
 ### [Ian Rickard](https://uk.linkedin.com/in/ianjaric) 🇬🇧
 Member 2017-2018.
-Ian came for a sabbatical from Durham University to study how twinning connects to fertility in humans, then switched career to become a data scientist for the ministry of justice in the UK.
+Ian came for a sabbatical from Durham University to study how twinning connects to fertility in humans, then switched career to become a data scientist for the ministry of justice in the UK. Ian and Alex were both postdocs in the same team in Sheffield (UK) headed by our collaborator [Virpi Lummaa](#VL).
 :::
 
 :::float-left
@@ -78,12 +81,11 @@ Now working at [CENTOGENE](https://www.centogene.com) in Berlin, Germany.
 :::
 
 :::float-right
-<img src="images/unknown.jpg" width="200px">
+<img src="images/camille_martinez.jpg" width="200px">
 
-### [Camille Martinez](https://www.researchgate.net/profile/Camille-Martinez-Almoyna) 🇫🇷
+### [Camille Martinez Almoyna](https://www.researchgate.net/profile/Camille-Martinez-Almoyna) 🇫🇷
 Member 2015-2016.
-Camille did a joint-internship here and in Montpellier developing stats methods to draw inference using simulation before starting her PhD.
-Currently doing a postdoc in Grenoble, France.
+Camille did a joint-internship here and in Montpellier developing stats methods to draw inference using simulation. She then applied her statistics skills during her master project and PhD to study interactions in soil between plants and other lifeforms, across alpine elevation gradients. Currently doing a postdoc in Grenoble, France.
 :::
 
 :::float-left
@@ -91,12 +93,31 @@ Currently doing a postdoc in Grenoble, France.
 
 ### Loïc Etienne 🇫🇷
 Member 2010-2014.
-Loïc did his PhD with us doing modelling about the evolution of mutual mate choice. Now a musician in France.
+Loïc did his PhD with us doing modelling about the evolution of mutual mate choice.
+He was co-supervised by Alex, our long standing collaborator [François Rousset](#FR), and [Bernard Godelle](https://www.researchgate.net/profile/Bernard-Godelle-2). 
+After his PhD, Loïc works as a highschool teacher, and he is now a full time musician in France.
 :::
 
 ## Friends
 
 Not quite members, not quite collaborators, but very close to us all the same!
+
+:::float-right
+<img src="images/zimai_li.jpg" width="200px">
+
+### [Zimai Li](https://www.ulrichlab.com/zimai-li) 🇨🇳
+Zimai worked quite a bit with us on our R package {hyneaR} while doing an internship with colleagues from the [hyena project](https://hyena-project.com) on mate choice in spotted hyenas.
+After his stay with us, he joined [Yuko Ulrich](https://www.ulrichlab.com/yuko-ulrich) to study the interactions between infections and behaviour in clonal raider ants.
+:::
+
+:::float-left
+<img src="images/matthias_gallipaud.jpg" width="200px">
+
+### [Matthias Gallipaud](https://ch.linkedin.com/in/matthias-galipaud-980a241a1) 🇫🇷
+Matthias is a long standing idea bouncer for the DZG.
+He did is PhD with [François Xavier Dechaume-Moncharmont](http://www.fxdm.org) who was at the time in Dijon (now in Lyon) and then a postdoc with [Hanna Kokko](http://www.kokkonuts.org/) in Zurich, Switzerland.
+Matthias stayed in Zurich and is currently a data scientist working for [UrbanDataLab](https://urbandatalab.ch), a startup specialized in GIS and spatial analyses. He also does statistical consulting on the side as a free lancer.
+:::
 
 :::float-right
 <img src="images/unknown.jpg" width="200px">
@@ -106,27 +127,12 @@ Ilja is a biologist colleague turned full time python programmer and Linux admin
 :::
 
 
-:::float-left
-<img src="images/matthias_gallipaud.jpg" width="200px">
-
-### [Matthias Gallipaud](https://ch.linkedin.com/in/matthias-galipaud-980a241a1) 🇫🇷
-Matthias is a long standing idea bouncer for the DZG, currently data scientist based in Zurich, Switzerland.
-:::
-
-:::float-right
-<img src="images/zimai_li.jpg" width="200px">
-
-### [Zimai Li](https://www.ulrichlab.com/zimai-li) 🇨🇳
-Zimai worked quite a bit with us on our R package {hyneaR} while doing an internship with colleagues from the [hyena project](https://hyena-project.com) on mate choice in spotted hyenas.
-:::
-
-
 ## Main collaborators
 
 :::float-left
 <img src="images/unknown.jpg" width="200px">
 
-### [François Rousset](https://kimura.univ-montp2.fr/~rousset) 🇫🇷
+### [François Rousset](https://kimura.univ-montp2.fr/~rousset) 🇫🇷{#FR}
 François is a theoretical biologist at the [Institut des Science de l'Evolution in Montpellier](https://isem-evolution.fr), France, turned hardcore statistician, author of R package {spaMM} without which we could not do half the work we do.
 :::
 
@@ -159,16 +165,16 @@ Kseniia has freshly finished her PhD at the [BatLab](https://www.batlab.de) from
 :::
 
 :::float-right
-<img src="images/unknown.jpg" width="200px">
+<img src="images/christian_voigt.jpg" width="200px">
 
 ### [Christian Voigt](https://www.izw-berlin.de/en/christian-voigt-en.html) 🇩🇪
-Christian is head of the department of Evolutionary Ecology at the [IZW](https://www.izw-berlin.de/en/home.html) and head of the [BatLab](https://www.batlab.de).
+Christian is head of the department of Evolutionary Ecology at the [IZW](https://www.izw-berlin.de/en/home.html) and head of the [BatLab](https://www.batlab.de). His large team studies the ecophysiology of bats, as well as various topics relevant for the conservation of bats, such as their migration.
 :::
 
 :::float-left
 <img src="images/virpi_lummaa.jpg" width="200px">
 
-### [Virpi Lummaa](https://www.utu.fi/en/people/virpi-lummaa) 🇫🇮
+### [Virpi Lummaa](https://www.utu.fi/en/people/virpi-lummaa) 🇫🇮{#VL}
 Virpi is the life history data queen who has produced two of the very best demographic datasets that exist (one on pre-industrial humans and one on Asian Elephants). Head of the [human life history science group](https://human-life-history.science) and of the [Myanmar Timber Elephant Project] (https://elephant-project.science) at the [University of Turku](https://www.utu.fi/en) in Finland.
 :::
 
