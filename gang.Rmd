@@ -112,59 +112,55 @@ He did is PhD with [François Xavier Dechaume-Moncharmont](http://www.fxdm.org) 
 Matthias stayed in Zurich and is currently a data scientist working for [UrbanDataLab](https://urbandatalab.ch), a startup specialized in GIS and spatial analyses. He also does statistical consulting, on the side, as a [free lancer](https://www.upwork.com/freelancers/~01ea2e83906c8e5a7c?suggest-vem-skills).
 :::
 
-:::float-right
-<img src="images/unknown.jpg" width="200px">
-
 ### Ilja Heckmann 🇰🇿🇩🇪
 Ilja is a biologist colleague turned full time python programmer and Linux admin from whom we never stop learning.
-:::
 
 
 ## Main collaborators
 
-:::float-left
-<img src="images/unknown.jpg" width="200px">
+:::float-right
+<img src="images/francois_rousset.jpg" width="200px">
 
 ### [François Rousset](https://kimura.univ-montp2.fr/~rousset) 🇫🇷{#FR}
 François is a theoretical biologist at the [Institut des Science de l'Evolution in Montpellier](https://isem-evolution.fr), France, turned hardcore statistician, author of R package {spaMM} without which we could not do half the work we do.
 :::
 
-:::float-right
+:::float-left
 <img src="images/oliver_hoener.jpg" width="200px">
 
 ### [Oliver Höner](https://www.izw-berlin.de/en/oliver-patrick-hoener-en.html) 🇨🇭🇧🇷
 Oliver is the PI behind the [hyena project](https://hyena-project.com), behavioral ecologist and field biologist turning anything hyena related into high quality datasets. Based in the department of Evolutionary Ecology at the [IZW](https://www.izw-berlin.de/en/home.html).
 :::
 
-:::float-left
+:::float-right
 <img src="images/viktoriia_radchuk.jpg" width="200px">
 
 ### [Viktoriia Radchuk](https://www.izw-berlin.de/en/viktoriia-radchuk-en-2.html) 🇺🇦
 Viktoriia is an individual-based modeler and big collaborative meta-analysis producer, like us she flourishes at the interface between field and theory. She is a key member of the department [Ecological Dynamics](https://ecological-dynamics-izw.com/) at the [IZW](https://www.izw-berlin.de/en/home.html).
 :::
 
-:::float-right
+:::float-left
 <img src="images/stephanie_kramer.jpg" width="200px">
 
 ### [Stephanie Kramer-Schadt](https://www.izw-berlin.de/en/stephanie-kramer-schadt-en.html) 🇩🇪
 Stephanie is head of the excellent department [Ecological Dynamics](https://ecological-dynamics-izw.com/) at the [IZW](https://www.izw-berlin.de/en/home.html) who is composed, almost exclusively, of great young scientists and students with strong quantitative skills.
 :::
 
-:::float-left
+:::float-right
 <img src="images/kseniia_kravchenko.jpg" width="200px">
 
 ### [Kseniia Kravchenko](https://www.researchgate.net/profile/Kseniia-Kravchenko) 🇺🇦
 Kseniia has freshly finished her PhD at the [BatLab](https://www.batlab.de) from the [IZW](https://www.izw-berlin.de/en/home.html). She is a batwomen with whom we try to predict the future distribution of hibernation niches by combining physiology and climate change.
 :::
 
-:::float-right
+:::float-left
 <img src="images/christian_voigt.jpg" width="200px">
 
 ### [Christian Voigt](https://www.izw-berlin.de/en/christian-voigt-en.html) 🇩🇪
 Christian is head of the department of Evolutionary Ecology at the [IZW](https://www.izw-berlin.de/en/home.html) and head of the [BatLab](https://www.batlab.de). His large team studies the ecophysiology of bats, as well as various topics relevant for the conservation of bats, such as their migration.
 :::
 
-:::float-left
+:::float-right
 <img src="images/virpi_lummaa.jpg" width="200px">
 
 ### [Virpi Lummaa](https://www.utu.fi/en/people/virpi-lummaa) 🇫🇮{#VL}
