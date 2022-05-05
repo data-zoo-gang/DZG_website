@@ -25,7 +25,7 @@ For the full list of publications of a given team member, please use instead:
 [Ian J. Rickard](https://orcid.org/0000-0003-0762-1689),
 [Camille Martinez-Almoyna](https://orcid.org/0000-0002-3624-7932).
 
-## <a name="recent"></a> 5 most recent
+## Most recent {#recent}
 
 Our last 5 publications are:
 
@@ -34,7 +34,7 @@ Our last 5 publications are:
 - @kruszynski_identifying_2021 is a study on migratory bats attempting to infer which migration corridor the bats are using based on two different stable isotopes.
 
 
-## best of {#best}
+## Best of {#best}
 
 Here is a short selection of publications we are particularly proud of and which best reflect our involvement and mindset.
 
@@ -45,7 +45,7 @@ Here is a short selection of publications we are particularly proud of and which
 - @courtiol_modelling_2017 introduces a new statistical method for modelling the distribution of stable isotopes in the environment.
 - @courtiol_evolution_2016 is a minimal model of the evolution of mate choice in both sexes.
 
-## by themes {#themes}
+## by Themes {#themes}
 
 We study [wildlife conservation](#conservation), the ecology and evolution of [life history traits](#traits), [animal behaviour](#behaviour), as well as various aspects of [health](#health) in wildlife populations.
 We also design [methods](#methods) that can be applied to study these themes.
@@ -140,7 +140,7 @@ We also design [methods](#methods) that can be applied to study these themes.
 @paijmans_impact_2016, @sommer_mhc_2013
 
 
-## by taxonomic groups {#taxons}
+## by Taxonomic groups {#taxons}
 
 We mostly work on birds and mammals (including humans) but sometimes venture to study other lifeforms, as well as viruses.
 
