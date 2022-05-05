@@ -33,7 +33,7 @@ Member since 2018. [<i class='fa fa-twitter'></i>](https://twitter.com/ldbailey2
 Postdoc. SHORT 3rd PERSON DESCRIPTION TODO.
 :::
 
-## Past members
+## Former members
 
 :::float-left
 <img src="images/colin_vullioud.jpg" width="200px">
@@ -107,7 +107,7 @@ Not quite members, not quite collaborators, but very close to us all the same!
 
 ### [Zimai Li](https://www.ulrichlab.com/zimai-li) 🇨🇳
 Zimai worked quite a bit with us on our R package {hyneaR} while doing an internship with colleagues from the [hyena project](https://hyena-project.com) on mate choice in spotted hyenas.
-After his stay with us, he joined [Yuko Ulrich](https://www.ulrichlab.com/yuko-ulrich) to study the interactions between infections and behaviour in clonal raider ants.
+After his stay with us, he joined [Yuko Ulrich](https://www.ulrichlab.com/yuko-ulrich) to study interactions between infections and behaviour in clonal raider ants.
 :::
 
 :::float-left
@@ -116,7 +116,7 @@ After his stay with us, he joined [Yuko Ulrich](https://www.ulrichlab.com/yuko-u
 ### [Matthias Gallipaud](https://ch.linkedin.com/in/matthias-galipaud-980a241a1) 🇫🇷
 Matthias is a long standing idea bouncer for the DZG.
 He did is PhD with [François Xavier Dechaume-Moncharmont](http://www.fxdm.org) who was at the time in Dijon (now in Lyon) and then a postdoc with [Hanna Kokko](http://www.kokkonuts.org/) in Zurich, Switzerland.
-Matthias stayed in Zurich and is currently a data scientist working for [UrbanDataLab](https://urbandatalab.ch), a startup specialized in GIS and spatial analyses. He also does statistical consulting on the side as a free lancer.
+Matthias stayed in Zurich and is currently a data scientist working for [UrbanDataLab](https://urbandatalab.ch), a startup specialized in GIS and spatial analyses. He also does statistical consulting, on the side, as a free lancer.
 :::
 
 :::float-right
@@ -137,7 +137,7 @@ François is a theoretical biologist at the [Institut des Science de l'Evolution
 :::
 
 :::float-right
-<img src="images/unknown.jpg" width="200px">
+<img src="images/oliver_hoener.jpg" width="200px">
 
 ### [Oliver Höner](https://www.izw-berlin.de/en/oliver-patrick-hoener-en.html) 🇨🇭🇧🇷
 Oliver is the PI behind the [hyena project](https://hyena-project.com), behavioral ecologist and field biologist turning anything hyena related into high quality datasets. Based in the department of Evolutionary Ecology at the [IZW](https://www.izw-berlin.de/en/home.html).
@@ -151,7 +151,7 @@ Viktoriia is an individual-based modeler and big collaborative meta-analysis pro
 :::
 
 :::float-right
-<img src="images/unknown.jpg" width="200px">
+<img src="images/stephanie_kramer.jpg" width="200px">
 
 ### [Stephanie Kramer-Schadt](https://www.izw-berlin.de/en/stephanie-kramer-schadt-en.html) 🇩🇪
 Stephanie is head of the excellent department [Ecological Dynamics](https://ecological-dynamics-izw.com/) at the [IZW](https://www.izw-berlin.de/en/home.html) who is composed, almost exclusively, of great young scientists and students with strong quantitative skills.
@@ -182,3 +182,4 @@ Virpi is the life history data queen who has produced two of the very best demog
 ## Collaborators wishlist
 
 They never worked with us, but are a very much like us, so we hope to work with them one day: [Sarah Cubaynes](https://sarahcubaynes144031551.wordpress.com/about) 🇫🇷, [Olivier Gimenez](https://oliviergimenez.github.io) 🇫🇷, [Samuel Pavard](https://www.ecoanthropologie.fr/fr/annuaire/pavard-samuel-6078) 🇫🇷, [François Xavier Dechaume-Moncharmont](http://www.fxdm.org) 🇫🇷.
+There is also [Erik Postma](https://www.lifelovedeath.net/) 🇳🇱 with whom we worked a little together already, but we would love to do much so much more with him.
