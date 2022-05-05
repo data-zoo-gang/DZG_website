@@ -1,5 +1,62 @@
 ---
 title: "Teaching"
+description: |
+  We teach both at the IZW and in universities
 ---
 
-TODO
+This page describes the teaching we do within academia.
+For teaching outside academia, please refer to our page on [consulting](consulting.html#external).
+
+
+## Current teaching and workshops
+
+### Introductory course: Solving problems in biostatistical analysis and experimental design in the life sciences
+
+Alex teaches this course at the Leibniz Institute for Zoo and Wildlife Research (or [IZW](https://www.izw-berlin.de/en/home.html)).
+
+It is dedicated to PhD students from the IZW as well as to those belonging to one of the following programs:
+
+- the [Research Training Group 2046 *Parasite Infections: From Experimental Models to Natural Systems* ](https://www.vetmed.fu-berlin.de/en/einrichtungen/sonstige/grk2046/index.html) also known as GRK 2046 or Grako.
+- the [International Max Planck Research School for Infectious Diseases and Immunology](https://www.mpiib-berlin.mpg.de/graduate_program/general_information) also known as ZIBI.
+- the [Dahlem Research School](https://www.drs.fu-berlin.de/) also known as DRS.
+
+The course is a 5 days block course occurring twice ever year: once in November or December and once in January or February (exact dates depend on the year).
+
+This is an introductory course, so no preliminary knowledge in statistics or R is required.
+It is however useful that students have their research question and experimental designs in mind.
+
+Course content:
+
+- day 1: basics of the statistical software and programming language called [R](https://www.r-project.org/).
+- day 2-3: fundamental concepts in statistics such as: population, sample, distribution, null hypothesis, statistical significance, p-values, statistical power, mutliple testing, replications...
+- day 3-4: non-parametric tests.
+- day 4-5: linear models (LM, GLM) and a few other parametric tests.
+
+Students need to bring a working laptop with charger and have installed the latest version of [R](https://www.r-project.org/) and [RStudio Desktop IDE](https://www.rstudio.com/products/rstudio/download/) before the course.
+
+### 
+
+### R for Genetics and Genomics
+
+Alex teaches this course with [Daniel Förster](https://www.izw-berlin.de/en/daniel-foerster-en.html).
+
+This one day practical course is part of a larger course on population genetics and genomics organised by [Jörns Fickel]() for [University of Potsdam](https://www.uni-potsdam.de/en/university-of-potsdam?land=Irland).
+
+
+### International Summer School on Stable Isotopes in Animal Ecology
+
+
+
+## Former teaching
+
+### Advanced course: solving problems in biostatistical analysis and experimental design in the life sciences
+
+Alex taught this course at the Leibniz Institute for Zoo and Wildlife Research (or [IZW](https://www.izw-berlin.de/en/home.html)).
+
+The point of this course was primarily to discuss and resolve every participant's (statistical) problem.
+
+The course is no longer running since it became relativelly redundant with the bi-weekly statistical seminars from the IZW, which we co-organise with [Emanuel Heitlinger](https://scholar.google.com/citations?user=ZgBJ3aAAAAAJ).
+
+
+
+
