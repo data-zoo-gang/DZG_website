@@ -3,6 +3,9 @@ title: "R packages"
 description: |
   We maintain and are key contributors to several R packages
 ---
+
+<script src="js/for_toc.js"></script>
+
 Here we list our main contributions. 
 
 We also contribute to many other R packages, but our contributions are not as crucial or the projects are small and experiemental.

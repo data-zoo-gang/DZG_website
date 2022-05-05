@@ -4,6 +4,8 @@ description: |
    We offer training and consulting about R, statistics, data visualisation and anything else we know for everyone.
 ---
 
+<script src="js/for_toc.js"></script>
+
 ## Outside academia {#external}
 
 We do a fair a bit of training and consulting outside academia.

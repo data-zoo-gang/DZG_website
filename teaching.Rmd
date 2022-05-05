@@ -4,16 +4,7 @@ description: |
   We teach at the IZW and in universities
 ---
 
-<style>
-.float-left img {
-    float:left;
-    padding: 5px 10px 0px 0px;
-}
-.float-right img {
-    float:right;
-    padding: 5px 10px 0px 0px;
-}
-</style>
+<script src="js/for_toc.js"></script>
 
 This page describes the teaching we do within academia.
 For teaching outside academia, please refer to our page on [consulting](consulting.html#external).

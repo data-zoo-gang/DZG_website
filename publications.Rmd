@@ -4,6 +4,8 @@ bibliography: publications.bib
 csl: apa.csl
 ---
 
+<script src="js/for_toc.js"></script>
+
 Publications are here sorted by multiple criterion: you can jump to categories [most recent](#recent), [best of](#best), [by themes](#themes), [by taxonomic groups](#taxons).
 
 Just hover on top of a publication to reveal its details.

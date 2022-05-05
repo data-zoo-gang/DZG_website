@@ -4,6 +4,7 @@ description: |
   Welcome to the website of the Data Zoo Gang!
 site: distill::distill_website
 ---
+<script src="js/for_toc.js"></script>
 
 ## Who are we?
 

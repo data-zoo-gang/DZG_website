@@ -4,16 +4,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-<style>
-.float-left img {
-    float:left;
-    padding: 5px 10px 0px 0px;
-}
-.float-right img {
-    float:right;
-    padding: 5px 10px 0px 0px;
-}
-</style>
+<script src="js/for_toc.js"></script>
 
 ## Current members
 
