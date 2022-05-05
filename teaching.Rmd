@@ -4,11 +4,25 @@ description: |
   We teach at the IZW and in universities
 ---
 
+<style>
+.float-left img {
+    float:left;
+    padding: 5px 10px 0px 0px;
+}
+.float-right img {
+    float:right;
+    padding: 5px 10px 0px 0px;
+}
+</style>
+
 This page describes the teaching we do within academia.
 For teaching outside academia, please refer to our page on [consulting](consulting.html#external).
 
 
 ## Current teaching and workshops
+
+:::float-right
+<img src="images/FU.png" width="100px">
 
 ### Data science for biologists: Generalized linear modelling with R
 
@@ -26,6 +40,10 @@ During this course students study GLMs in depth, favoring practical consideratio
 By the end of the course, they should be able to use a wide range of GLMs (i.e. LM, GLM, LMM, GLMM) and understand how to solve several common practical problems that show up when analysing real datasets.
 They will also learn how to translate a concrete biological problem into a GLM.
 All that is done with the open source software R, which is the most popular software for data science in the world.
+:::
+
+:::float-right
+<img src="images/IZW.jpg" width="100px">
 
 ### Introductory course: Solving problems in biostatistical analysis and experimental design in the Life Sciences
 
@@ -46,6 +64,10 @@ One day 1, Alex reviews the basics of the statistical software and programming l
 One days 2-3, he teaches fundamental concepts in statistics such as: population, sample, distribution, null hypothesis, statistical significance, p-values, statistical power, multiple testing, replications...
 On days 3-4, he introduces several useful non-parametric tests.
 On days 4-5, he introduces linear models (LM, GLM) and a few other parametric tests that are good to know.
+:::
+
+:::float-right
+<img src="images/UP.jpg" width="100px">
 
 ### Conservation Genetics
 
@@ -54,15 +76,22 @@ Alex and Liam perform some of the teaching of a course on Conservation Genetics 
 Alex teaches a one day course on R for genetics and genomics with [Daniel Förster](https://www.izw-berlin.de/en/daniel-foerster-en.html).
 
 Liam teaches an introduction to R.
+:::
+
+:::float-right
+<img src="images/IZW.jpg" width="100px">
 
 ### International summer school on stable isotopes in Animal Ecology
 
 Every other year, [Christian Voigt](https://www.izw-berlin.de/en/christian-voigt-en.html) organises a summer school aiming at giving PhD students an overall introduction to the various usage of stable isotopes to study animal ecology.
 
 In this context, Alex gives a one day course on how to use [IsoriX](packages.html#main_packages), an R package that can be used to infer the origin of migratory lifeforms based on their isotopic signatures.
-
+:::
 
 ## Former teaching
+
+:::float-right
+<img src="images/IZW.jpg" width="100px">
 
 ### Advanced course: Solving problems in biostatistical analysis and experimental design in the Life Sciences
 
@@ -71,13 +100,22 @@ Alex taught this course, for several years, at the Leibniz Institute for Zoo and
 The point of this course was primarily to discuss and resolve every participant's (statistical) problem.
 
 The course is no longer running since it became relativelly redundant with the bi-weekly statistical seminars at the IZW, which we co-organise with [Emanuel Heitlinger](https://scholar.google.com/citations?user=ZgBJ3aAAAAAJ).
+:::
 
 ### Other former courses
 
+:::float-right
+<img src="images/FU.png" width="70px">
 - In Berlin (Germany), Alex has taught the course **Current and classic topics in Evolution and Ecology** at the Freie Universität, to replace [Jens Rolff](https://www.bcp.fu-berlin.de/en/biologie/arbeitsgruppen/zoologie/ag_rolff/index.html) who was doing a sabbatical.
+:::
+:::float-right
+<img src="images/USh.png" width="70px">
 - In Sheffield (UK), during his postdoc, Alex has taught an introduction to R with [Andrew Beckerman](https://andbeck.github.io/beckslab/).
+:::
+:::float-right
+<img src="images/UM.png" width="70px">
 - In Montpellier (France), during his PhD, Alex has taught population genetics and various practicals in ecology.
-
+:::
 
 
 
