@@ -10,6 +10,23 @@ For teaching outside academia, please refer to our page on [consulting](consulti
 
 ## Current teaching and workshops
 
+### Data science for biologists: generalized linear modelling with R
+
+Alex teaches [this course](https://www.fu-berlin.de/vv/en/search?utf8=%E2%9C%93&query=courtiol&sm=682080) ever even year at the Freie Universität in Berlin (FU for short).
+
+It is dedicated to master and PhD students from the [department of biology, chemistry and pharmacy at the FU](https://www.bcp.fu-berlin.de/en/index.html) but students from other universities can easily make to necessary paperwork to take part as well.
+
+The course occurs during the summer semester and currently run for 40 hours in class (2 full days a week, for 4 consecutive weeks; used to be twice as long).
+
+The goal of this course is to teach students how to analyse most datasets on their own, and derive biological meaning from them.
+The course specifically focuses on Generalised Linear Models (or GLMs for short) – a family of statistical models that aim at describing the effect of different variables on one outcome of interest.
+The GLM is the most useful statistical tool the for most natural scientists.
+It is also the foundation of more complex methods, such as AI algorithms.
+During this course students study GLMs in depth, favoring practical considerations over mathematics.
+By the end of the course, they should be able to use a wide range of GLMs (i.e. LM, GLM, LMM, GLMM) and understand how to solve several common practical problems that show up when analysing real datasets.
+They will also learn how to translate a concrete biological problem into a GLM.
+All that is done with the open source software R, which is the most popular software for data science in the world.
+
 ### Introductory course: Solving problems in biostatistical analysis and experimental design in the life sciences
 
 Alex teaches this course at the Leibniz Institute for Zoo and Wildlife Research (or [IZW](https://www.izw-berlin.de/en/home.html)).
@@ -17,34 +34,32 @@ Alex teaches this course at the Leibniz Institute for Zoo and Wildlife Research 
 It is dedicated to PhD students from the IZW as well as to those belonging to one of the following programs:
 
 - the [Research Training Group 2046 *Parasite Infections: From Experimental Models to Natural Systems* ](https://www.vetmed.fu-berlin.de/en/einrichtungen/sonstige/grk2046/index.html) also known as GRK 2046 or Grako.
-- the [International Max Planck Research School for Infectious Diseases and Immunology](https://www.mpiib-berlin.mpg.de/graduate_program/general_information) also known as ZIBI.
+- the [International Max Planck Research School for Infectious Diseases and Immunology](https://www.mpiib-berlin.mpg.de/graduate_program/general_information) also known as IMPRS.
+- the Graduate School of the [Interdisciplinary Center of Infection Biology and Immunity](https://www.zibi-berlin.de/training/zibi-graduate-school/index.html) also known as ZIBI.
 - the [Dahlem Research School](https://www.drs.fu-berlin.de/) also known as DRS.
 
 The course is a 5 days block course occurring twice ever year: once in November or December and once in January or February (exact dates depend on the year).
 
 This is an introductory course, so no preliminary knowledge in statistics or R is required.
 It is however useful that students have their research question and experimental designs in mind.
+One day 1, Alex reviews the basics of the statistical software and programming language called [R](https://www.r-project.org/).
+One days 2-3, he teaches fundamental concepts in statistics such as: population, sample, distribution, null hypothesis, statistical significance, p-values, statistical power, multiple testing, replications...
+On days 3-4, he introduces several useful non-parametric tests.
+On days 4-5, he introduces linear models (LM, GLM) and a few other parametric tests that are good to know.
 
-Course content:
+### Conservation Genetics
 
-- day 1: basics of the statistical software and programming language called [R](https://www.r-project.org/).
-- day 2-3: fundamental concepts in statistics such as: population, sample, distribution, null hypothesis, statistical significance, p-values, statistical power, mutliple testing, replications...
-- day 3-4: non-parametric tests.
-- day 4-5: linear models (LM, GLM) and a few other parametric tests.
+Alex and Liam perform some of the teaching of a course on Conservation Genetics (Naturschutzgenetik) organised by [Jörns Fickel]() for [University of Potsdam](https://www.uni-potsdam.de/en/university-of-potsdam?land=Irland).
 
-Students need to bring a working laptop with charger and have installed the latest version of [R](https://www.r-project.org/) and [RStudio Desktop IDE](https://www.rstudio.com/products/rstudio/download/) before the course.
+Alex teaches a one day course on R for genetics and genomics with [Daniel Förster](https://www.izw-berlin.de/en/daniel-foerster-en.html).
 
-### 
-
-### R for Genetics and Genomics
-
-Alex teaches this course with [Daniel Förster](https://www.izw-berlin.de/en/daniel-foerster-en.html).
-
-This one day practical course is part of a larger course on population genetics and genomics organised by [Jörns Fickel]() for [University of Potsdam](https://www.uni-potsdam.de/en/university-of-potsdam?land=Irland).
-
+Liam teaches an introduction to R.
 
 ### International Summer School on Stable Isotopes in Animal Ecology
 
+Every other year, [Christian Voigt](https://www.izw-berlin.de/en/christian-voigt-en.html) organises a summer school aiming at giving PhD students an overall introduction to the various usage of stable isotopes to study animal ecology.
+
+In this context, Alex gives a one day course on how to use [IsoriX](packages.html#main_packages), an R package that can be used to infer the origin of migratory lifeforms based on their isotopic signatures.
 
 
 ## Former teaching
@@ -57,6 +72,10 @@ The point of this course was primarily to discuss and resolve every participant'
 
 The course is no longer running since it became relativelly redundant with the bi-weekly statistical seminars from the IZW, which we co-organise with [Emanuel Heitlinger](https://scholar.google.com/citations?user=ZgBJ3aAAAAAJ).
 
+### Other teaching
+
+Alex has taught for a short time in Montpellier population genetics and various practical in ecology.
+He also taught once the course *Current and classic topics in Evolution and Ecology* at the Freie Universität, to replace [Jens Rolff](https://www.bcp.fu-berlin.de/en/biologie/arbeitsgruppen/zoologie/ag_rolff/index.html) who was doing a sabbatical.
 
 
 
