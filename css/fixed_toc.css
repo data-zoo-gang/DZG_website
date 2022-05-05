@@ -6,12 +6,12 @@ d-article {
 
 /* Sidebar Navigation */
 #TOC {
-  opacity: 1;
+  opacity: 0.8;
   position: fixed;
   left: calc(7%);
   top: calc(5.5%);
-  /* width: 20%; */
-  max-width: 260px;
+  width: 20%;
+  max-width: 150px;
   max-height: 85%;
   overflow-y: auto;
   background: white;            /* Optional, remove to enable the blur filter (just for fun). */
@@ -25,11 +25,13 @@ d-article {
   }
 
 /* Hide the TOC when resized to mobile or tablet:  480px, 768px, 900px */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
 #TOC {
-    position: relative;
     left: 0;
     top: 0;
+    padding: 0;
+    width: 90%;
+    position: relative;
     max-width: none;
     max-height: none;
     overflow-y: auto;
