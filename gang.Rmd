@@ -116,7 +116,7 @@ After his stay with us, he joined [Yuko Ulrich](https://www.ulrichlab.com/yuko-u
 ### [Matthias Gallipaud](https://ch.linkedin.com/in/matthias-galipaud-980a241a1) 🇫🇷
 Matthias is a long standing idea bouncer for the DZG.
 He did is PhD with [François Xavier Dechaume-Moncharmont](http://www.fxdm.org) who was at the time in Dijon (now in Lyon) and then a postdoc with [Hanna Kokko](http://www.kokkonuts.org/) in Zurich, Switzerland.
-Matthias stayed in Zurich and is currently a data scientist working for [UrbanDataLab](https://urbandatalab.ch), a startup specialized in GIS and spatial analyses. He also does statistical consulting, on the side, as a free lancer.
+Matthias stayed in Zurich and is currently a data scientist working for [UrbanDataLab](https://urbandatalab.ch), a startup specialized in GIS and spatial analyses. He also does statistical consulting, on the side, as a [free lancer](https://www.upwork.com/freelancers/~01ea2e83906c8e5a7c?suggest-vem-skills).
 :::
 
 :::float-right
