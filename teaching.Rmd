@@ -1,7 +1,7 @@
 ---
 title: "Teaching"
 description: |
-  We teach both at the IZW and in universities
+  We teach at the IZW and in universities
 ---
 
 This page describes the teaching we do within academia.
@@ -10,7 +10,7 @@ For teaching outside academia, please refer to our page on [consulting](consulti
 
 ## Current teaching and workshops
 
-### Data science for biologists: generalized linear modelling with R
+### Data science for biologists: Generalized linear modelling with R
 
 Alex teaches [this course](https://www.fu-berlin.de/vv/en/search?utf8=%E2%9C%93&query=courtiol&sm=682080) ever even year at the Freie Universität in Berlin (FU for short).
 
@@ -27,7 +27,7 @@ By the end of the course, they should be able to use a wide range of GLMs (i.e. 
 They will also learn how to translate a concrete biological problem into a GLM.
 All that is done with the open source software R, which is the most popular software for data science in the world.
 
-### Introductory course: Solving problems in biostatistical analysis and experimental design in the life sciences
+### Introductory course: Solving problems in biostatistical analysis and experimental design in the Life Sciences
 
 Alex teaches this course at the Leibniz Institute for Zoo and Wildlife Research (or [IZW](https://www.izw-berlin.de/en/home.html)).
 
@@ -55,7 +55,7 @@ Alex teaches a one day course on R for genetics and genomics with [Daniel Först
 
 Liam teaches an introduction to R.
 
-### International Summer School on Stable Isotopes in Animal Ecology
+### International summer school on stable isotopes in Animal Ecology
 
 Every other year, [Christian Voigt](https://www.izw-berlin.de/en/christian-voigt-en.html) organises a summer school aiming at giving PhD students an overall introduction to the various usage of stable isotopes to study animal ecology.
 
@@ -64,18 +64,19 @@ In this context, Alex gives a one day course on how to use [IsoriX](packages.htm
 
 ## Former teaching
 
-### Advanced course: solving problems in biostatistical analysis and experimental design in the life sciences
+### Advanced course: Solving problems in biostatistical analysis and experimental design in the Life Sciences
 
-Alex taught this course at the Leibniz Institute for Zoo and Wildlife Research (or [IZW](https://www.izw-berlin.de/en/home.html)).
+Alex taught this course, for several years, at the Leibniz Institute for Zoo and Wildlife Research (or [IZW](https://www.izw-berlin.de/en/home.html)).
 
 The point of this course was primarily to discuss and resolve every participant's (statistical) problem.
 
-The course is no longer running since it became relativelly redundant with the bi-weekly statistical seminars from the IZW, which we co-organise with [Emanuel Heitlinger](https://scholar.google.com/citations?user=ZgBJ3aAAAAAJ).
+The course is no longer running since it became relativelly redundant with the bi-weekly statistical seminars at the IZW, which we co-organise with [Emanuel Heitlinger](https://scholar.google.com/citations?user=ZgBJ3aAAAAAJ).
 
-### Other teaching
+### Other former courses
 
-Alex has taught for a short time in Montpellier population genetics and various practical in ecology.
-He also taught once the course **Current and classic topics in Evolution and Ecology** at the Freie Universität, to replace [Jens Rolff](https://www.bcp.fu-berlin.de/en/biologie/arbeitsgruppen/zoologie/ag_rolff/index.html) who was doing a sabbatical.
+- In Montpellier (France), during his PhD, Alex has taught population genetics and various practicals in ecology.
+- In Sheffield (UK), he taught an introduction to R with [Andrew Beckerman](https://andbeck.github.io/beckslab/).
+- In Berlin (Germany), he taught the course **Current and classic topics in Evolution and Ecology** at the Freie Universität, to replace [Jens Rolff](https://www.bcp.fu-berlin.de/en/biologie/arbeitsgruppen/zoologie/ag_rolff/index.html) who was doing a sabbatical.
 
 
 
