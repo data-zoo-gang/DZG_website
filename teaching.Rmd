@@ -74,9 +74,11 @@ The course is no longer running since it became relativelly redundant with the b
 
 ### Other former courses
 
+- In Berlin (Germany), Alex has taught the course **Current and classic topics in Evolution and Ecology** at the Freie Universität, to replace [Jens Rolff](https://www.bcp.fu-berlin.de/en/biologie/arbeitsgruppen/zoologie/ag_rolff/index.html) who was doing a sabbatical.
+- In Sheffield (UK), during his postdoc, Alex has taught an introduction to R with [Andrew Beckerman](https://andbeck.github.io/beckslab/).
 - In Montpellier (France), during his PhD, Alex has taught population genetics and various practicals in ecology.
-- In Sheffield (UK), he taught an introduction to R with [Andrew Beckerman](https://andbeck.github.io/beckslab/).
-- In Berlin (Germany), he taught the course **Current and classic topics in Evolution and Ecology** at the Freie Universität, to replace [Jens Rolff](https://www.bcp.fu-berlin.de/en/biologie/arbeitsgruppen/zoologie/ag_rolff/index.html) who was doing a sabbatical.
+
+
 
 
 
