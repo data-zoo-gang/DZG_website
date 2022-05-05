@@ -73,7 +73,7 @@ Ian came for a sabbatical from Durham University to study how twinning connects 
 
 ### [Robert Schwieger](https://de.linkedin.com/in/robert-schwieger-431ab4197) 🇩🇪
 Member 2015-2016.
-Robert came to do maths for fun on inference problems about mate choice before doing a PhD in applied mathematics on XXX.
+Robert came to do maths for fun on inference problems about mate choice before doing a PhD in applied mathematics on gene regulatory networks.
 Now working at [CENTOGENE](https://www.centogene.com) in Berlin, Germany.
 :::
 
@@ -107,7 +107,7 @@ Ilja is a biologist colleague turned full time python programmer and Linux admin
 
 
 :::float-left
-<img src="images/unknown.jpg" width="200px">
+<img src="images/matthias_gallipaud.jpg" width="200px">
 
 ### [Matthias Gallipaud](https://ch.linkedin.com/in/matthias-galipaud-980a241a1) 🇫🇷
 Matthias is a long standing idea bouncer for the DZG, currently data scientist based in Zurich, Switzerland.
@@ -152,7 +152,7 @@ Stephanie is head of the excellent department [Ecological Dynamics](https://ecol
 :::
 
 :::float-left
-<img src="images/unknown.jpg" width="200px">
+<img src="images/kseniia_kravchenko.jpg" width="200px">
 
 ### [Kseniia Kravchenko](https://www.researchgate.net/profile/Kseniia-Kravchenko) 🇺🇦
 Kseniia has freshly finished her PhD at the [BatLab](https://www.batlab.de) from the [IZW](https://www.izw-berlin.de/en/home.html). She is a batwomen with whom we try to predict the future distribution of hibernation niches by combining physiology and climate change.
