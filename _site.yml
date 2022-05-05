@@ -19,6 +19,8 @@ navbar:
       href: consulting.html
     - text: "About"
       href: about.html
+    - icon: fab fa-github
+      href: https://github.com/data-zoo-gang/DZG_website
 output:
   distill::distill_article:
     toc: true
