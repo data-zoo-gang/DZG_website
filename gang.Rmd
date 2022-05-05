@@ -1,5 +1,7 @@
 ---
 title: "DZG's who's who"
+description: |
+  We are a small group of nature lovers interested in data science and biology.
 editor_options: 
   chunk_output_type: console
 ---

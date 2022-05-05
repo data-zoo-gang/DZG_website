@@ -1,7 +1,7 @@
 ---
 title: "Teaching"
 description: |
-  We teach at the IZW and in universities
+  We teach data science and biology in different places in Berlin.
 ---
 
 <script src="js/for_toc.js"></script>

@@ -1,5 +1,7 @@
 ---
 title: "Publications"
+description: |
+  We turn our findings into scientific publications.
 bibliography: publications.bib
 csl: apa.csl
 ---

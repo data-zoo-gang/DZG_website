@@ -1,7 +1,7 @@
 ---
 title: "R packages"
 description: |
-  We maintain and are key contributors to several R packages
+  We turn the methods we develop into R packages.
 ---
 
 <script src="js/for_toc.js"></script>

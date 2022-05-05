@@ -2,6 +2,7 @@
 title: "DZG"
 description: |
   Welcome to the website of the Data Zoo Gang!
+  A research group on wildlife quantitative biology from the Leibniz IZW, Berlin, Germany.
 site: distill::distill_website
 ---
 <script src="js/for_toc.js"></script>
