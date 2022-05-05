@@ -13,7 +13,7 @@ For more details, you can check our GitHub pages:
 
 ## Open source
 
-### For natural scientists
+### For natural scientists {#main_packages}
 
 - [climwin](https://cran.r-project.org/web/packages/climwin/index.html) to detect and visualise periods of climate sensitivity (climate windows) for a given biological response. Created and maintained by Liam.
 - [IsoriX](https://cran.r-project.org/web/packages/IsoriX/index.html) to build isoscapes using mixed models and infer the geographic origin of organisms based on their isotopic ratios. Created and maintained by Alex.
