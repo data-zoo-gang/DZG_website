@@ -74,7 +74,7 @@ Now working at [CENTOGENE](https://www.centogene.com) in Berlin, Germany.
 :::float-right
 <img src="images/camille_martinez.jpg" width="200px">
 
-### [Camille Martinez Almoyna](https://www.researchgate.net/profile/Camille-Martinez-Almoyna) 🇫🇷
+### [Camille Martinez Almoyna](https://scholar.google.de/citations?hl=en&user=KsalObYAAAAJ) 🇫🇷
 Member 2015-2016.
 Camille did a joint-internship here and in Montpellier developing stats methods to draw inference using simulation. She then applied her statistics skills during her master project and PhD to study interactions in soil between plants and other lifeforms, across alpine elevation gradients. Currently doing a postdoc in Grenoble, France.
 :::
