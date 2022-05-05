@@ -35,3 +35,7 @@ For more details, you can check our GitHub pages:
 - [HyenaPopmod ](https://github.com/hyenaproject/HyenaPopmod) to perform individual-based simulations mimicking the hyenas followed by the [hyena project](https://hyena-project.com). Created and maintained by Liam.
 
 These packages will become open whenever we will judge them ready for others to use.
+
+```{r, fig.align='center', out.width=100, echo=FALSE}
+knitr::include_graphics(path = "images/R.jpg")
+```
