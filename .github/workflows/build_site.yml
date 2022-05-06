@@ -18,7 +18,7 @@ jobs:
 
       - name: Render Site
         run: |
-          install.packages("rmarkdown")
+          install.packages(c("rmarkdown", "distill"))
           rmarkdown::render_site(encoding = 'UTF-8')
         shell: Rscript {0}
 
