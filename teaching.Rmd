@@ -108,6 +108,7 @@ The course is no longer running since it became relativelly redundant with the b
 - In Montpellier (France), during his PhD, Alex has taught population genetics and various practicals in ecology.
 :::
 
-
-
+```{r, fig.align='center', out.width=200, echo=FALSE}
+knitr::include_graphics(path = "images/african_elephant.jpg")
+```
 

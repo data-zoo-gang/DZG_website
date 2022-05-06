@@ -13,9 +13,14 @@ The Data Zoo Gang is [a small team of scientists](gang.html) (mostly biologists)
 
 We all love mammals, birds, computers and [R](https://www.r-project.org/).
 
+```{r, fig.align='center', out.width=200}
+knitr::include_graphics(path = "images/great_tit.jpg")
+```
+
 We enjoy collaborating with people -- whoever they are -- as long as they really want to discover something cool and not too obvious about their favorite species.
 
 We hate demonstrating the obvious, and strongly dislike low quality datasets and proprietary software (although we sometimes use both).
+
 
 ## What do we do?
 
@@ -51,3 +56,4 @@ All the same, we love collaborating with field biologists, NGOs, or geeks from a
 ## How to join us?
 
 If you would like to join us and are a motivated scientist with overlapping interests, no matter your skills, origin, age, sex & gender, please do [contact us](mailto: courtiol@izw-berlin.de) and we will figure out the details together.
+

@@ -148,23 +148,37 @@ We mostly work on birds and mammals (including humans) but sometimes venture to 
 
 ### Arthropods
 
+:::float-right
+<img src="images/droso.jpg" width="200px">
 @debelle_mate_2017
+:::
 
 ### Bats
 
+:::float-left
+<img src="images/bat_costarica.jpg" width="200px">
 @kruszynski_identifying_2021, @kravchenko_generational_2020, @courtiol_isoscape_2019, @seltmann_habitat_2017, @santos_mhc-dependent_2016, @schneeberger_immune_2014
+:::
 
 ### Birds
 
+:::float-right
+<img src="images/flamingo.jpg" width="200px">
 @merling_de_chapa_phantom_2020, @radchuk_adaptive_2019, @gillingham_very_2017, @gillingham_evidence_2016, @renoult_novel_2013
+:::
 
 ### Carnivores
-
+:::float-left
+<img src="images/hyena_portrait.jpg" width="200px">
 @vullioud_social_2019, @heinrich_cheetahs_2017, @davidian_why_2016, @paijmans_impact_2016, @wilting_planning_2015, @davidian_determining_2015
+:::
 
 ### Elephants
 
+:::float-right
+<img src="images/asian_elephant_working.jpg" width="200px">
 @lahdenpera_differences_2018, @saragusty_sperm_2016, @mumby_stress_2015, @mumby_climatic_2013, @mumby_birth_2013
+:::
 
 ### Marsupials
 
@@ -172,19 +186,30 @@ We mostly work on birds and mammals (including humans) but sometimes venture to 
 
 ### Plants 
 
+:::float-right
+<img src="images/leucadendron_rubrum.jpg" width="200px">
 @tonnabel_sexspecific_2021
+:::
 
 ### Primates
 
+:::float-left
+<img src="images/baboon_tsaobis.jpg" width="200px">
 @corbett_transition_2018, @courtiol_when_2016, @levrero_social_2015, @cohen_relevance_2015, @pettay_effects_2014, @courtiol_demographic_2013, @courtiol_natural_2012, @rickard_intergenerational_2012
+:::
 
 ### Rodents
 
+:::float-right
+<img src="images/porcupine.jpg" width="200px">
 @tian_circulating_2015, @sommer_mhc_2013
+:::
 
 ### Ungulates
-
+:::float-left
+<img src="images/zebra_southafrica.jpg" width="200px">
 @dayaram_seasonal_2021, @kretzschmar_mate_2020, @trinogga_fragmentation_2019, @trinogga_fragmentation_2019, @speck_cationic_2014
+:::
 
 ### Viruses
 
