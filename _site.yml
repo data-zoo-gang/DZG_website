@@ -2,7 +2,7 @@ name: "Data Zoo Gang"
 title: "Data Zoo Gang"
 description: |
   Data Zoo Gang's website
-output_dir: "_site"
+output_dir: "docs"
 navbar:
   right:
     - text: "Home"
