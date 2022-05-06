@@ -6,6 +6,10 @@ Go to www.datazoogang.de to visit our website.
 
 ### for website maintainers
 
+For changes related to references: do not alter the BibTeX file directly, but perform changes in the shared Zotero library DZG and overwrite a new file `publications.bib`.
+
+For pictures, make sure before committing that they are saved with a resolution of 270px wide (GIMP can be used for resizing: Image -> Scale Image...) and an extension `.jpg` or `.png`.
+
 To update the website, do the changes locally, save, and then run the following in R:
 
 ```r
