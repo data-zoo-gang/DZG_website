@@ -12,7 +12,8 @@ To update the website, do the changes locally, save, and then run the following 
 rmarkdown::render_site(encoding = 'UTF-8')   # to build the updated website
 gert::git_add(".")                           # to stage all changes
 gert::git_commit(message = "Update website") # to add the commit message
-gitcreds::gitcreds_set()                     # to load GH credentials (paste the token stored in my_GH_token.txt)
+gitcreds::gitcreds_set()                     # to load GH credentials 
+                                             # (paste the token stored in my_GH_token.txt)
 gert::git_push()                             # to push all changes on GitHub
 ```
 
