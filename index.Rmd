@@ -9,7 +9,7 @@ site: distill::distill_website
 
 ## Who are we?
 
-The Data Zoo Gang is [a small team of scientists](gang.html) (mostly biologists) with a slight geeky data driven take on wildlife and humans.
+The Data Zoo Gang is [a small team of scientists](gang.html) (mostly biologists) with a slightly geeky data-driven take on wildlife and humans.
 
 We all love mammals, birds, computers and [R](https://www.r-project.org/).
 
@@ -17,7 +17,7 @@ We all love mammals, birds, computers and [R](https://www.r-project.org/).
 knitr::include_graphics(path = "images/great_tit.jpg")
 ```
 
-We enjoy collaborating with people -- whoever they are -- as long as they really want to discover something cool and not too obvious about their favorite species.
+We enjoy collaborating with people -- whoever they are -- as long as they want to discover something cool and not too obvious about their favorite species.
 
 We hate demonstrating the obvious, and strongly dislike low quality datasets and proprietary software (although we sometimes use both).
 
@@ -34,7 +34,7 @@ We also create open source tools ([R packages](packages.html)) for researchers f
 ## Where are we based?
 
 We are based at the Leibniz Institute for Zoo and Wildlife Research in Berlin, Germany (or [IZW](https://www.izw-berlin.de/en/home.html) for short).
-Some of us occasionally do a little bit of field work in Tanzania as also member of the [hyena project](https://hyena-project.com) not to loose track with the real world. 
+Some of us occasionally do field work in Tanzania as members of the [hyena project](https://hyena-project.com), so as not to lose track of the real world. 
 
 ## Why are we called *Data Zoo Gang*?
 
@@ -46,14 +46,14 @@ We call our team, the *Data Zoo Gang* or DZG (pronounced "deezeegee") for short.
 
 **Gang** because there is a nicer rhythm to it than *group* or *team* and because we are almost rebels:
 
-- we think that developing methods is a scientific activity on its own right, which should be better recognized and funded as such.
+- we think that developing methods is a scientific activity in its own right, which should be better recognized and funded as such.
 - we think that most null hypothesis testing is dull.
-- we show no mercy to data, flimsy ideas (no matter how established) and computers.
-- one past team member unconditionally wore a baseball cap and there is also a somewhat anti-capitalist vibe within the group; but we remain tolerant and professional, especially since we consult for profit companies under a [Robin Hood model](consulting.html#robinhood).
-
-All the same, we love collaborating with field biologists, NGOs, or geeks from any background.
+- we show no mercy to data, flimsy ideas (no matter how established) or computers.
+- there is also a somewhat anti-capitalist vibe within the group; but we remain tolerant and professional, especially since we consult for profit companies under a [Robin Hood model](consulting.html#robinhood).
 
 ## How to join us?
+
+We love collaborating with field biologists, NGOs, or geeks from any background.
 
 If you would like to join us and are a motivated scientist with overlapping interests, no matter your skills, origin, age, sex & gender, please do [contact us](mailto: courtiol@izw-berlin.de) and we will figure out the details together.
 
