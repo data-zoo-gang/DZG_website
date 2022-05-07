@@ -29,18 +29,27 @@ For the full list of publications of a given team member, please refer to:
 
 ## Most recent {#recent}
 
-Our publications from the last 2 years are: @bailey_bird_2022, @fasel_assigning_2022, @kruszynski_high_2022, @azevedo_decreasing_2021, @culina_connecting_2021, @dayaram_seasonal_2021, @kruszynski_identifying_2021 and @tonnabel_sexspecific_2021.
+Our publications from the last 2 years are:
+
+@bailey_bird_2022 [<i class="fa fa-file-pdf"></i>](pdfs/bailey_bird_2022.pdf) | 
+@fasel_assigning_2022 [<i class="fa fa-file-pdf"></i>](pfasel_assigning_2022.pdf) | 
+@kruszynski_high_2022 [<i class="fa fa-file-pdf"></i>](pdfs/kruszynski_high_2022.pdf) | 
+@azevedo_decreasing_2021 [<i class="fa fa-file-pdf"></i>](pdfs/azevedo_decreasing_2021.pdf) | 
+@culina_connecting_2021 [<i class="fa fa-file-pdf"></i>](pdfs/culina_connecting_2021.pdf) | 
+@dayaram_seasonal_2021 [<i class="fa fa-file-pdf"></i>](pdfs/dayaram_seasonal_2021.pdf) | 
+@kruszynski_identifying_2021 [<i class="fa fa-file-pdf"></i>](pdfs/kruszynski_identifying_2021.pdf) | 
+@tonnabel_sexspecific_2021 [<i class="fa fa-file-pdf"></i>](pdfs/tonnabel_sexspecific_2021.pdf)
 
 ## Selection {#best}
 
 Here is a short selection of recent DZG publications we are particularly proud of and which best reflect our involvement and mindset.
 
-- @bailey_bird_2022 is a meta-analysis of 67 populations of great and blue tits investigating the link between the phenotypic plasticity on their phenology and climate change -- published in *Nature Communications*.
-- @culina_connecting_2021 is a paper announcing the creation of the SPI-Birds network and its database for long-term population studies on birds -- published in *Journal of Animal Ecology*.
-- @radchuk_adaptive_2019 is a meta-analysis quantifying precisely the extent to which animals (mostly birds) are adapting to changing climate -- published in *Nature Communications*.
-- @vullioud_social_2019 is an in-depth study of social hierarchy in spotted hyenas revealing how social rank emerges from simple behavioural rules -- published in *Nature Ecology & Evolution*.
-- @corbett_transition_2018 is a review of the causes and consequences of demographic transitions in humans, with an emphasis on human health -- published in *Nature Reviews Genetics*.
-- @lahdenpera_differences_2018 is a detailed study of how capture influences survival in Asian elephants -- published in *Nature Communications*.
+- @bailey_bird_2022 [<i class="fa fa-file-pdf"></i>](pdfs/bailey_bird_2022.pdf) is a meta-analysis of 67 populations of great and blue tits investigating the link between the phenotypic plasticity on their phenology and climate change -- published in *Nature Communications*.
+- @culina_connecting_2021 [<i class="fa fa-file-pdf"></i>](pdfs/culina_connecting_2021.pdf) is a paper announcing the creation of the SPI-Birds network and its database for long-term population studies on birds -- published in *Journal of Animal Ecology*.
+- @radchuk_adaptive_2019 [<i class="fa fa-file-pdf"></i>](pdfs/radchuk_adaptive_2019.pdf) is a meta-analysis quantifying precisely the extent to which animals (mostly birds) are adapting to changing climate -- published in *Nature Communications*.
+- @vullioud_social_2019 [<i class="fa fa-file-pdf"></i>](pdfs/vullioud_social_2019.pdf) is an in-depth study of social hierarchy in spotted hyenas revealing how social rank emerges from simple behavioural rules -- published in *Nature Ecology & Evolution*.
+- @corbett_transition_2018 [<i class="fa fa-file-pdf"></i>](pdfs/corbett_transition_2018.pdf) is a review of the causes and consequences of demographic transitions in humans, with an emphasis on human health -- published in *Nature Reviews Genetics*.
+- @lahdenpera_differences_2018 [<i class="fa fa-file-pdf"></i>](pdfs/lahdenpera_differences_2018.pdf) is a detailed study of how capture influences survival in Asian elephants -- published in *Nature Communications*.
 
 ## Themes {#themes}
 
@@ -51,105 +60,174 @@ We also design [methods](#methods) that can be applied to study these themes.
 
 #### Climate change
 
-@bailey_bird_2022, @radchuk_adaptive_2019, @mumby_climatic_2013
+@bailey_bird_2022 [<i class="fa fa-file-pdf"></i>](pdfs/bailey_bird_2022.pdf)| 
+@radchuk_adaptive_2019 [<i class="fa fa-file-pdf"></i>](pdfs/radchuk_adaptive_2019.pdf) | 
+@mumby_climatic_2013 [<i class="fa fa-file-pdf"></i>](pdfs/mumby_climatic_2013.pdf)
 
 #### Habitat degradation (including urbanisation)
 
-@kruszynski_high_2022, @merling_de_chapa_phantom_2020, @trinogga_fragmentation_2019, @krone_monitoring_2019, @seltmann_habitat_2017
+@kruszynski_high_2022 [<i class="fa fa-file-pdf"></i>](pdfs/kruszynski_high_2022.pdf) | 
+@merling_de_chapa_phantom_2020 [<i class="fa fa-file-pdf"></i>](pdfs/merling_de_chapa_phantom_2020.pdf) | 
+@trinogga_fragmentation_2019 [<i class="fa fa-file-pdf"></i>](pdfs/trinogga_fragmentation_2019.pdf) | 
+@krone_monitoring_2019 [<i class="fa fa-file-pdf"></i>](pdfs/krone_monitoring_2019.pdf) | 
+@seltmann_habitat_2017 [<i class="fa fa-file-pdf"></i>](pdfs/seltmann_habitat_2017.pdf)
 
 #### Reproduction and management
 
-@eder_equilibration_2020, @kretzschmar_mate_2020, @hryciuk_functional_2019, @saragusty_sperm_2016, @wilting_planning_2015
+@eder_equilibration_2020 [<i class="fa fa-file-pdf"></i>](pdfs/eder_equilibration_2020.pdf) | 
+@kretzschmar_mate_2020 [<i class="fa fa-file-pdf"></i>](pdfs/kretzschmar_mate_2020.pdf) | 
+@hryciuk_functional_2019 [<i class="fa fa-file-pdf"></i>](pdfs/hryciuk_functional_2019.pdf) | 
+@saragusty_sperm_2016 [<i class="fa fa-file-pdf"></i>](pdfs/saragusty_sperm_2016.pdf) | 
+@wilting_planning_2015 [<i class="fa fa-file-pdf"></i>](pdfs/wilting_planning_2015.pdf)
 
 #### Effect of capture and captivity
 
-@lahdenpera_differences_2018, @heinrich_cheetahs_2017, @mumby_birth_2013
+@lahdenpera_differences_2018 [<i class="fa fa-file-pdf"></i>](pdfs/lahdenpera_differences_2018.pdf) | 
+@heinrich_cheetahs_2017 [<i class="fa fa-file-pdf"></i>](pdfs/heinrich_cheetahs_2017.pdf) | 
+@mumby_birth_2013 [<i class="fa fa-file-pdf"></i>](pdfs/mumby_birth_2013.pdf)
 
 
 ### Life history {#traits}
 
 #### Lifespan
 
-@lahdenpera_differences_2018, @corbett_transition_2018, @mumby_climatic_2013, @schneeberger_immune_2014
+@lahdenpera_differences_2018 [<i class="fa fa-file-pdf"></i>](pdfs/lahdenpera_differences_2018.pdf) | 
+@corbett_transition_2018 [<i class="fa fa-file-pdf"></i>](pdfs/corbett_transition_2018.pdf) | 
+@schneeberger_immune_2014 [<i class="fa fa-file-pdf"></i>](pdfs/schneeberger_immune_2014.pdf) | 
+@mumby_climatic_2013 [<i class="fa fa-file-pdf"></i>](pdfs/mumby_climatic_2013.pdf)
 
 #### Mating, reproductive success and fitness
 
-@tonnabel_sexspecific_2021, @radchuk_adaptive_2019, @corbett_transition_2018, @courtiol_when_2016, @pettay_effects_2014, @courtiol_natural_2012
+@tonnabel_sexspecific_2021 [<i class="fa fa-file-pdf"></i>](pdfs/tonnabel_sexspecific_2021.pdf) | 
+@radchuk_adaptive_2019 [<i class="fa fa-file-pdf"></i>](pdfs/radchuk_adaptive_2019.pdf) | 
+@corbett_transition_2018 [<i class="fa fa-file-pdf"></i>](pdfs/corbett_transition_2018.pdf) | 
+@courtiol_when_2016 [<i class="fa fa-file-pdf"></i>](pdfs/courtiol_when_2016.pdf) | 
+@pettay_effects_2014 [<i class="fa fa-file-pdf"></i>](pdfs/pettay_effects_2014.pdf) | 
+@courtiol_natural_2012 [<i class="fa fa-file-pdf"></i>](pdfs/courtiol_natural_2012.pdf)
 
 #### Effect of climate and seasonality
 
-@bailey_bird_2022, @radchuk_adaptive_2019, @mumby_stress_2015, @mumby_climatic_2013, @mumby_birth_2013, @rickard_intergenerational_2012
+@bailey_bird_2022 [<i class="fa fa-file-pdf"></i>](pdfs/bailey_bird_2022.pdf) | 
+@radchuk_adaptive_2019 [<i class="fa fa-file-pdf"></i>](pdfs/radchuk_adaptive_2019.pdf) | 
+@mumby_stress_2015 [<i class="fa fa-file-pdf"></i>](pdfs/mumby_stress_2015.pdf) | 
+@mumby_climatic_2013 [<i class="fa fa-file-pdf"></i>](pdfs/mumby_climatic_2013.pdf) | 
+@mumby_birth_2013 [<i class="fa fa-file-pdf"></i>](pdfs/mumby_birth_2013.pdf) | 
+@rickard_intergenerational_2012 [<i class="fa fa-file-pdf"></i>](pdfs/rickard_intergenerational_2012.pdf)
 
 #### Effect of demography
 
-@corbett_transition_2018, @courtiol_demographic_2013
+@corbett_transition_2018 [<i class="fa fa-file-pdf"></i>](pdfs/corbett_transition_2018.pdf) | 
+@courtiol_demographic_2013 [<i class="fa fa-file-pdf"></i>](pdfs/courtiol_demographic_2013.pdf)
 
 
 ### Behaviour {#behaviour}
 
 #### Perception
 
-@levrero_social_2015, @cohen_relevance_2015, @renoult_novel_2013
+@levrero_social_2015 [<i class="fa fa-file-pdf"></i>](pdfs/levrero_social_2015.pdf) | 
+@cohen_relevance_2015 [<i class="fa fa-file-pdf"></i>](pdfs/cohen_relevance_2015.pdf) | 
+@renoult_novel_2013 [<i class="fa fa-file-pdf"></i>](pdfs/renoult_novel_2013.pdf)
 
 #### Mate choice
 
-@kretzschmar_mate_2020, @debelle_mate_2017, @courtiol_evolution_2016, @santos_mhc-dependent_2016, @davidian_why_2016, @etienne_how_2014
+@kretzschmar_mate_2020 [<i class="fa fa-file-pdf"></i>](pdfs/kretzschmar_mate_2020.pdf) | 
+@debelle_mate_2017 [<i class="fa fa-file-pdf"></i>](pdfs/debelle_mate_2017.pdf) | 
+@courtiol_evolution_2016 [<i class="fa fa-file-pdf"></i>](pdfs/courtiol_evolution_2016.pdf) | 
+@santos_mhc-dependent_2016 [<i class="fa fa-file-pdf"></i>](pdfs/santos_mhc-dependent_2016.pdf) | 
+@davidian_why_2016 [<i class="fa fa-file-pdf"></i>](pdfs/davidian_why_2016.pdf) | 
+@etienne_how_2014 [<i class="fa fa-file-pdf"></i>](pdfs/etienne_how_2014.pdf)
 
 #### Migration and dispersion
 
-@kruszynski_high_2022, @kruszynski_identifying_2021, @kravchenko_generational_2020, @courtiol_isoscape_2019, @hobson_outlook_2019, @courtiol_modelling_2017, @davidian_why_2016
+@kruszynski_high_2022 [<i class="fa fa-file-pdf"></i>](pdfs/kruszynski_high_2022.pdf) | 
+@kruszynski_identifying_2021 [<i class="fa fa-file-pdf"></i>](pdfs/kruszynski_identifying_2021.pdf) | 
+@kravchenko_generational_2020 [<i class="fa fa-file-pdf"></i>](pdfs/kravchenko_generational_2020.pdf) | 
+@courtiol_isoscape_2019 | <!-- TODO add PDF -->
+@hobson_outlook_2019 | <!-- TODO add PDF -->
+@courtiol_modelling_2017 [<i class="fa fa-file-pdf"></i>](pdfs/courtiol_modelling_2017.pdf) | 
+@davidian_why_2016 [<i class="fa fa-file-pdf"></i>](pdfs/davidian_why_2016.pdf)
 
 #### Social hierarchy
 
-@vullioud_social_2019
+@vullioud_social_2019 [<i class="fa fa-file-pdf"></i>](pdfs/vullioud_social_2019.pdf)
+
 
 ### Health {#health}
 
 #### Diseases
 
-@dayaram_seasonal_2021, @merling_de_chapa_phantom_2020, @numberger_recovery_2019, @franz_sicknessinduced_2018, @cui_comprehensive_2016
+@dayaram_seasonal_2021 [<i class="fa fa-file-pdf"></i>](pdfs/dayaram_seasonal_2021.pdf) | 
+@merling_de_chapa_phantom_2020 [<i class="fa fa-file-pdf"></i>](pdfs/merling_de_chapa_phantom_2020.pdf) | 
+@numberger_recovery_2019 [<i class="fa fa-file-pdf"></i>](pdfs/numberger_recovery_2019.pdf) | 
+@franz_sicknessinduced_2018 [<i class="fa fa-file-pdf"></i>](pdfs/franz_sicknessinduced_2018.pdf) | 
+@cui_comprehensive_2016 [<i class="fa fa-file-pdf"></i>](pdfs/cui_comprehensive_2016.pdf)
 
 #### Immunity, stress and microbiome
 
-@azevedo_decreasing_2021, @azevedo_age_2019, @krone_monitoring_2019, @davidian_determining_2015, @alfano_variation_2015, @mumby_stress_2015, @tian_circulating_2015, @schneeberger_immune_2014
+@azevedo_decreasing_2021 [<i class="fa fa-file-pdf"></i>](pdfs/azevedo_decreasing_2021.pdf) | 
+@azevedo_age_2019 [<i class="fa fa-file-pdf"></i>](pdfs/azevedo_age_2019.pdf) | 
+@krone_monitoring_2019 [<i class="fa fa-file-pdf"></i>](pdfs/krone_monitoring_2019.pdf) | 
+@davidian_determining_2015 [<i class="fa fa-file-pdf"></i>](pdfs/davidian_determining_2015.pdf) | 
+@alfano_variation_2015 [<i class="fa fa-file-pdf"></i>](pdfs/alfano_variation_2015.pdf) | 
+@mumby_stress_2015 [<i class="fa fa-file-pdf"></i>](pdfs/mumby_stress_2015.pdf) | 
+@tian_circulating_2015 [<i class="fa fa-file-pdf"></i>](pdfs/tian_circulating_2015.pdf) | 
+@schneeberger_immune_2014 [<i class="fa fa-file-pdf"></i>](pdfs/schneeberger_immune_2014.pdf)
 
 #### MHC
 
-@gillingham_very_2017, @santos_mhc-dependent_2016, @gillingham_evidence_2016, @sommer_mhc_2013
+@gillingham_very_2017 [<i class="fa fa-file-pdf"></i>](pdfs/gillingham_very_2017.pdf) | 
+@santos_mhc-dependent_2016 [<i class="fa fa-file-pdf"></i>](pdfs/santos_mhc-dependent_2016.pdf) | 
+@gillingham_evidence_2016 [<i class="fa fa-file-pdf"></i>](pdfs/gillingham_evidence_2016.pdf) | 
+@sommer_mhc_2013 [<i class="fa fa-file-pdf"></i>](pdfs/sommer_mhc_2013.pdf)
 
 
 ### Morphology {#morphology}
 
 #### Effect of climate
 
-@bailey_using_2020, @radchuk_adaptive_2019
+@bailey_using_2020 [<i class="fa fa-file-pdf"></i>](pdfs/bailey_using_2020.pdf) | 
+@radchuk_adaptive_2019 [<i class="fa fa-file-pdf"></i>](pdfs/radchuk_adaptive_2019.pdf)
 
 #### Effect of diet and lifestyle
 
-@cohen_relevance_2015
+@cohen_relevance_2015 [<i class="fa fa-file-pdf"></i>](pdfs/cohen_relevance_2015.pdf)
 
 
 ### Methodological contributions {#methods}
 
 #### Databases
 
-@culina_connecting_2021
+@culina_connecting_2021 [<i class="fa fa-file-pdf"></i>](pdfs/culina_connecting_2021.pdf)
 
 #### R packages
 
-@fasel_assigning_2022, @courtiol_isoscape_2019, @rousset_summary-likelihood_2017, @niedballa_camtrapr_2016
+@fasel_assigning_2022 [<i class="fa fa-file-pdf"></i>](pdfs/fasel_assigning_2022.pdf) | 
+@courtiol_isoscape_2019 | <!-- TODO add PDF -->
+@rousset_summary-likelihood_2017 [<i class="fa fa-file-pdf"></i>](pdfs/rousset_summary-likelihood_2017.pdf) | 
+@niedballa_camtrapr_2016 [<i class="fa fa-file-pdf"></i>](pdfs/niedballa_camtrapr_2016.pdf)
 
 #### Quantitative methods
 
-@rousset_summary-likelihood_2017, @courtiol_modelling_2017, @davidian_determining_2015, @sommer_mhc_2013, @renoult_novel_2013
+@rousset_summary-likelihood_2017 [<i class="fa fa-file-pdf"></i>](pdfs/rousset_summary-likelihood_2017.pdf) | 
+@courtiol_modelling_2017 [<i class="fa fa-file-pdf"></i>](pdfs/courtiol_modelling_2017.pdf) | 
+@davidian_determining_2015 [<i class="fa fa-file-pdf"></i>](pdfs/davidian_determining_2015.pdf) | 
+@sommer_mhc_2013 [<i class="fa fa-file-pdf"></i>](pdfs/sommer_mhc_2013.pdf) | 
+@renoult_novel_2013 [<i class="fa fa-file-pdf"></i>](pdfs/renoult_novel_2013.pdf)
 
 #### Non-invasive methods
 
-@azevedo_age_2019, @niedballa_assessing_2019, @niedballa_camtrapr_2016, @davidian_determining_2015
+@azevedo_age_2019 [<i class="fa fa-file-pdf"></i>](pdfs/azevedo_age_2019.pdf) | 
+@niedballa_assessing_2019 [<i class="fa fa-file-pdf"></i>](pdfs/niedballa_assessing_2019.pdf) | 
+@niedballa_camtrapr_2016 [<i class="fa fa-file-pdf"></i>](pdfs/niedballa_camtrapr_2016.pdf) | 
+@davidian_determining_2015 [<i class="fa fa-file-pdf"></i>](pdfs/davidian_determining_2015.pdf)
 
 #### Wet lab and genomics
 
-@eder_equilibration_2020, @hryciuk_functional_2019, @paijmans_impact_2016,  @saragusty_sperm_2016, @sommer_mhc_2013
+@eder_equilibration_2020 [<i class="fa fa-file-pdf"></i>](pdfs/eder_equilibration_2020.pdf) | 
+@hryciuk_functional_2019 [<i class="fa fa-file-pdf"></i>](pdfs/hryciuk_functional_2019.pdf) | 
+@paijmans_impact_2016 [<i class="fa fa-file-pdf"></i>](pdfs/paijmans_impact_2016.pdf) | 
+@saragusty_sperm_2016 [<i class="fa fa-file-pdf"></i>](pdfs/saragusty_sperm_2016.pdf) | 
+@sommer_mhc_2013 [<i class="fa fa-file-pdf"></i>](pdfs/sommer_mhc_2013.pdf)
 
 
 ## Taxonomic groups {#taxons}
@@ -160,67 +238,107 @@ We mostly work on birds and mammals (including humans) but sometimes venture to 
 
 :::float-right
 <img src="images/droso.jpg" width="200px">
-@debelle_mate_2017
+@debelle_mate_2017 [<i class="fa fa-file-pdf"></i>](pdfs/debelle_mate_2017.pdf)
 :::
 
 ### Bats
 
 :::float-left
 <img src="images/bat_costarica.jpg" width="200px">
-@kruszynski_high_2022, @kruszynski_identifying_2021, @kravchenko_generational_2020, @courtiol_isoscape_2019, @seltmann_habitat_2017, @santos_mhc-dependent_2016, @schneeberger_immune_2014
+@kruszynski_high_2022 [<i class="fa fa-file-pdf"></i>](pdfs/kruszynski_high_2022.pdf) | 
+@kruszynski_identifying_2021 [<i class="fa fa-file-pdf"></i>](pdfs/kruszynski_identifying_2021.pdf) | 
+@kravchenko_generational_2020 [<i class="fa fa-file-pdf"></i>](pdfs/kravchenko_generational_2020.pdf) | 
+@courtiol_isoscape_2019 | <!-- TODO add PDF -->
+@seltmann_habitat_2017 [<i class="fa fa-file-pdf"></i>](pdfs/seltmann_habitat_2017.pdf) | 
+@santos_mhc-dependent_2016 [<i class="fa fa-file-pdf"></i>](pdfs/santos_mhc-dependent_2016.pdf) | 
+@schneeberger_immune_2014 [<i class="fa fa-file-pdf"></i>](pdfs/schneeberger_immune_2014.pdf)
 :::
 
 ### Birds
 
 :::float-right
 <img src="images/flamingo.jpg" width="200px">
-@bailey_bird_2022, @culina_connecting_2021, @bailey_using_2020, @merling_de_chapa_phantom_2020, @radchuk_adaptive_2019, @krone_monitoring_2019, @gillingham_very_2017, @gillingham_evidence_2016, @renoult_novel_2013
+@bailey_bird_2022 [<i class="fa fa-file-pdf"></i>](pdfs/bailey_bird_2022.pdf) | 
+@culina_connecting_2021 [<i class="fa fa-file-pdf"></i>](pdfs/culina_connecting_2021.pdf) | 
+@bailey_using_2020 [<i class="fa fa-file-pdf"></i>](pdfs/bailey_using_2020.pdf) | 
+@merling_de_chapa_phantom_2020 [<i class="fa fa-file-pdf"></i>](pdfs/merling_de_chapa_phantom_2020.pdf) | 
+@radchuk_adaptive_2019 [<i class="fa fa-file-pdf"></i>](pdfs/radchuk_adaptive_2019.pdf) | 
+@krone_monitoring_2019 [<i class="fa fa-file-pdf"></i>](pdfs/krone_monitoring_2019.pdf) | 
+@gillingham_very_2017 [<i class="fa fa-file-pdf"></i>](pdfs/gillingham_very_2017.pdf) | 
+@gillingham_evidence_2016 [<i class="fa fa-file-pdf"></i>](pdfs/gillingham_evidence_2016.pdf) | 
+@renoult_novel_2013 [<i class="fa fa-file-pdf"></i>](pdfs/renoult_novel_2013.pdf)
 :::
 
 ### Carnivores
 :::float-left
 <img src="images/hyena_portrait.jpg" width="200px">
-@azevedo_decreasing_2021, @eder_equilibration_2020, @vullioud_social_2019, @azevedo_age_2019, @hryciuk_functional_2019, @heinrich_cheetahs_2017, @davidian_why_2016, @paijmans_impact_2016, @wilting_planning_2015, @davidian_determining_2015
+@azevedo_decreasing_2021 [<i class="fa fa-file-pdf"></i>](pdfs/azevedo_decreasing_2021.pdf) | 
+@eder_equilibration_2020 [<i class="fa fa-file-pdf"></i>](pdfs/eder_equilibration_2020.pdf) | 
+@vullioud_social_2019 [<i class="fa fa-file-pdf"></i>](pdfs/vullioud_social_2019.pdf) | 
+@azevedo_age_2019 [<i class="fa fa-file-pdf"></i>](pdfs/azevedo_age_2019.pdf) | 
+@hryciuk_functional_2019 [<i class="fa fa-file-pdf"></i>](pdfs/hryciuk_functional_2019.pdf) | 
+@heinrich_cheetahs_2017 [<i class="fa fa-file-pdf"></i>](pdfs/heinrich_cheetahs_2017.pdf) | 
+@davidian_why_2016 [<i class="fa fa-file-pdf"></i>](pdfs/davidian_why_2016.pdf) | 
+@paijmans_impact_2016 [<i class="fa fa-file-pdf"></i>](pdfs/paijmans_impact_2016.pdf) | 
+@wilting_planning_2015 [<i class="fa fa-file-pdf"></i>](pdfs/wilting_planning_2015.pdf) | 
+@davidian_determining_2015 [<i class="fa fa-file-pdf"></i>](pdfs/davidian_determining_2015.pdf)
 :::
 
 ### Elephants
 
 :::float-right
 <img src="images/asian_elephant_working.jpg" width="200px">
-@lahdenpera_differences_2018, @saragusty_sperm_2016, @mumby_stress_2015, @mumby_climatic_2013, @mumby_birth_2013
+@lahdenpera_differences_2018 [<i class="fa fa-file-pdf"></i>](pdfs/lahdenpera_differences_2018.pdf) | 
+@saragusty_sperm_2016 [<i class="fa fa-file-pdf"></i>](pdfs/saragusty_sperm_2016.pdf) | 
+@mumby_stress_2015 [<i class="fa fa-file-pdf"></i>](pdfs/mumby_stress_2015.pdf) | 
+@mumby_climatic_2013 [<i class="fa fa-file-pdf"></i>](pdfs/@mumby_climatic_2013.pdf) | 
+@mumby_birth_2013 [<i class="fa fa-file-pdf"></i>](pdfs/mumby_birth_2013.pdf)
 :::
 
 ### Marsupials
 
-@cui_comprehensive_2016, @alfano_variation_2015
+@cui_comprehensive_2016 [<i class="fa fa-file-pdf"></i>](pdfs/cui_comprehensive_2016.pdf) | 
+@alfano_variation_2015 [<i class="fa fa-file-pdf"></i>](pdfs/alfano_variation_2015.pdf)
 
 ### Plants 
 
 :::float-right
 <img src="images/leucadendron_rubrum.jpg" width="200px">
-@tonnabel_sexspecific_2021
+@tonnabel_sexspecific_2021 [<i class="fa fa-file-pdf"></i>](pdfs/tonnabel_sexspecific_2021.pdf)
 :::
 
 ### Primates (including humans)
 
 :::float-left
 <img src="images/baboon_tsaobis.jpg" width="200px">
-@corbett_transition_2018, @courtiol_when_2016, @levrero_social_2015, @cohen_relevance_2015, @pettay_effects_2014, @courtiol_demographic_2013, @courtiol_natural_2012, @rickard_intergenerational_2012
+@corbett_transition_2018 [<i class="fa fa-file-pdf"></i>](pdfs/corbett_transition_2018.pdf) | 
+@courtiol_when_2016 [<i class="fa fa-file-pdf"></i>](pdfs/courtiol_when_2016.pdf) | 
+@levrero_social_2015 [<i class="fa fa-file-pdf"></i>](pdfs/levrero_social_2015.pdf) | 
+@cohen_relevance_2015 [<i class="fa fa-file-pdf"></i>](pdfs/cohen_relevance_2015.pdf) | 
+@pettay_effects_2014 [<i class="fa fa-file-pdf"></i>](pdfs/pettay_effects_2014.pdf) | 
+@courtiol_demographic_2013 [<i class="fa fa-file-pdf"></i>](pdfs/courtiol_demographic_2013.pdf) | 
+@courtiol_natural_2012 [<i class="fa fa-file-pdf"></i>](pdfs/courtiol_natural_2012.pdf) | 
+@rickard_intergenerational_2012 [<i class="fa fa-file-pdf"></i>](pdfs/rickard_intergenerational_2012.pdf)
 :::
 
 ### Rodents
 
 :::float-right
 <img src="images/porcupine.jpg" width="200px">
-@tian_circulating_2015, @sommer_mhc_2013
+@tian_circulating_2015 [<i class="fa fa-file-pdf"></i>](pdfs/tian_circulating_2015.pdf) | 
+@sommer_mhc_2013 [<i class="fa fa-file-pdf"></i>](pdfs/sommer_mhc_2013.pdf)
 :::
 
 ### Ungulates
 :::float-left
 <img src="images/zebra_southafrica.jpg" width="200px">
-@dayaram_seasonal_2021, @kretzschmar_mate_2020, @trinogga_fragmentation_2019, @trinogga_fragmentation_2019, @speck_cationic_2014
+@dayaram_seasonal_2021 [<i class="fa fa-file-pdf"></i>](pdfs/dayaram_seasonal_2021.pdf) | 
+@kretzschmar_mate_2020 [<i class="fa fa-file-pdf"></i>](pdfs/kretzschmar_mate_2020.pdf) | 
+@trinogga_fragmentation_2019 [<i class="fa fa-file-pdf"></i>](pdfs/trinogga_fragmentation_2019.pdf) | 
+@speck_cationic_2014 [<i class="fa fa-file-pdf"></i>](pdfs/speck_cationic_2014.pdf)
 :::
 
 ### Viruses
 
-@dayaram_seasonal_2021, @numberger_recovery_2019
+@dayaram_seasonal_2021 [<i class="fa fa-file-pdf"></i>](pdfs/dayaram_seasonal_2021.pdf) | 
+@numberger_recovery_2019 [<i class="fa fa-file-pdf"></i>](pdfs/numberger_recovery_2019.pdf)
