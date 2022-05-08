@@ -31,7 +31,7 @@ For the full list of publications of a given team member, please refer to:
 
 Our publications from the last 2 years are:
 
-@bailey_bird_2022 [<i class="fa fa-file-pdf"></i>](pdfs/bailey_bird_2022.pdf) | 
+@bailey_bird_2022 [<img src="images/pdf.png" width=20px style="vertical-align:middle"/>](pdfs/bailey_bird_2022.pdf) | 
 @fasel_assigning_2022 [<i class="fa fa-file-pdf"></i>](pfasel_assigning_2022.pdf) | 
 @kruszynski_high_2022 [<i class="fa fa-file-pdf"></i>](pdfs/kruszynski_high_2022.pdf) | 
 @azevedo_decreasing_2021 [<i class="fa fa-file-pdf"></i>](pdfs/azevedo_decreasing_2021.pdf) | 
