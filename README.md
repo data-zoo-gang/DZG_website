@@ -9,7 +9,7 @@ Go to www.datazoogang.de to visit the website.
 For changes related to references: 
 
 - please do not alter the BibTeX file directly, but perform changes in the shared Zotero library DZG and overwrite a new file `publications.bib`.
-- please add the PDF in the folder *pdfs* and name the PDF with the same bibtex key as the publication.
+- please add the PDFs in the folder *pdfs* and name them with the same bibtex keys as those referring to the corresponding publications.
 
 For pictures, before committing please make sure that they are saved with a resolution of 270px wide (GIMP can be used for resizing: Image -> Scale Image...) and an extension `.jpg` or `.png`.
 
