@@ -8,6 +8,24 @@ csl: apa.csl
 
 <script src="js/for_toc.js"></script>
 
+
+```{r, echo=FALSE}
+bib <- RefManageR::ReadBib("publications.bib")
+maketab <- function(publis) {
+  publis <- stringr::str_replace_all(publis, "@", "")
+  selected <- bib[publis]
+  tab <- tibble::tibble(Title = selected$title, Key = names(selected))
+  tab$Title <- stringr::str_replace_all(tab$Title, "\\{|\\}", "")
+  tab$Key <- paste0("@", tab$Key)
+  tab$pdf <- "[<img src='images/pdf.png' width=100px style='float:none; vertical-align:middle; padding:0 0 0 0'/>]"
+  tab$pdf <- paste0(tab$pdf, "(pdfs/", publis, ".pdf)")
+  tab <- kableExtra::kable(tab, col.names = c("", "", ""), escape = FALSE,  align = "lrc")
+  tab <- kableExtra::column_spec(tab, column = 2, width = "200px")
+  tab <- kableExtra::column_spec(tab, column = 1, extra_css = "line-height: 1.2")
+  tab
+}
+```
+
 Publications are sorted by multiple criteria and you can jump directly to the following categories: [most recent](#recent), [selection](#best), [themes](#themes), [taxonomic groups](#taxons).
 
 **Hover on top of a publication to reveal its details** (or click if using a phone).
@@ -319,6 +337,14 @@ We mostly work on birds and mammals (including humans) but sometimes venture to 
 @courtiol_demographic_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_demographic_2013.pdf) | 
 @courtiol_natural_2012 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_natural_2012.pdf) | 
 @rickard_intergenerational_2012 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/rickard_intergenerational_2012.pdf)
+:::
+
+### Primates (including humans) (TEST: alternative formatting!)
+:::float-left
+<img src="images/baboon_tsaobis.jpg" width="200px">
+```{r, echo=FALSE}
+maketab(c("@corbett_transition_2018", "@courtiol_when_2016", "@levrero_social_2015", "@cohen_relevance_2015", "@pettay_effects_2014", "@courtiol_demographic_2013", "@courtiol_natural_2012", "@rickard_intergenerational_2012"))
+```
 :::
 
 ### Rodents
