@@ -11,17 +11,30 @@ csl: apa.csl
 
 ```{r, echo=FALSE}
 bib <- RefManageR::ReadBib("publications.bib")
-maketab <- function(publis) {
+
+maketab <- function(publis, title = FALSE) {
+  
   publis <- stringr::str_replace_all(publis, "@", "")
+  
   selected <- bib[publis]
+  
   tab <- tibble::tibble(Title = selected$title, Key = names(selected))
+  
   tab$Title <- stringr::str_replace_all(tab$Title, "\\{|\\}", "")
   tab$Key <- paste0("@", tab$Key)
-  tab$pdf <- "[<img src='images/pdf.png' width=100px style='float:none; vertical-align:middle; padding:0 0 0 0'/>]"
+  tab$pdf <- "[<img src='images/pdf.png' width=20px style='float:none; vertical-align:middle; padding:0 0 0 0'/>]"
   tab$pdf <- paste0(tab$pdf, "(pdfs/", publis, ".pdf)")
-  tab <- kableExtra::kable(tab, col.names = c("", "", ""), escape = FALSE,  align = "lrc")
-  tab <- kableExtra::column_spec(tab, column = 2, width = "200px")
-  tab <- kableExtra::column_spec(tab, column = 1, extra_css = "line-height: 1.2")
+  
+  if (!title) {
+    tab <- tab[, c("Key", "pdf")] ## Remove Title for now
+    tab <- kableExtra::kable(tab, col.names = c("", ""), escape = FALSE,  align = "rc")
+  } else {
+    tab$pdf <- stringr::str_replace_all(tab$pdf, "20px", "100px")
+    tab <- kableExtra::kable(tab, col.names = c("", "", ""), escape = FALSE,  align = "lrc") 
+    tab <- kableExtra::column_spec(tab, column = 1, extra_css = "line-height: 1.2")
+    tab <- kableExtra::column_spec(tab, column = 2, width = "200px")
+  }
+  
   tab
 }
 ```
@@ -343,9 +356,18 @@ We mostly work on birds and mammals (including humans) but sometimes venture to 
 :::float-left
 <img src="images/baboon_tsaobis.jpg" width="200px">
 ```{r, echo=FALSE}
-maketab(c("@corbett_transition_2018", "@courtiol_when_2016", "@levrero_social_2015", "@cohen_relevance_2015", "@pettay_effects_2014", "@courtiol_demographic_2013", "@courtiol_natural_2012", "@rickard_intergenerational_2012"))
+maketab(c("@corbett_transition_2018", "@courtiol_when_2016", "@levrero_social_2015", "@cohen_relevance_2015", "@pettay_effects_2014", "@courtiol_demographic_2013", "@courtiol_natural_2012", "@rickard_intergenerational_2012"), title = FALSE)
 ```
 :::
+
+### Primates (including humans) (TEST: alternative formatting!)
+:::float-left
+<img src="images/baboon_tsaobis.jpg" width="200px">
+```{r, echo=FALSE}
+maketab(c("@corbett_transition_2018", "@courtiol_when_2016", "@levrero_social_2015", "@cohen_relevance_2015", "@pettay_effects_2014", "@courtiol_demographic_2013", "@courtiol_natural_2012", "@rickard_intergenerational_2012"), title = TRUE)
+```
+:::
+
 
 ### Rodents
 
