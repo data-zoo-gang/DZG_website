@@ -2,13 +2,16 @@
 
 This repository contains the material behind the Data Zoo Gang's website.
 
-Go to www.datazoogang.de to visit our website.
+Go to www.datazoogang.de to visit the website.
 
 ### for website maintainers
 
-For changes related to references: do not alter the BibTeX file directly, but perform changes in the shared Zotero library DZG and overwrite a new file `publications.bib`.
+For changes related to references: 
 
-For pictures, make sure before committing that they are saved with a resolution of 270px wide (GIMP can be used for resizing: Image -> Scale Image...) and an extension `.jpg` or `.png`.
+- please do not alter the BibTeX file directly, but perform changes in the shared Zotero library DZG and overwrite a new file `publications.bib`.
+- please add the PDF in the folder *pdfs* and name the PDF with the same bibtex key as the publication.
+
+For pictures, before committing please make sure that they are saved with a resolution of 270px wide (GIMP can be used for resizing: Image -> Scale Image...) and an extension `.jpg` or `.png`.
 
 To update the website, do the changes locally, save, and then run the following in R:
 
@@ -16,7 +19,7 @@ To update the website, do the changes locally, save, and then run the following 
 rmarkdown::render_site(encoding = 'UTF-8')   # to build the updated website
 gert::git_add(".")                           # to stage all changes
 gert::git_commit(message = "Update website") # to add the commit message
-gitcreds::gitcreds_set()                     # to load GH credentials 
+gitcreds::gitcreds_set()                     # to load GH credentials (if using token system)
                                              # (paste the token stored in my_GH_token.txt)
 gert::git_push()                             # to push all changes on GitHub
 ```
