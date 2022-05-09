@@ -2,8 +2,8 @@
 title: "About this site"
 ---
 
-We created this website using the R package [{distill}](https://rstudio.github.io/distill/) (check the [distillery](https://distillery.rbind.io/) for other websites created in the same way).
+We created this website using the R package [{distill}](https://rstudio.github.io/distill/) -- a simple system for creating simple websites for those who know R and markdown.
 
-This is a simple system for creating simple websites for those who know R and markdown.
+You can check our GitHub repository [<i class='fa fa-github'></i>](https://github.com/data-zoo-gang/DZG_website) to see how we coded it, and you can check the [distillery](https://distillery.rbind.io/) for other websites created using {distill}.
 
-We are aware that R is not the best tool for creating a proper website, but we only do a few things properly besides data analyses and teaching.
+We are aware that R is not the best tool for creating a website, but since we love R we wanted to give it a try.
