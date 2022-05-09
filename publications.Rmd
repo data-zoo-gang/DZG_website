@@ -44,7 +44,7 @@ maketab <- function(publis, position = "left", title = FALSE) {
 }
 ```
 
-Publications are sorted by multiple criteria and you can jump directly to the following categories: [most recent](#recent), [selection](#best), [themes](#themes), [taxonomic groups](#taxons).
+Publications are sorted by multiple criteria and you can jump directly to the following categories: [most recent](#recent), [short selection](#best), [themes](#themes), [taxonomic groups](#taxons).
 
 **Hover on top of a publication to reveal its details** (or click if using a touch screen).
 
@@ -80,7 +80,7 @@ maketab(c(
 ), position = "center", title = TRUE)
 ```
 
-## Selection {#best}
+## Short selection {#best}
 
 Here is a short selection of recent DZG publications we are particularly proud of and which best reflect our involvement and mindset.
 
