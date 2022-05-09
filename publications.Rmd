@@ -44,7 +44,7 @@ maketab <- function(publis, position = "left", title = FALSE) {
 
 Publications are sorted by multiple criteria and you can jump directly to the following categories: [most recent](#recent), [selection](#best), [themes](#themes), [taxonomic groups](#taxons).
 
-**Hover on top of a publication to reveal its details** (or click if using a phone).
+**Hover on top of a publication to reveal its details** (or click if using a touch screen).
 
 Only publications created while being part of the Data Zoo Gang are listed here.
 For the full list of publications of a given team member, please refer to: 
