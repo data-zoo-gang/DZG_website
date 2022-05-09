@@ -10,6 +10,7 @@ csl: apa.csl
 
 
 ```{r, echo=FALSE}
+#RefManageR::BibOptions(style = "text") ## no effect :-(
 bib <- RefManageR::ReadBib("publications.bib")
 
 maketab <- function(publis, position = "left", title = FALSE) {
@@ -20,7 +21,8 @@ maketab <- function(publis, position = "left", title = FALSE) {
   
   tab <- tibble::tibble(Title = selected$title, Key = names(selected))
   
-  tab$Title <- stringr::str_replace_all(tab$Title, "\\{|\\}", "")
+  tab$Title <- stringr::str_replace_all(tab$Title, "\\{|\\}|\\\\textit", "") ## remove LateX code created by RefManageR
+  tab$Title <- stringr::str_replace_all(tab$Title, "[[:blank:]]\\)", "\\)") ## remove extra spaces before )
   tab$Key <- paste0("@", tab$Key)
   tab$pdf <- "[<img src='images/pdf.png' width=20px style='float:none; vertical-align:middle; padding:0 0 0 0'/>]"
   tab$pdf <- paste0(tab$pdf, "(pdfs/", publis, ".pdf)")
@@ -65,14 +67,18 @@ For the full list of publications of a given team member, please refer to:
 
 Our publications from the last 2 years are:
 
-@bailey_bird_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/bailey_bird_2022.pdf) | 
-@fasel_assigning_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pfasel_assigning_2022.pdf) | 
-@kruszynski_high_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kruszynski_high_2022.pdf) | 
-@azevedo_decreasing_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/azevedo_decreasing_2021.pdf) | 
-@culina_connecting_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/culina_connecting_2021.pdf) | 
-@dayaram_seasonal_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/dayaram_seasonal_2021.pdf) | 
-@kruszynski_identifying_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kruszynski_identifying_2021.pdf) | 
-@tonnabel_sexspecific_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/tonnabel_sexspecific_2021.pdf)
+```{r, echo=FALSE}
+maketab(c(
+  "@bailey_bird_2022",
+  "@fasel_assigning_2022",
+  "@kruszynski_high_2022",
+  "@azevedo_decreasing_2021",
+  "@culina_connecting_2021",
+  "@dayaram_seasonal_2021",
+  "@kruszynski_identifying_2021",
+  "@tonnabel_sexspecific_2021"
+), position = "center", title = TRUE)
+```
 
 ## Selection {#best}
 
