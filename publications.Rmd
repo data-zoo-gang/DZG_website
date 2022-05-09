@@ -21,7 +21,7 @@ maketab <- function(publis, position = "left", title = FALSE) {
   
   tab <- tibble::tibble(Title = selected$title, Key = names(selected))
   
-  tab$Title <- stringr::str_replace_all(tab$Title, "\\{|\\}|\\\\textit", "") ## remove LateX code created by RefManageR
+  tab$Title <- stringr::str_replace_all(tab$Title, "\\{|\\}|\\\\textit", "") ## remove LaTeX code created by RefManageR
   tab$Title <- stringr::str_replace_all(tab$Title, "[[:blank:]]\\)", "\\)") ## remove extra spaces before )
   tab$Key <- paste0("@", tab$Key)
   tab$pdf <- "[<img src='images/pdf.png' width=20px style='float:none; vertical-align:middle; padding:0 0 0 0'/>]"
@@ -44,7 +44,7 @@ maketab <- function(publis, position = "left", title = FALSE) {
 }
 ```
 
-Publications are sorted by multiple criteria and you can jump directly to the following categories: [most recent](#recent), [short selection](#best), [themes](#themes), [taxonomic groups](#taxons).
+Publications are sorted by multiple criteria and you can jump directly to the following categories: [most recent](#recent), [short selection](#best), [themes](#themes), [taxonomic groups](#taxon).
 
 **Hover on top of a publication to reveal its details** (or click if using a touch screen).
 
@@ -98,13 +98,13 @@ We also design [methods](#methods) that can be applied to study these themes.
 
 ### Wildlife conservation {#conservation}
 
-#### Climate change
+#### Climate change {#conservation_climate}
 
 @bailey_bird_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/bailey_bird_2022.pdf)| 
 @radchuk_adaptive_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/radchuk_adaptive_2019.pdf) | 
 @mumby_climatic_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/mumby_climatic_2013.pdf)
 
-#### Habitat degradation (including urbanisation)
+#### Habitat degradation (including urbanisation) {#conservation_degradation}
 
 @kruszynski_high_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kruszynski_high_2022.pdf) | 
 @merling_de_chapa_phantom_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/merling_de_chapa_phantom_2020.pdf) | 
@@ -112,7 +112,7 @@ We also design [methods](#methods) that can be applied to study these themes.
 @krone_monitoring_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/krone_monitoring_2019.pdf) | 
 @seltmann_habitat_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/seltmann_habitat_2017.pdf)
 
-#### Reproduction and management
+#### Reproduction and management {#conservation_reproduction}
 
 @eder_equilibration_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/eder_equilibration_2020.pdf) | 
 @kretzschmar_mate_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kretzschmar_mate_2020.pdf) | 
@@ -120,7 +120,7 @@ We also design [methods](#methods) that can be applied to study these themes.
 @saragusty_sperm_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/saragusty_sperm_2016.pdf) | 
 @wilting_planning_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/wilting_planning_2015.pdf)
 
-#### Effect of capture and captivity
+#### Effect of capture and captivity {#conservation_captivity}
 
 @lahdenpera_differences_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/lahdenpera_differences_2018.pdf) | 
 @heinrich_cheetahs_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/heinrich_cheetahs_2017.pdf) | 
@@ -129,14 +129,14 @@ We also design [methods](#methods) that can be applied to study these themes.
 
 ### Life history {#traits}
 
-#### Lifespan
+#### Lifespan {#traits_lifespan}
 
 @lahdenpera_differences_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/lahdenpera_differences_2018.pdf) | 
 @corbett_transition_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/corbett_transition_2018.pdf) | 
 @schneeberger_immune_2014 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/schneeberger_immune_2014.pdf) | 
 @mumby_climatic_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/mumby_climatic_2013.pdf)
 
-#### Mating, reproductive success and fitness
+#### Mating, reproductive success and fitness {#traits_fitness}
 
 @tonnabel_sexspecific_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/tonnabel_sexspecific_2021.pdf) | 
 @radchuk_adaptive_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/radchuk_adaptive_2019.pdf) | 
@@ -145,7 +145,7 @@ We also design [methods](#methods) that can be applied to study these themes.
 @pettay_effects_2014 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/pettay_effects_2014.pdf) | 
 @courtiol_natural_2012 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_natural_2012.pdf)
 
-#### Effect of climate and seasonality
+#### Effect of climate and seasonality {#traits_climate}
 
 @bailey_bird_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/bailey_bird_2022.pdf) | 
 @radchuk_adaptive_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/radchuk_adaptive_2019.pdf) | 
@@ -154,7 +154,7 @@ We also design [methods](#methods) that can be applied to study these themes.
 @mumby_birth_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/mumby_birth_2013.pdf) | 
 @rickard_intergenerational_2012 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/rickard_intergenerational_2012.pdf)
 
-#### Effect of demography
+#### Effect of demography {#traits_demography}
 
 @corbett_transition_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/corbett_transition_2018.pdf) | 
 @courtiol_demographic_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_demographic_2013.pdf)
@@ -162,13 +162,13 @@ We also design [methods](#methods) that can be applied to study these themes.
 
 ### Behaviour {#behaviour}
 
-#### Perception
+#### Perception {#behaviour_perception}
 
 @levrero_social_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/levrero_social_2015.pdf) | 
 @cohen_relevance_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/cohen_relevance_2015.pdf) | 
 @renoult_novel_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/renoult_novel_2013.pdf)
 
-#### Mate choice
+#### Mate choice {#behaviour_matechoice}
 
 @kretzschmar_mate_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kretzschmar_mate_2020.pdf) | 
 @debelle_mate_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/debelle_mate_2017.pdf) | 
@@ -177,7 +177,7 @@ We also design [methods](#methods) that can be applied to study these themes.
 @davidian_why_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/davidian_why_2016.pdf) | 
 @etienne_how_2014 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/etienne_how_2014.pdf)
 
-#### Migration and dispersion
+#### Migration and dispersion {#behaviour_migration}
 
 @kruszynski_high_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kruszynski_high_2022.pdf) | 
 @kruszynski_identifying_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kruszynski_identifying_2021.pdf) | 
@@ -187,14 +187,14 @@ We also design [methods](#methods) that can be applied to study these themes.
 @courtiol_modelling_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_modelling_2017.pdf) | 
 @davidian_why_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/davidian_why_2016.pdf)
 
-#### Social hierarchy
+#### Social hierarchy {#behaviour_hierarchy}
 
 @vullioud_social_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/vullioud_social_2019.pdf)
 
 
 ### Health {#health}
 
-#### Diseases
+#### Diseases {#health_diseases}
 
 @dayaram_seasonal_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/dayaram_seasonal_2021.pdf) | 
 @merling_de_chapa_phantom_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/merling_de_chapa_phantom_2020.pdf) | 
@@ -202,7 +202,7 @@ We also design [methods](#methods) that can be applied to study these themes.
 @franz_sicknessinduced_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/franz_sicknessinduced_2018.pdf) | 
 @cui_comprehensive_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/cui_comprehensive_2016.pdf)
 
-#### Immunity, stress and microbiome
+#### Immunity, stress and microbiome {#health_immunity}
 
 @azevedo_decreasing_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/azevedo_decreasing_2021.pdf) | 
 @azevedo_age_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/azevedo_age_2019.pdf) | 
@@ -213,7 +213,7 @@ We also design [methods](#methods) that can be applied to study these themes.
 @tian_circulating_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/tian_circulating_2015.pdf) | 
 @schneeberger_immune_2014 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/schneeberger_immune_2014.pdf)
 
-#### MHC
+#### MHC {#health_MHC}
 
 @gillingham_very_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/gillingham_very_2017.pdf) | 
 @santos_mhc-dependent_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/santos_mhc-dependent_2016.pdf) | 
@@ -223,30 +223,30 @@ We also design [methods](#methods) that can be applied to study these themes.
 
 ### Morphology {#morphology}
 
-#### Effect of climate
+#### Effect of climate {#morphology_climate}
 
 @bailey_using_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/bailey_using_2020.pdf) | 
 @radchuk_adaptive_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/radchuk_adaptive_2019.pdf)
 
-#### Effect of diet and lifestyle
+#### Effect of diet and lifestyle {#morphology_diet}
 
 @cohen_relevance_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/cohen_relevance_2015.pdf)
 
 
 ### Methodological contributions {#methods}
 
-#### Databases
+#### Databases {#methods_databases}
 
 @culina_connecting_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/culina_connecting_2021.pdf)
 
-#### R packages
+#### R packages {#methods_packages}
 
 @fasel_assigning_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/fasel_assigning_2022.pdf) | 
 @courtiol_isoscape_2019 | <!-- TODO add PDF -->
 @rousset_summary-likelihood_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/rousset_summary-likelihood_2017.pdf) | 
 @niedballa_camtrapr_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/niedballa_camtrapr_2016.pdf)
 
-#### Quantitative methods
+#### Quantitative methods {#methods_quantitative}
 
 @rousset_summary-likelihood_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/rousset_summary-likelihood_2017.pdf) | 
 @courtiol_modelling_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_modelling_2017.pdf) | 
@@ -254,14 +254,14 @@ We also design [methods](#methods) that can be applied to study these themes.
 @sommer_mhc_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/sommer_mhc_2013.pdf) | 
 @renoult_novel_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/renoult_novel_2013.pdf)
 
-#### Non-invasive methods
+#### Non-invasive methods {#methods_noninvasive}
 
 @azevedo_age_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/azevedo_age_2019.pdf) | 
 @niedballa_assessing_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/niedballa_assessing_2019.pdf) | 
 @niedballa_camtrapr_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/niedballa_camtrapr_2016.pdf) | 
 @davidian_determining_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/davidian_determining_2015.pdf)
 
-#### Wet lab and genomics
+#### Wet lab and genomics {#methods_genomics}
 
 @eder_equilibration_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/eder_equilibration_2020.pdf) | 
 @hryciuk_functional_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/hryciuk_functional_2019.pdf) | 
@@ -270,11 +270,11 @@ We also design [methods](#methods) that can be applied to study these themes.
 @sommer_mhc_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/sommer_mhc_2013.pdf)
 
 
-## Taxonomic groups {#taxons}
+## Taxonomic groups {#taxon}
 
 We mostly work on birds and mammals (including humans) but sometimes venture to study other lifeforms, as well as viruses.
 
-### Arthropods
+### Arthropods {#taxon_arthropod}
 
 :::float-right
 <img src="images/droso.jpg" width="200px">
@@ -286,7 +286,7 @@ maketab(c(
 <!-- @debelle_mate_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/debelle_mate_2017.pdf) -->
 :::
 
-### Bats
+### Bats {#taxon_bat}
 
 :::float-left
 <img src="images/bat_costarica.jpg" width="200px">
@@ -303,7 +303,7 @@ maketab(c(
 ```
 :::
 
-### Birds
+### Birds {#taxon_bird}
 
 :::float-right
 <img src="images/flamingo.jpg" width="200px">
@@ -322,7 +322,7 @@ maketab(c(
 ```
 :::
 
-### Carnivores
+### Carnivores {#taxon_carnivore}
 :::float-left
 <img src="images/hyena_portrait.jpg" width="200px">
 ```{r, echo=FALSE}
@@ -341,7 +341,7 @@ maketab(c(
 ```
 :::
 
-### Elephants
+### Elephants {#taxon_elephant}
 
 :::float-right
 <img src="images/asian_elephant_working.jpg" width="200px">
@@ -356,7 +356,7 @@ maketab(c(
 ```
 :::
 
-### Marsupials
+### Marsupials {#taxon_marsupial}
 
 ```{r, echo=FALSE}
 maketab(c(
@@ -365,7 +365,7 @@ maketab(c(
 ), position = "right")
 ```
 
-### Plants 
+### Plants {#taxon_plant}
 
 :::float-right
 <img src="images/leucadendron_rubrum.jpg" width="200px">
@@ -376,7 +376,7 @@ maketab(c(
 ```
 :::
 
-### Primates (including humans)
+### Primates (including humans) {#taxon_primate}
 :::float-left
 <img src="images/baboon_tsaobis.jpg" width="200px">
 ```{r, echo=FALSE}
@@ -393,7 +393,7 @@ maketab(c(
 ```
 :::
 
-### Rodents
+### Rodents {#taxon_rodent}
 
 :::float-right
 <img src="images/porcupine.jpg" width="200px">
@@ -405,7 +405,7 @@ maketab(c(
 ```
 :::
 
-### Ungulates
+### Ungulates {#taxon_ungulate}
 :::float-left
 <img src="images/zebra_southafrica.jpg" width="200px">
 ```{r, echo=FALSE}
@@ -418,7 +418,7 @@ maketab(c(
 ```
 :::
 
-### Viruses
+### Viruses {#taxon_virus}
 
 ```{r, echo=FALSE}
 maketab(c(
