@@ -3,4 +3,4 @@
 .Rdata
 .httr-oauth
 .DS_Store
-my_GH_token.txt
+.my_GH_token.txt
