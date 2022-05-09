@@ -2,7 +2,7 @@
 title: "About this site"
 ---
 
-We created this website using the R package [{distill}](https://rstudio.github.io/distill/) -- a simple system for creating simple websites for those who know R and markdown.
+We created this website using the R package [{distill}](https://rstudio.github.io/distill/) [<i class='fa fa-github'></i>](https://github.com/rstudio/distill) [<i class='fab fa-r-project'></i>](https://cran.r-project.org/web/packages/distill/index.html) -- a simple system for creating simple websites for those who know R and markdown.
 
 You can check our GitHub repository [<i class='fa fa-github'></i>](https://github.com/data-zoo-gang/DZG_website) to see how we coded it, and you can check the [distillery](https://distillery.rbind.io/) for other websites created using {distill}.
 
