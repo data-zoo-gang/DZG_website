@@ -4,6 +4,8 @@ description: |
   We turn our findings into scientific publications.
 bibliography: publications.bib
 csl: apa.csl
+editor_options: 
+  chunk_output_type: console
 ---
 
 <script src="js/for_toc.js"></script>
@@ -13,9 +15,23 @@ csl: apa.csl
 #RefManageR::BibOptions(style = "text") ## no effect :-(
 bib <- RefManageR::ReadBib("publications.bib")
 
-maketab <- function(publis, position = "left", title = FALSE) {
+extract_tags <- function(bib) {
+  tags <- bib$keywords
+  tags <- lapply(tags, \(list) stringr::str_remove_all(string = list, pattern = "dzg\\\\_|\\\\"))
+  tags <- lapply(tags, \(list) stringr::str_split(string = list, pattern = ", ", simplify = FALSE))
+  table <- tidyr::unnest_longer(tibble::tibble(name = names(tags), tag = sapply(tags, \(x) x[1][[1]])), col = "tag")
+  table
+}
+
+maketab <- function(tags, bib, position = "left", title = FALSE) {
   
-  publis <- stringr::str_replace_all(publis, "@", "")
+  tags_table <- extract_tags(bib = bib)
+  
+  all_tags <- unique(tags_table$tag)
+  
+  if (!all(tags %in% all_tags)) stop("Some tags are not found in any reference")
+  
+  publis <- tags_table$name[tags_table$tag %in% tags]
   
   selected <- bib[publis]
   
@@ -27,6 +43,11 @@ maketab <- function(publis, position = "left", title = FALSE) {
   tab$pdf <- "[<img src='images/pdf.png' width=20px style='float:none; vertical-align:middle; padding:0 0 0 0'/>]"
   tab$pdf <- paste0(tab$pdf, "(pdfs/", publis, ".pdf)")
   
+  ## sorting
+  tab$year <- as.numeric(stringr::str_extract(tab$Key, pattern = "[[:digit:]]{4}"))
+  tab <- tab[order(-tab$year, tab$Key), ]
+  tab$year <- NULL
+  
   if (!title) {
     tab <- tab[, c("Key", "pdf")] ## Remove Title for now
     tab <- kableExtra::kable(tab, col.names = c("", ""), escape = FALSE,  align = "rc")
@@ -34,7 +55,7 @@ maketab <- function(publis, position = "left", title = FALSE) {
   } else {
     tab$pdf <- stringr::str_replace_all(tab$pdf, "20px", "100px")
     tab <- kableExtra::kable(tab, col.names = c("", "", ""), escape = FALSE,  align = "lrc") 
-    tab <- kableExtra::column_spec(tab, column = 1, extra_css = "line-height: 1.2")
+    tab <- kableExtra::column_spec(tab, column = 1, extra_css = "line-height: 1.3")
     tab <- kableExtra::column_spec(tab, column = 2, width = "200px")
     tab <- kableExtra::column_spec(tab, column = 3, width = "20px")
   }
@@ -44,7 +65,7 @@ maketab <- function(publis, position = "left", title = FALSE) {
 }
 ```
 
-Publications are sorted by multiple criteria and you can jump directly to the following categories: [most recent](#recent), [short selection](#best), [themes](#themes), [taxonomic groups](#taxon).
+Publications are sorted by multiple criteria and you can jump directly to the following categories: [short selection](#best), [most recent](#recent), [taxonomic groups](#taxon), [themes](#themes).
 
 **Hover on top of a publication to reveal its details** (or click if using a touch screen).
 
@@ -63,22 +84,6 @@ For the full list of publications of a given team member, please refer to:
 [Ian J. Rickard](https://orcid.org/0000-0003-0762-1689),
 [Camille Martinez-Almoyna](https://orcid.org/0000-0002-3624-7932).
 
-## Most recent {#recent}
-
-Our publications from the last 2 years are:
-
-```{r, echo=FALSE}
-maketab(c(
-  "@bailey_bird_2022",
-  "@fasel_assigning_2022",
-  "@kruszynski_high_2022",
-  "@azevedo_decreasing_2021",
-  "@culina_connecting_2021",
-  "@dayaram_seasonal_2021",
-  "@kruszynski_identifying_2021",
-  "@tonnabel_sexspecific_2021"
-), position = "center", title = TRUE)
-```
 
 ## Short selection {#best}
 
@@ -91,184 +96,14 @@ Here is a short selection of recent DZG publications we are particularly proud o
 - @corbett_transition_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/corbett_transition_2018.pdf) is a review of the causes and consequences of demographic transitions in humans, with an emphasis on human health -- published in *Nature Reviews Genetics*.
 - @lahdenpera_differences_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/lahdenpera_differences_2018.pdf) is a detailed study of how capture influences survival in Asian elephants -- published in *Nature Communications*.
 
-## Themes {#themes}
 
-We study [wildlife conservation](#conservation), the ecology and evolution of [life history traits](#traits), [animal behaviour](#behaviour), [morphology](#morphology), as well as various aspects of [health](#health) in wildlife populations.
-We also design [methods](#methods) that can be applied to study these themes.
+## Most recent {#recent}
 
-### Wildlife conservation {#conservation}
+Our publications from the last 2 years are:
 
-#### Climate change {#conservation_climate}
-
-@bailey_bird_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/bailey_bird_2022.pdf)| 
-@radchuk_adaptive_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/radchuk_adaptive_2019.pdf) | 
-@mumby_climatic_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/mumby_climatic_2013.pdf)
-
-#### Habitat degradation (including urbanisation) {#conservation_degradation}
-
-@kruszynski_high_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kruszynski_high_2022.pdf) | 
-@merling_de_chapa_phantom_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/merling_de_chapa_phantom_2020.pdf) | 
-@trinogga_fragmentation_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/trinogga_fragmentation_2019.pdf) | 
-@krone_monitoring_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/krone_monitoring_2019.pdf) | 
-@seltmann_habitat_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/seltmann_habitat_2017.pdf)
-
-#### Reproduction and management {#conservation_reproduction}
-
-@eder_equilibration_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/eder_equilibration_2020.pdf) | 
-@kretzschmar_mate_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kretzschmar_mate_2020.pdf) | 
-@hryciuk_functional_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/hryciuk_functional_2019.pdf) | 
-@saragusty_sperm_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/saragusty_sperm_2016.pdf) | 
-@wilting_planning_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/wilting_planning_2015.pdf)
-
-#### Effect of capture and captivity {#conservation_captivity}
-
-@lahdenpera_differences_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/lahdenpera_differences_2018.pdf) | 
-@heinrich_cheetahs_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/heinrich_cheetahs_2017.pdf) | 
-@mumby_birth_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/mumby_birth_2013.pdf)
-
-
-### Life history {#traits}
-
-#### Lifespan {#traits_lifespan}
-
-@lahdenpera_differences_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/lahdenpera_differences_2018.pdf) | 
-@corbett_transition_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/corbett_transition_2018.pdf) | 
-@schneeberger_immune_2014 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/schneeberger_immune_2014.pdf) | 
-@mumby_climatic_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/mumby_climatic_2013.pdf)
-
-#### Mating, reproductive success and fitness {#traits_fitness}
-
-@tonnabel_sexspecific_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/tonnabel_sexspecific_2021.pdf) | 
-@radchuk_adaptive_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/radchuk_adaptive_2019.pdf) | 
-@corbett_transition_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/corbett_transition_2018.pdf) | 
-@courtiol_when_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_when_2016.pdf) | 
-@pettay_effects_2014 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/pettay_effects_2014.pdf) | 
-@courtiol_natural_2012 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_natural_2012.pdf)
-
-#### Effect of climate and seasonality {#traits_climate}
-
-@bailey_bird_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/bailey_bird_2022.pdf) | 
-@radchuk_adaptive_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/radchuk_adaptive_2019.pdf) | 
-@mumby_stress_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/mumby_stress_2015.pdf) | 
-@mumby_climatic_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/mumby_climatic_2013.pdf) | 
-@mumby_birth_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/mumby_birth_2013.pdf) | 
-@rickard_intergenerational_2012 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/rickard_intergenerational_2012.pdf)
-
-#### Effect of demography {#traits_demography}
-
-@corbett_transition_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/corbett_transition_2018.pdf) | 
-@courtiol_demographic_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_demographic_2013.pdf)
-
-
-### Behaviour {#behaviour}
-
-#### Perception {#behaviour_perception}
-
-@levrero_social_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/levrero_social_2015.pdf) | 
-@cohen_relevance_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/cohen_relevance_2015.pdf) | 
-@renoult_novel_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/renoult_novel_2013.pdf)
-
-#### Mate choice {#behaviour_matechoice}
-
-@kretzschmar_mate_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kretzschmar_mate_2020.pdf) | 
-@debelle_mate_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/debelle_mate_2017.pdf) | 
-@courtiol_evolution_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_evolution_2016.pdf) | 
-@santos_mhc-dependent_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/santos_mhc-dependent_2016.pdf) | 
-@davidian_why_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/davidian_why_2016.pdf) | 
-@etienne_how_2014 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/etienne_how_2014.pdf)
-
-#### Migration and dispersion {#behaviour_migration}
-
-@kruszynski_high_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kruszynski_high_2022.pdf) | 
-@kruszynski_identifying_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kruszynski_identifying_2021.pdf) | 
-@kravchenko_generational_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kravchenko_generational_2020.pdf) | 
-@courtiol_isoscape_2019 | <!-- TODO add PDF -->
-@hobson_outlook_2019 | <!-- TODO add PDF -->
-@courtiol_modelling_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_modelling_2017.pdf) | 
-@davidian_why_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/davidian_why_2016.pdf)
-
-#### Social hierarchy {#behaviour_hierarchy}
-
-@vullioud_social_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/vullioud_social_2019.pdf)
-
-
-### Health {#health}
-
-#### Diseases {#health_diseases}
-
-@dayaram_seasonal_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/dayaram_seasonal_2021.pdf) | 
-@merling_de_chapa_phantom_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/merling_de_chapa_phantom_2020.pdf) | 
-@numberger_recovery_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/numberger_recovery_2019.pdf) | 
-@franz_sicknessinduced_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/franz_sicknessinduced_2018.pdf) | 
-@cui_comprehensive_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/cui_comprehensive_2016.pdf)
-
-#### Immunity, stress and microbiome {#health_immunity}
-
-@azevedo_decreasing_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/azevedo_decreasing_2021.pdf) | 
-@azevedo_age_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/azevedo_age_2019.pdf) | 
-@krone_monitoring_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/krone_monitoring_2019.pdf) | 
-@davidian_determining_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/davidian_determining_2015.pdf) | 
-@alfano_variation_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/alfano_variation_2015.pdf) | 
-@mumby_stress_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/mumby_stress_2015.pdf) | 
-@tian_circulating_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/tian_circulating_2015.pdf) | 
-@schneeberger_immune_2014 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/schneeberger_immune_2014.pdf)
-
-#### MHC {#health_MHC}
-
-@gillingham_very_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/gillingham_very_2017.pdf) | 
-@santos_mhc-dependent_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/santos_mhc-dependent_2016.pdf) | 
-@gillingham_evidence_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/gillingham_evidence_2016.pdf) | 
-@sommer_mhc_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/sommer_mhc_2013.pdf)
-
-
-### Morphology {#morphology}
-
-#### Effect of climate {#morphology_climate}
-
-@bailey_using_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/bailey_using_2020.pdf) | 
-@radchuk_adaptive_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/radchuk_adaptive_2019.pdf)
-
-#### Effect of diet and lifestyle {#morphology_diet}
-
-@cohen_relevance_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/cohen_relevance_2015.pdf)
-
-
-### Methodological contributions {#methods}
-
-#### Databases {#methods_databases}
-
-@culina_connecting_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/culina_connecting_2021.pdf)
-
-#### R packages {#methods_packages}
-
-@fasel_assigning_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/fasel_assigning_2022.pdf) | 
-@courtiol_isoscape_2019 | <!-- TODO add PDF -->
-@rousset_summary-likelihood_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/rousset_summary-likelihood_2017.pdf) | 
-@niedballa_camtrapr_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/niedballa_camtrapr_2016.pdf)
-
-#### Quantitative methods {#methods_quantitative}
-
-@rousset_summary-likelihood_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/rousset_summary-likelihood_2017.pdf) | 
-@courtiol_modelling_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_modelling_2017.pdf) | 
-@davidian_determining_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/davidian_determining_2015.pdf) | 
-@sommer_mhc_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/sommer_mhc_2013.pdf) | 
-@renoult_novel_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/renoult_novel_2013.pdf)
-
-#### Non-invasive methods {#methods_noninvasive}
-
-@azevedo_age_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/azevedo_age_2019.pdf) | 
-@niedballa_assessing_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/niedballa_assessing_2019.pdf) | 
-@niedballa_camtrapr_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/niedballa_camtrapr_2016.pdf) | 
-@davidian_determining_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/davidian_determining_2015.pdf)
-
-#### Wet lab and genomics {#methods_genomics}
-
-@eder_equilibration_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/eder_equilibration_2020.pdf) | 
-@hryciuk_functional_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/hryciuk_functional_2019.pdf) | 
-@paijmans_impact_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/paijmans_impact_2016.pdf) | 
-@saragusty_sperm_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/saragusty_sperm_2016.pdf) | 
-@sommer_mhc_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/sommer_mhc_2013.pdf)
-
+```{r, echo=FALSE}
+maketab(tags = "recent", bib = bib, position = "center", title = TRUE)
+```
 
 ## Taxonomic groups {#taxon}
 
@@ -279,9 +114,7 @@ We mostly work on birds and mammals (including humans) but sometimes venture to 
 :::float-right
 <img src="images/droso.jpg" width="200px">
 ```{r, echo=FALSE}
-maketab(c(
-  "@debelle_mate_2017"
-  ), position = "left")
+maketab(tags = "taxon_arthropod", bib = bib, position = "left")
 ```
 <!-- @debelle_mate_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/debelle_mate_2017.pdf) -->
 :::
@@ -291,15 +124,7 @@ maketab(c(
 :::float-left
 <img src="images/bat_costarica.jpg" width="200px">
 ```{r, echo=FALSE}
-maketab(c(
-  "@kruszynski_high_2022",
-  "@kruszynski_identifying_2021",
-  "@kravchenko_generational_2020",
-  "@courtiol_isoscape_2019", # TODO: add PDF
-  "@seltmann_habitat_2017",
-  "@santos_mhc-dependent_2016",
-  "@schneeberger_immune_2014"
-  ), position = "right")
+maketab(tags = "taxon_bat", bib = bib, position = "right")
 ```
 :::
 
@@ -308,17 +133,7 @@ maketab(c(
 :::float-right
 <img src="images/flamingo.jpg" width="200px">
 ```{r, echo=FALSE}
-maketab(c(
-  "@bailey_bird_2022",
-  "@culina_connecting_2021",
-  "@bailey_using_2020",
-  "@merling_de_chapa_phantom_2020",
-  "@radchuk_adaptive_2019",
-  "@krone_monitoring_2019",
-  "@gillingham_very_2017",
-  "@gillingham_evidence_2016",
-  "@renoult_novel_2013"
-  ), position = "left")
+maketab(tags = "taxon_bird", bib = bib, position = "left")
 ```
 :::
 
@@ -326,18 +141,7 @@ maketab(c(
 :::float-left
 <img src="images/hyena_portrait.jpg" width="200px">
 ```{r, echo=FALSE}
-maketab(c(
-  "@azevedo_decreasing_2021",
-  "@eder_equilibration_2020",
-  "@vullioud_social_2019",
-  "@azevedo_age_2019",
-  "@hryciuk_functional_2019",
-  "@heinrich_cheetahs_2017",
-  "@davidian_why_2016",
-  "@paijmans_impact_2016",
-  "@wilting_planning_2015",
-  "@davidian_determining_2015"
-), position = "right")
+maketab(tags = "taxon_carnivore", bib = bib, position = "right")
 ```
 :::
 
@@ -346,23 +150,14 @@ maketab(c(
 :::float-right
 <img src="images/asian_elephant_working.jpg" width="200px">
 ```{r, echo=FALSE}
-maketab(c(
-  "@lahdenpera_differences_2018",
-  "@saragusty_sperm_2016",
-  "@mumby_stress_2015",
-  "@mumby_climatic_2013",
-  "@mumby_birth_2013"
-), position = "left")
+maketab(tags = "taxon_elephant", bib = bib, position = "left")
 ```
 :::
 
 ### Marsupials {#taxon_marsupial}
 
 ```{r, echo=FALSE}
-maketab(c(
-  "@cui_comprehensive_2016",
-  "@alfano_variation_2015"
-), position = "right")
+maketab(tags = "taxon_marsupial", bib = bib, position = "right")
 ```
 
 ### Plants {#taxon_plant}
@@ -370,9 +165,7 @@ maketab(c(
 :::float-right
 <img src="images/leucadendron_rubrum.jpg" width="200px">
 ```{r, echo=FALSE}
-maketab(c(
-  "@tonnabel_sexspecific_2021"
-), position = "left")
+maketab(tags = "taxon_plant", bib = bib, position = "left")
 ```
 :::
 
@@ -380,16 +173,7 @@ maketab(c(
 :::float-left
 <img src="images/baboon_tsaobis.jpg" width="200px">
 ```{r, echo=FALSE}
-maketab(c(
-  "@corbett_transition_2018",
-  "@courtiol_when_2016",
-  "@levrero_social_2015",
-  "@cohen_relevance_2015",
-  "@pettay_effects_2014",
-  "@courtiol_demographic_2013",
-  "@courtiol_natural_2012",
-  "@rickard_intergenerational_2012"
-  ), position = "right")
+maketab(tags = "taxon_primate", bib = bib, position = "right")
 ```
 :::
 
@@ -398,10 +182,7 @@ maketab(c(
 :::float-right
 <img src="images/porcupine.jpg" width="200px">
 ```{r, echo=FALSE}
-maketab(c(
-  "@tian_circulating_2015",
-  "@sommer_mhc_2013"
-  ), position = "left")
+maketab(tags = "taxon_rodent", bib = bib, position = "left")
 ```
 :::
 
@@ -409,20 +190,167 @@ maketab(c(
 :::float-left
 <img src="images/zebra_southafrica.jpg" width="200px">
 ```{r, echo=FALSE}
-maketab(c(
-  "@dayaram_seasonal_2021",
-  "@kretzschmar_mate_2020",
-  "@trinogga_fragmentation_2019",
-  "@speck_cationic_2014"
-  ), position = "right")
+maketab(tags = "taxon_ungulate", bib = bib, position = "right")
 ```
 :::
 
 ### Viruses {#taxon_virus}
 
 ```{r, echo=FALSE}
-maketab(c(
-  "@dayaram_seasonal_2021",
-  "@numberger_recovery_2019"
-  ), position = "left")
+maketab(tags = "taxon_virus", bib = bib, position = "left")
+```
+
+
+## Themes {#themes}
+
+We study [wildlife conservation](#conservation), the ecology and evolution of [life history traits](#traits), [animal behaviour](#behaviour), [morphology](#morphology), as well as various aspects of [health](#health) in wildlife populations.
+We also design [methods](#methods) that can be applied to study these themes.
+
+### Wildlife conservation {#conservation}
+
+#### Climate change {#conservation_climate}
+
+```{r, echo=FALSE}
+maketab(tags = "conservation_climate", bib = bib, position = "left", title = TRUE)
+```
+
+#### Habitat degradation (including urbanisation) {#conservation_degradation}
+
+```{r, echo=FALSE}
+maketab(tags = "conservation_degradation", bib = bib, position = "left", title = TRUE)
+```
+
+#### Reproduction and management {#conservation_reproduction}
+
+```{r, echo=FALSE}
+maketab(tags = "conservation_reproduction", bib = bib, position = "left", title = TRUE)
+```
+
+#### Effect of capture and captivity {#conservation_captivity}
+
+```{r, echo=FALSE}
+maketab(tags = "conservation_captivity", bib = bib, position = "left", title = TRUE)
+```
+
+
+### Life history {#traits}
+
+#### Lifespan {#traits_lifespan}
+
+```{r, echo=FALSE}
+maketab(tags = "traits_lifespan", bib = bib, position = "left", title = TRUE)
+```
+
+#### Mating, reproductive success and fitness {#traits_fitness}
+
+```{r, echo=FALSE}
+maketab(tags = "traits_fitness", bib = bib, position = "left", title = TRUE)
+```
+
+#### Effect of climate and seasonality {#traits_climate}
+
+```{r, echo=FALSE}
+maketab(tags = "traits_climate", bib = bib, position = "left", title = TRUE)
+```
+
+#### Effect of demography {#traits_demography}
+
+```{r, echo=FALSE}
+maketab(tags = "traits_demography", bib = bib, position = "left", title = TRUE)
+```
+
+
+### Behaviour {#behaviour}
+
+#### Perception {#behaviour_perception}
+
+```{r, echo=FALSE}
+maketab(tags = "behaviour_perception", bib = bib, position = "left", title = TRUE)
+```
+
+#### Mate choice {#behaviour_matechoice}
+
+```{r, echo=FALSE}
+maketab(tags = "behaviour_matechoice", bib = bib, position = "left", title = TRUE)
+```
+
+#### Migration and dispersion {#behaviour_migration}
+
+```{r, echo=FALSE}
+maketab(tags = "behaviour_migration", bib = bib, position = "left", title = TRUE)
+```
+
+#### Social hierarchy {#behaviour_hierarchy}
+
+```{r, echo=FALSE}
+maketab(tags = "behaviour_hierarchy", bib = bib, position = "left", title = TRUE)
+```
+
+
+### Health {#health}
+
+#### Diseases {#health_diseases}
+
+```{r, echo=FALSE}
+maketab(tags = "health_diseases", bib = bib, position = "left", title = TRUE)
+```
+
+#### Immunity, stress and microbiome {#health_immunity}
+
+```{r, echo=FALSE}
+maketab(tags = "health_immunity", bib = bib, position = "left", title = TRUE)
+```
+
+#### MHC {#health_MHC}
+
+```{r, echo=FALSE}
+maketab(tags = "health_MHC", bib = bib, position = "left", title = TRUE)
+```
+
+
+### Morphology {#morphology}
+
+#### Effect of climate {#morphology_climate}
+
+```{r, echo=FALSE}
+maketab(tags = "morphology_climate", bib = bib, position = "left", title = TRUE)
+```
+
+#### Effect of diet and lifestyle {#morphology_diet}
+
+```{r, echo=FALSE}
+maketab(tags = "morphology_diet", bib = bib, position = "left", title = TRUE)
+```
+
+
+### Methodological contributions {#methods}
+
+#### Databases {#methods_databases}
+
+```{r, echo=FALSE}
+maketab(tags = "methods_databases", bib = bib, position = "left", title = TRUE)
+```
+
+#### R packages {#methods_packages}
+
+```{r, echo=FALSE}
+maketab(tags = "methods_packages", bib = bib, position = "left", title = TRUE)
+```
+
+#### Quantitative methods {#methods_quantitative}
+
+```{r, echo=FALSE}
+maketab(tags = "methods_quantitative", bib = bib, position = "left", title = TRUE)
+```
+
+#### Non-invasive methods {#methods_noninvasive}
+
+```{r, echo=FALSE}
+maketab(tags = "methods_noninvasive", bib = bib, position = "left", title = TRUE)
+```
+
+#### Wet lab and genomics {#methods_genomics}
+
+```{r, echo=FALSE}
+maketab(tags = "methods_genomics", bib = bib, position = "left", title = TRUE)
 ```

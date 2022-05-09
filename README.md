@@ -12,6 +12,7 @@ Check that you have all R packages required for building this website:
 if (!requireNamespace("knitr"))      install.packages("knitr")
 if (!requireNamespace("distill"))    install.packages("distill")
 if (!requireNamespace("tibble"))     install.packages("tibble")
+if (!requireNamespace("tidyr"))     install.packages("tidyr")
 if (!requireNamespace("RefManageR")) install.packages("RefManageR")
 if (!requireNamespace("kableExtra")) install.packages("kableExtra")
 if (!requireNamespace("stringr"))    install.packages("stringr")
