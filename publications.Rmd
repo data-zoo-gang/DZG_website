@@ -6,6 +6,10 @@ bibliography: publications.bib
 csl: apa.csl
 editor_options: 
   chunk_output_type: console
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
 ---
 
 <script src="js/for_toc.js"></script>

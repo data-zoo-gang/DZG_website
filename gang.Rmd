@@ -4,6 +4,10 @@ description: |
   We are a small group of nature lovers interested in data science and biology.
 editor_options: 
   chunk_output_type: console
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
 ---
 
 <script src="js/for_toc.js"></script>
