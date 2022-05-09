@@ -6,6 +6,17 @@ Go to www.datazoogang.de to visit the website.
 
 ### for website maintainers
 
+Check that you have all R packages required for building this website:
+
+```r
+if (!requireNamespace("knitr"))      install.packages("knitr")
+if (!requireNamespace("distill"))    install.packages("distill")
+if (!requireNamespace("tibble"))     install.packages("tibble")
+if (!requireNamespace("RefManageR")) install.packages("RefManageR")
+if (!requireNamespace("kableExtra")) install.packages("kableExtra")
+if (!requireNamespace("stringr"))    install.packages("stringr")
+```
+
 For changes related to references: 
 
 - please do not alter the BibTeX file directly, but perform changes in the shared Zotero library DZG and overwrite a new file `publications.bib`.
