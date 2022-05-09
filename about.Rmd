@@ -2,8 +2,10 @@
 title: "About this site"
 ---
 
-We created this website using the R package [{distill}](https://rstudio.github.io/distill/) [<i class='fa fa-github'></i>](https://github.com/rstudio/distill) [<i class='fab fa-r-project'></i>](https://cran.r-project.org/web/packages/distill/index.html) -- a simple system for creating simple websites for those who know R and markdown.
+We created this website using the R package [{distill}](https://rstudio.github.io/distill/) [<i class='fa fa-github'></i>](https://github.com/rstudio/distill) [<i class='fab fa-r-project'></i>](https://cran.r-project.org/web/packages/distill/index.html) -- a simple system for creating simple websites for those who know R.
 
-You can check our GitHub repository [<i class='fa fa-github'></i>](https://github.com/data-zoo-gang/DZG_website) to see how we coded it, and you can check the [distillery](https://distillery.rbind.io/) for other websites created using {distill}.
+We are aware that R is not the best tool for creating a website, but we wanted to give it a try.
+We found the possibility to write a few lines of custom R code so as to generate tables of publications automatically particularly convenient.
+The relevant references are selected from a BibTeX file on the basis of key words attached to the entries.
 
-We are aware that R is not the best tool for creating a website, but since we love R we wanted to give it a try.
+You can check our GitHub repository [<i class='fa fa-github'></i>](https://github.com/data-zoo-gang/DZG_website) to see how we coded everything, and you can check the [distillery](https://distillery.rbind.io/) for other websites created using {distill}.
