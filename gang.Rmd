@@ -14,7 +14,7 @@ editor_options:
 
 :::float-left
 <img src="images/alex_courtiol.jpg" width="200px">
-Member since 2012. [<i class='fa fa-twitter'></i> (personal)](https://twitter.com/alexcourtiol), [<i class='fa fa-twitter'></i> (R)](https://twitter.com/rdataberlin).
+Member since 2012. [<i class='fa fa-twitter'></i> <i class='fa fa-flask'></i>](https://twitter.com/alexcourtiol), [<i class='fa fa-twitter'></i> <i class='fab fa-r-project'></i>](https://twitter.com/rdataberlin).
 Senior researcher, lecturer. Initially trained as an evolutionary biologist with an additional emphasis on applied statistics, Alex has adopted ecology and demography after his PhD. He is mostly interested in humans, wild mammals and birds. His favorite research projects are those revealing unexpected outcomes. His focus is on questions related to life history and behaviour, but he is always open to new exciting collaborations. He likes programming and teaching R.
 :::
 
