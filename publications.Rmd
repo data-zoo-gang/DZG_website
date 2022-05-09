@@ -12,7 +12,7 @@ csl: apa.csl
 ```{r, echo=FALSE}
 bib <- RefManageR::ReadBib("publications.bib")
 
-maketab <- function(publis, title = FALSE) {
+maketab <- function(publis, position = "left", title = FALSE) {
   
   publis <- stringr::str_replace_all(publis, "@", "")
   
@@ -34,8 +34,10 @@ maketab <- function(publis, title = FALSE) {
     tab <- kableExtra::kable(tab, col.names = c("", "", ""), escape = FALSE,  align = "lrc") 
     tab <- kableExtra::column_spec(tab, column = 1, extra_css = "line-height: 1.2")
     tab <- kableExtra::column_spec(tab, column = 2, width = "200px")
+    tab <- kableExtra::column_spec(tab, column = 3, width = "20px")
   }
   
+  tab <- kableExtra::kable_styling(tab, position = position)
   tab
 }
 ```
@@ -270,94 +272,118 @@ We mostly work on birds and mammals (including humans) but sometimes venture to 
 
 :::float-right
 <img src="images/droso.jpg" width="200px">
-@debelle_mate_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/debelle_mate_2017.pdf)
+```{r, echo=FALSE}
+maketab(c(
+  "@debelle_mate_2017"
+  ), position = "left")
+```
+<!-- @debelle_mate_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/debelle_mate_2017.pdf) -->
 :::
 
 ### Bats
 
 :::float-left
 <img src="images/bat_costarica.jpg" width="200px">
-@kruszynski_high_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kruszynski_high_2022.pdf) | 
-@kruszynski_identifying_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kruszynski_identifying_2021.pdf) | 
-@kravchenko_generational_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kravchenko_generational_2020.pdf) | 
-@courtiol_isoscape_2019 | <!-- TODO add PDF -->
-@seltmann_habitat_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/seltmann_habitat_2017.pdf) | 
-@santos_mhc-dependent_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/santos_mhc-dependent_2016.pdf) | 
-@schneeberger_immune_2014 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/schneeberger_immune_2014.pdf)
+```{r, echo=FALSE}
+maketab(c(
+  "@kruszynski_high_2022",
+  "@kruszynski_identifying_2021",
+  "@kravchenko_generational_2020",
+  "@courtiol_isoscape_2019", # TODO: add PDF
+  "@seltmann_habitat_2017",
+  "@santos_mhc-dependent_2016",
+  "@schneeberger_immune_2014"
+  ), position = "right")
+```
 :::
 
 ### Birds
 
 :::float-right
 <img src="images/flamingo.jpg" width="200px">
-@bailey_bird_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/bailey_bird_2022.pdf) | 
-@culina_connecting_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/culina_connecting_2021.pdf) | 
-@bailey_using_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/bailey_using_2020.pdf) | 
-@merling_de_chapa_phantom_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/merling_de_chapa_phantom_2020.pdf) | 
-@radchuk_adaptive_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/radchuk_adaptive_2019.pdf) | 
-@krone_monitoring_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/krone_monitoring_2019.pdf) | 
-@gillingham_very_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/gillingham_very_2017.pdf) | 
-@gillingham_evidence_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/gillingham_evidence_2016.pdf) | 
-@renoult_novel_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/renoult_novel_2013.pdf)
+```{r, echo=FALSE}
+maketab(c(
+  "@bailey_bird_2022",
+  "@culina_connecting_2021",
+  "@bailey_using_2020",
+  "@merling_de_chapa_phantom_2020",
+  "@radchuk_adaptive_2019",
+  "@krone_monitoring_2019",
+  "@gillingham_very_2017",
+  "@gillingham_evidence_2016",
+  "@renoult_novel_2013"
+  ), position = "left")
+```
 :::
 
 ### Carnivores
 :::float-left
 <img src="images/hyena_portrait.jpg" width="200px">
-@azevedo_decreasing_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/azevedo_decreasing_2021.pdf) | 
-@eder_equilibration_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/eder_equilibration_2020.pdf) | 
-@vullioud_social_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/vullioud_social_2019.pdf) | 
-@azevedo_age_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/azevedo_age_2019.pdf) | 
-@hryciuk_functional_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/hryciuk_functional_2019.pdf) | 
-@heinrich_cheetahs_2017 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/heinrich_cheetahs_2017.pdf) | 
-@davidian_why_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/davidian_why_2016.pdf) | 
-@paijmans_impact_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/paijmans_impact_2016.pdf) | 
-@wilting_planning_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/wilting_planning_2015.pdf) | 
-@davidian_determining_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/davidian_determining_2015.pdf)
+```{r, echo=FALSE}
+maketab(c(
+  "@azevedo_decreasing_2021",
+  "@eder_equilibration_2020",
+  "@vullioud_social_2019",
+  "@azevedo_age_2019",
+  "@hryciuk_functional_2019",
+  "@heinrich_cheetahs_2017",
+  "@davidian_why_2016",
+  "@paijmans_impact_2016",
+  "@wilting_planning_2015",
+  "@davidian_determining_2015"
+), position = "right")
+```
 :::
 
 ### Elephants
 
 :::float-right
 <img src="images/asian_elephant_working.jpg" width="200px">
-@lahdenpera_differences_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/lahdenpera_differences_2018.pdf) | 
-@saragusty_sperm_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/saragusty_sperm_2016.pdf) | 
-@mumby_stress_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/mumby_stress_2015.pdf) | 
-@mumby_climatic_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/@mumby_climatic_2013.pdf) | 
-@mumby_birth_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/mumby_birth_2013.pdf)
+```{r, echo=FALSE}
+maketab(c(
+  "@lahdenpera_differences_2018",
+  "@saragusty_sperm_2016",
+  "@mumby_stress_2015",
+  "@mumby_climatic_2013",
+  "@mumby_birth_2013"
+), position = "left")
+```
 :::
 
 ### Marsupials
 
-@cui_comprehensive_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/cui_comprehensive_2016.pdf) | 
-@alfano_variation_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/alfano_variation_2015.pdf)
+```{r, echo=FALSE}
+maketab(c(
+  "@cui_comprehensive_2016",
+  "@alfano_variation_2015"
+), position = "right")
+```
 
 ### Plants 
 
 :::float-right
 <img src="images/leucadendron_rubrum.jpg" width="200px">
-@tonnabel_sexspecific_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/tonnabel_sexspecific_2021.pdf)
+```{r, echo=FALSE}
+maketab(c(
+  "@tonnabel_sexspecific_2021"
+), position = "left")
+```
 :::
 
 ### Primates (including humans)
-
-:::float-left
-<img src="images/baboon_tsaobis.jpg" width="200px">
-@corbett_transition_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/corbett_transition_2018.pdf) | 
-@courtiol_when_2016 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_when_2016.pdf) | 
-@levrero_social_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/levrero_social_2015.pdf) | 
-@cohen_relevance_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/cohen_relevance_2015.pdf) | 
-@pettay_effects_2014 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/pettay_effects_2014.pdf) | 
-@courtiol_demographic_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_demographic_2013.pdf) | 
-@courtiol_natural_2012 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/courtiol_natural_2012.pdf) | 
-@rickard_intergenerational_2012 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/rickard_intergenerational_2012.pdf)
-:::
-
-### Primates (including humans) (TEST: alternative formatting!)
 :::float-left
 <img src="images/baboon_tsaobis.jpg" width="200px">
 ```{r, echo=FALSE}
-maketab(c("@corbett_transition_2018", "@courtiol_when_2016", "@levrero_social_2015", "@cohen_relevance_2015", "@pettay_effects_2014", "@courtiol_demographic_2013", "@courtiol_natural_2012", "@rickard_intergenerational_2012"))
+maketab(c(
+  "@corbett_transition_2018",
+  "@courtiol_when_2016",
+  "@levrero_social_2015",
+  "@cohen_relevance_2015",
+  "@pettay_effects_2014",
+  "@courtiol_demographic_2013",
+  "@courtiol_natural_2012",
+  "@rickard_intergenerational_2012"
+  ), position = "right")
 ```
 :::
 
@@ -365,20 +391,32 @@ maketab(c("@corbett_transition_2018", "@courtiol_when_2016", "@levrero_social_20
 
 :::float-right
 <img src="images/porcupine.jpg" width="200px">
-@tian_circulating_2015 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/tian_circulating_2015.pdf) | 
-@sommer_mhc_2013 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/sommer_mhc_2013.pdf)
+```{r, echo=FALSE}
+maketab(c(
+  "@tian_circulating_2015",
+  "@sommer_mhc_2013"
+  ), position = "left")
+```
 :::
 
 ### Ungulates
 :::float-left
 <img src="images/zebra_southafrica.jpg" width="200px">
-@dayaram_seasonal_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/dayaram_seasonal_2021.pdf) | 
-@kretzschmar_mate_2020 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/kretzschmar_mate_2020.pdf) | 
-@trinogga_fragmentation_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/trinogga_fragmentation_2019.pdf) | 
-@speck_cationic_2014 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/speck_cationic_2014.pdf)
+```{r, echo=FALSE}
+maketab(c(
+  "@dayaram_seasonal_2021",
+  "@kretzschmar_mate_2020",
+  "@trinogga_fragmentation_2019",
+  "@speck_cationic_2014"
+  ), position = "right")
+```
 :::
 
 ### Viruses
 
-@dayaram_seasonal_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/dayaram_seasonal_2021.pdf) | 
-@numberger_recovery_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/numberger_recovery_2019.pdf)
+```{r, echo=FALSE}
+maketab(c(
+  "@dayaram_seasonal_2021",
+  "@numberger_recovery_2019"
+  ), position = "left")
+```
