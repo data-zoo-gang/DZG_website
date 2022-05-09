@@ -14,7 +14,7 @@ The Data Zoo Gang is [a small team of scientists](gang.html) (mostly biologists)
 We all love mammals, birds, computers and [R](https://www.r-project.org/).
 
 ```{r, fig.align='center', out.width=200}
-knitr::include_graphics(path = "images/great_tit.jpg")
+knitr::include_graphics(path = "images/great_tit.jpg") # this is R code
 ```
 
 We enjoy collaborating with people -- whoever they are -- as long as they want to discover something cool and not too obvious about their favorite species.
