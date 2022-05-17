@@ -80,6 +80,16 @@ Every other year, [Christian Voigt](https://www.izw-berlin.de/en/christian-voigt
 In this context, Alex gives a 1-day course on how to use [IsoriX](packages.html#main_packages), an R package that can be used to infer the origin of migratory lifeforms based on their isotopic signatures.
 :::
 
+:::float-right
+<img src="images/NCAA_logo.png" style="display:inline;width:15%">
+
+### Working with weather station data in Ngorongoro Crater
+
+Liam teaches how to work with data from our network of weather stations in the Ngorongoro Conservation Area (see a report of our data [here](https://github.com/LiamDBailey/Ngorongoro_weather_report/blob/5f579ec9aeb30d258bb32b2ef911d2fe8486c6e2/reports/NCAA_weather_report.pdf)). We include both introductory techniques using Microsoft Excel and more advanced techniques in R. This workshop is run for the Ngorongoro Conservation Area Authority, which allows local conservation managers to use weather data for their conservation goals. 
+
+:::
+<img src="images/NCAA_workshop.JPG" style="display:block; margin-left:auto; margin-right:auto; width:50%">
+
 ## Former teaching
 
 :::float-right
