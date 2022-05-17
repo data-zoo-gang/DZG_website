@@ -101,9 +101,21 @@ After his PhD, Loïc worked as a high-school teacher, and he is now a full time 
 
 Not quite members, not quite collaborators, but very close to us all the same!
 
-### [Zimai Li](https://www.ulrichlab.com/zimai-li) 🇨🇳
+### [Jörns Fickel](https://www.izw-berlin.de/en/joerns-fickel-en.html) 🇩🇪 {#joerns_fickel}
 
 :::float-right
+<img src="images/joerns_fickel.jpg" width="200px">
+Jörns Fickel is the wise [Sensei](https://en.wikipedia.org/wiki/Sensei) in charge of the IZW [Department of Evolutionary Genetics](https://www.izw-berlin.de/en/department-of-evolutionary-genetics.html) to which we belong.
+He is also leading the [course on conservation genetics](teaching.html#teaching_conservation_genetics) to which we contribute.
+We are delighted that he has our back, and effectively defend our interests within the IZW and beyond.
+:::
+
+### Ilja Heckmann 🇰🇿🇩🇪
+Ilja is a biologist colleague turned full time python programmer and Linux admin from whom we never stop learning.
+
+### [Zimai Li](https://www.ulrichlab.com/zimai-li) 🇨🇳
+
+:::float-left
 <img src="images/zimai_li.jpg" width="200px">
 Zimai worked with us on our R package {hyneaR} while doing an internship with colleagues from the [hyena project](https://hyena-project.com) on mate choice in spotted hyenas.
 After his stay with us, he joined [Yuko Ulrich](https://www.ulrichlab.com/yuko-ulrich) to study interactions between infections and behaviour in clonal raider ants.
@@ -111,29 +123,25 @@ After his stay with us, he joined [Yuko Ulrich](https://www.ulrichlab.com/yuko-u
 
 ### [Matthias Gallipaud](https://ch.linkedin.com/in/matthias-galipaud-980a241a1) 🇫🇷
 
-:::float-left
+:::float-right
 <img src="images/matthias_gallipaud.jpg" width="200px">
 Matthias is a long standing idea bouncer for the DZG.
 He did his PhD with [François Xavier Dechaume-Moncharmont](http://www.fxdm.org) who was in Dijon at the time (now in Lyon) and then a postdoc with [Hanna Kokko](http://www.kokkonuts.org/) in Zurich, Switzerland.
 Matthias stayed in Zurich and is currently a data scientist working for [UrbanDataLab](https://urbandatalab.ch), a startup specialising in GIS and spatial analyses. He also does statistical consulting, on the side, as a [freelancer](https://www.upwork.com/freelancers/~01ea2e83906c8e5a7c?suggest-vem-skills).
 :::
 
-### Ilja Heckmann 🇰🇿🇩🇪
-Ilja is a biologist colleague turned full time python programmer and Linux admin from whom we never stop learning.
-
-
 ## Main collaborators
 
 ### [François Rousset](https://kimura.univ-montp2.fr/~rousset) 🇫🇷{#FR}
 
-:::float-right
+:::float-left
 <img src="images/francois_rousset.jpg" width="200px">
 François is a theoretical biologist at the [Institut des Sciences de l'Evolution in Montpellier](https://isem-evolution.fr), France, turned hardcore statistician, author of R package {spaMM} without which we could not do half the work we do.
 :::
 
 ### [Oliver Höner](https://www.izw-berlin.de/en/oliver-patrick-hoener-en.html) 🇨🇭🇧🇷
 
-:::float-left
+:::float-right
 <img src="images/oliver_hoener.jpg" width="200px">
 Oliver is the leader of the [hyena project](https://hyena-project.com).
 He's a behavioral ecologist and field biologist who turns anything hyena related into high quality datasets.
@@ -143,7 +151,7 @@ Oliver is based in the department of Evolutionary Ecology at the [IZW](https://w
 
 ### [Viktoriia Radchuk](https://www.viktoriiaradchuk.com/) 🇺🇦
 
-:::float-right
+:::float-left
 <img src="images/viktoriia_radchuk.jpg" width="200px">
 Viktoriia is an individual-based modeler and the producer of big collaborative meta-analyses.
 Like us she flourishes at the interface between field and theory.
@@ -152,14 +160,14 @@ She is a key member of the department of [Ecological Dynamics](https://ecologica
 
 ### [Stephanie Kramer-Schadt](https://www.izw-berlin.de/en/stephanie-kramer-schadt-en.html) 🇩🇪
 
-:::float-left
+:::float-right
 <img src="images/stephanie_kramer.jpg" width="200px">
 Stephanie is head of the excellent department [Ecological Dynamics](https://ecological-dynamics-izw.com/) at the [IZW](https://www.izw-berlin.de/en/home.html) which is composed, almost exclusively, of great young scientists and students with strong quantitative skills.
 :::
 
 ### [Kseniia Kravchenko](https://www.researchgate.net/profile/Kseniia-Kravchenko) 🇺🇦
 
-:::float-right
+:::float-left
 <img src="images/kseniia_kravchenko.jpg" width="200px">
 Kseniia has freshly finished her PhD at the [BatLab](https://www.batlab.de) from the [IZW](https://www.izw-berlin.de/en/home.html).
 She is a batwomen with whom we try to predict the future distribution of hibernation niches by combining physiology and climate change.
@@ -167,14 +175,14 @@ She is a batwomen with whom we try to predict the future distribution of hiberna
 
 ### [Christian Voigt](https://www.izw-berlin.de/en/christian-voigt-en.html) 🇩🇪
 
-:::float-left
+:::float-right
 <img src="images/christian_voigt.jpg" width="200px">
 Christian is head of the department of Evolutionary Ecology at the [IZW](https://www.izw-berlin.de/en/home.html) and head of the [BatLab](https://www.batlab.de). His large team studies the ecophysiology of bats, as well as various topics relevant for the conservation of bats, such as their migration.
 :::
 
 ### [Virpi Lummaa](https://www.utu.fi/en/people/virpi-lummaa) 🇫🇮{#VL}
 
-:::float-right
+:::float-left
 <img src="images/virpi_lummaa.jpg" width="200px">
 Virpi is the life history data queen who has produced two of the very best demographic datasets that exist (one on pre-industrial humans and one on Asian Elephants).
 She is head of the [human life history science group](https://human-life-history.science) and of the [Myanmar Timber Elephant Project](https://elephant-project.science) at the [University of Turku](https://www.utu.fi/en) in Finland.

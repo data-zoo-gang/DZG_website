@@ -61,9 +61,9 @@ On days 4-5, he introduces linear models (LM, GLM) and a few other parametric te
 :::float-right
 <img src="images/UP.jpg" width="100px">
 
-### Conservation Genetics
+### Conservation Genetics {#teaching_conservation_genetics}
 
-Alex and Liam perform some of the teaching of a course on Conservation Genetics (Naturschutzgenetik) organised by [Jörns Fickel]() for the [University of Potsdam](https://www.uni-potsdam.de/en/university-of-potsdam?land=Irland).
+Alex and Liam perform some of the teaching of a course on Conservation Genetics (Naturschutzgenetik) organised by [Jörns Fickel](gang.html#joerns_fickel) for the [University of Potsdam](https://www.uni-potsdam.de/en/university-of-potsdam?land=Irland).
 
 Alex teaches a 1-day course on R for genetics and genomics with [Daniel Förster](https://www.izw-berlin.de/en/daniel-foerster-en.html).
 
