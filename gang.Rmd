@@ -145,8 +145,8 @@ François is a theoretical biologist at the [Institut des Sciences de l'Evolutio
 <img src="images/oliver_hoener.jpg" width="200px">
 Oliver is the leader of the [hyena project](https://hyena-project.com).
 He's a behavioral ecologist and field biologist who turns anything hyena related into high quality datasets.
-We also collaborate intensively with his students -- currently [Eve Davidian](https://www.researchgate.net/profile/Eve-Davidian) and [Arjun Dheer](https://arjdheer.com/).
 Oliver is based in the department of Evolutionary Ecology at the [IZW](https://www.izw-berlin.de/en/home.html).
+We also collaborate intensively with Oliver's student(s) -- currently [Arjun Dheer](https://arjdheer.com/) -- and with other members of the project, especially co-leader [Eve Davidian](https://www.researchgate.net/profile/Eve-Davidian).
 :::
 
 ### [Viktoriia Radchuk](https://www.viktoriiaradchuk.com/) 🇺🇦
