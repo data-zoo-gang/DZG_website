@@ -30,7 +30,7 @@ Here are some representative examples of the training & consulting we are curren
 
 - development of R packages and advanced R training for all data scientists at [Factworks](https://www.factworks.com), a market research and analytics company.
 
-- support in statistical analyses for the Nature and Biodiversity Conservation Union in Germany ([NABU](https://en.nabu.de)), the World Wildlife Foundation ([WWF](https://www.worldwildlife.org/)) and the conservation NGO [rewild](https://www.rewild.org).
+- support in statistical analyses for the Nature and Biodiversity Conservation Union in Germany ([NABU](https://en.nabu.de)), the World Wildlife Fund ([WWF](https://www.worldwildlife.org/)) and the conservation NGO [rewild](https://www.rewild.org).
 
 Just [write to us](mailto: courtiol@izw-berlin.de) and we will happily put you in contact with people we worked with for you to get direct feedback on how they perceived our work.
 
