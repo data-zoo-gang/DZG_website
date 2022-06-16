@@ -69,9 +69,9 @@ maketab <- function(tags, bib, position = "left", title = FALSE) {
 }
 ```
 
-Publications are sorted by multiple criteria and you can jump directly to the following categories: [short selection](#best), [most recent](#recent), [taxonomic groups](#taxon), [themes](#themes).
+Publications are sorted by multiple criteria and you can jump directly to the following categories: [most recent](#recent), [selection](#best), [taxonomic groups](#taxon), [themes](#themes).
 
-**Hover on top of a publication to reveal its details** (or click if using a touch screen).
+**Hover on top of a reference to reveal its details** (or click if using a touch screen).
 
 Only publications created while being part of the Data Zoo Gang are listed here.
 For the full list of publications of a given team member, please refer to: 
@@ -88,8 +88,15 @@ For the full list of publications of a given team member, please refer to:
 [Ian J. Rickard](https://orcid.org/0000-0003-0762-1689),
 [Camille Martinez-Almoyna](https://orcid.org/0000-0002-3624-7932).
 
+## Most recent {#recent}
 
-## Short selection {#best}
+Our publications from the last 2 years are:
+
+```{r, echo=FALSE}
+maketab(tags = "recent", bib = bib, position = "center", title = TRUE)
+```
+
+## Selection {#best}
 
 Here is a short selection of recent DZG publications we are particularly proud of and which best reflect our involvement and mindset.
 
@@ -101,14 +108,6 @@ Here is a short selection of recent DZG publications we are particularly proud o
 - @corbett_transition_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/corbett_transition_2018.pdf) is a review of the causes and consequences of demographic transitions in humans, with an emphasis on human health -- published in *Nature Reviews Genetics*.
 - @lahdenpera_differences_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/lahdenpera_differences_2018.pdf) is a detailed study of how capture influences survival in Asian elephants -- published in *Nature Communications*.
 
-
-## Most recent {#recent}
-
-Our publications from the last 2 years are:
-
-```{r, echo=FALSE}
-maketab(tags = "recent", bib = bib, position = "center", title = TRUE)
-```
 
 ## Taxonomic groups {#taxon}
 
