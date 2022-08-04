@@ -27,7 +27,7 @@ Senior researcher, lecturer. Initially trained as an evolutionary biologist with
 :::float-right
 <img src="images/liam_bailey.jpg" width="200px">
 Member since 2018. [<i class='fa fa-twitter'></i>](https://twitter.com/ldbailey255).
-Postdoc. SHORT 3rd PERSON DESCRIPTION TODO.
+Postdoc. Liam is interested in understanding how ecosystems are affected by and respond to environmental change, particularly in the context of climate change. His research often involves long-term demographic datasets, and he loves using R and his experience as a data scientist to work with these data and answer scientific questions. While he started his research with birds, Liam has now branched out to include research with wild mammals. He also enjoys data visualization and teaching others how to visually communicate their ideas and scientific findings. 
 :::
 
 ## Former members
