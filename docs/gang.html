@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -1030,10 +1031,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-top: 1.5em;
   }
 
-  .figure img {
-    width: 100%;
-  }
-
   .figure .caption {
     color: rgba(0, 0, 0, 0.6);
     font-size: 12px;
@@ -1863,6 +1860,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
           return "<p>" + $('#ref-' + ref).html() + "</p>";
@@ -1877,6 +1880,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1976,6 +2004,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1998,7 +2028,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2173,46 +2203,62 @@ and biology.</p></p>
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#current-members">Current members</a>
+<li><a href="#current-members" id="toc-current-members">Current
+members</a>
 <ul>
-<li><a href="#alexandre-courtiol"><span>Alexandre Courtiol</span>
-🇫🇷</a></li>
-<li><a href="#liam-bailey"><span>Liam Bailey</span> 🇦🇺</a></li>
+<li><a href="#alexandre-courtiol"
+id="toc-alexandre-courtiol"><span>Alexandre Courtiol</span> 🇫🇷</a></li>
+<li><a href="#liam-bailey" id="toc-liam-bailey"><span>Liam Bailey</span>
+🇦🇺</a></li>
 </ul></li>
-<li><a href="#former-members">Former members</a>
+<li><a href="#former-members" id="toc-former-members">Former members</a>
 <ul>
-<li><a href="#colin-vullioud"><span>Colin Vullioud</span> 🇨🇭</a></li>
-<li><a href="#elisa-donati"><span>Elisa Donati</span> 🇮🇹</a></li>
-<li><a href="#louise-chevalier">Louise Chevalier 🇫🇷</a></li>
-<li><a href="#ian-rickard"><span>Ian Rickard</span> 🇬🇧</a></li>
-<li><a href="#robert-schwieger"><span>Robert Schwieger</span>
+<li><a href="#colin-vullioud" id="toc-colin-vullioud"><span>Colin
+Vullioud</span> 🇨🇭</a></li>
+<li><a href="#elisa-donati" id="toc-elisa-donati"><span>Elisa
+Donati</span> 🇮🇹</a></li>
+<li><a href="#louise-chevalier" id="toc-louise-chevalier">Louise
+Chevalier 🇫🇷</a></li>
+<li><a href="#ian-rickard" id="toc-ian-rickard"><span>Ian Rickard</span>
+🇬🇧</a></li>
+<li><a href="#robert-schwieger" id="toc-robert-schwieger"><span>Robert
+Schwieger</span> 🇩🇪</a></li>
+<li><a href="#camille-martinez-almoyna"
+id="toc-camille-martinez-almoyna"><span>Camille Martinez Almoyna</span>
+🇫🇷</a></li>
+<li><a href="#loïc-etienne" id="toc-loïc-etienne">Loïc Etienne
+🇫🇷</a></li>
+</ul></li>
+<li><a href="#friends" id="toc-friends">Friends</a>
+<ul>
+<li><a href="#joerns_fickel" id="toc-joerns_fickel"><span>Jörns
+Fickel</span> 🇩🇪</a></li>
+<li><a href="#ilja-heckmann" id="toc-ilja-heckmann">Ilja Heckmann
+🇰🇿🇩🇪</a></li>
+<li><a href="#zimai-li" id="toc-zimai-li"><span>Zimai Li</span>
+🇨🇳</a></li>
+<li><a href="#matthias-gallipaud"
+id="toc-matthias-gallipaud"><span>Matthias Gallipaud</span> 🇫🇷</a></li>
+</ul></li>
+<li><a href="#main-collaborators" id="toc-main-collaborators">Main
+collaborators</a>
+<ul>
+<li><a href="#FR" id="toc-FR"><span>François Rousset</span> 🇫🇷</a></li>
+<li><a href="#oliver-höner" id="toc-oliver-höner"><span>Oliver
+Höner</span> 🇨🇭🇧🇷</a></li>
+<li><a href="#viktoriia-radchuk"
+id="toc-viktoriia-radchuk"><span>Viktoriia Radchuk</span> 🇺🇦</a></li>
+<li><a href="#stephanie-kramer-schadt"
+id="toc-stephanie-kramer-schadt"><span>Stephanie Kramer-Schadt</span>
 🇩🇪</a></li>
-<li><a href="#camille-martinez-almoyna"><span>Camille Martinez
-Almoyna</span> 🇫🇷</a></li>
-<li><a href="#loïc-etienne">Loïc Etienne 🇫🇷</a></li>
+<li><a href="#kseniia-kravchenko"
+id="toc-kseniia-kravchenko"><span>Kseniia Kravchenko</span> 🇺🇦</a></li>
+<li><a href="#christian-voigt" id="toc-christian-voigt"><span>Christian
+Voigt</span> 🇩🇪</a></li>
+<li><a href="#VL" id="toc-VL"><span>Virpi Lummaa</span> 🇫🇮</a></li>
 </ul></li>
-<li><a href="#friends">Friends</a>
-<ul>
-<li><a href="#joerns_fickel"><span>Jörns Fickel</span> 🇩🇪</a></li>
-<li><a href="#ilja-heckmann">Ilja Heckmann 🇰🇿🇩🇪</a></li>
-<li><a href="#zimai-li"><span>Zimai Li</span> 🇨🇳</a></li>
-<li><a href="#matthias-gallipaud"><span>Matthias Gallipaud</span>
-🇫🇷</a></li>
-</ul></li>
-<li><a href="#main-collaborators">Main collaborators</a>
-<ul>
-<li><a href="#FR"><span>François Rousset</span> 🇫🇷</a></li>
-<li><a href="#oliver-höner"><span>Oliver Höner</span> 🇨🇭🇧🇷</a></li>
-<li><a href="#viktoriia-radchuk"><span>Viktoriia Radchuk</span>
-🇺🇦</a></li>
-<li><a href="#stephanie-kramer-schadt"><span>Stephanie
-Kramer-Schadt</span> 🇩🇪</a></li>
-<li><a href="#kseniia-kravchenko"><span>Kseniia Kravchenko</span>
-🇺🇦</a></li>
-<li><a href="#christian-voigt"><span>Christian Voigt</span> 🇩🇪</a></li>
-<li><a href="#VL"><span>Virpi Lummaa</span> 🇫🇮</a></li>
-</ul></li>
-<li><a href="#collaborators-wishlist">Collaborators wishlist</a></li>
+<li><a href="#collaborators-wishlist"
+id="toc-collaborators-wishlist">Collaborators wishlist</a></li>
 </ul>
 </nav>
 </div>
@@ -2265,8 +2311,8 @@ came to program virtual hyenas and to work on our R package {hyneaR}.
 She did this between a master’s thesis on lizards and a research project
 that involved setting up a complex simulation platform so as to model
 the coastal ecosystem of Venice, with a view to allowing sustainable
-exploitation by humans. She is now looking for a PhD in Italy (too bad
-for us, otherwise we would have kept her here in Berlin!).</p>
+exploitation by humans. She now continues modelling coastal ecosystems,
+this time as a PhD student in Trieste, Italy.</p>
 </div>
 <h3 id="louise-chevalier">Louise Chevalier 🇫🇷</h3>
 <div class="float-left">
@@ -2382,12 +2428,14 @@ Höner</a> 🇨🇭🇧🇷</h3>
 <p><img src="images/oliver_hoener.jpg" width="200px"> Oliver is the
 leader of the <a href="https://hyena-project.com">hyena project</a>.
 He’s a behavioral ecologist and field biologist who turns anything hyena
-related into high quality datasets. We also collaborate intensively with
-his students – currently <a
+related into high quality datasets. Oliver is based in the department of
+Evolutionary Ecology at the <a
+href="https://www.izw-berlin.de/en/home.html">IZW</a>. We also
+collaborate intensively with Oliver’s student(s) – currently <a
+href="https://arjdheer.com/">Arjun Dheer</a> – and with other members of
+the project, especially co-leader <a
 href="https://www.researchgate.net/profile/Eve-Davidian">Eve
-Davidian</a> and <a href="https://arjdheer.com/">Arjun Dheer</a>. Oliver
-is based in the department of Evolutionary Ecology at the <a
-href="https://www.izw-berlin.de/en/home.html">IZW</a>.</p>
+Davidian</a>.</p>
 </div>
 <h3 id="viktoriia-radchuk"><a
 href="https://www.viktoriiaradchuk.com/">Viktoriia Radchuk</a> 🇺🇦</h3>

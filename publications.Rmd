@@ -69,9 +69,9 @@ maketab <- function(tags, bib, position = "left", title = FALSE) {
 }
 ```
 
-Publications are sorted by multiple criteria and you can jump directly to the following categories: [short selection](#best), [most recent](#recent), [taxonomic groups](#taxon), [themes](#themes).
+Publications are sorted by multiple criteria and you can jump directly to the following categories: [most recent](#recent), [selection](#best), [taxonomic groups](#taxon), [themes](#themes).
 
-**Hover on top of a publication to reveal its details** (or click if using a touch screen).
+**Hover on top of a reference to reveal its details** (or click if using a touch screen).
 
 Only publications created while being part of the Data Zoo Gang are listed here.
 For the full list of publications of a given team member, please refer to: 
@@ -88,19 +88,6 @@ For the full list of publications of a given team member, please refer to:
 [Ian J. Rickard](https://orcid.org/0000-0003-0762-1689),
 [Camille Martinez-Almoyna](https://orcid.org/0000-0002-3624-7932).
 
-
-## Short selection {#best}
-
-Here is a short selection of recent DZG publications we are particularly proud of and which best reflect our involvement and mindset.
-
-- @bailey_bird_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/bailey_bird_2022.pdf) is a meta-analysis of 67 populations of great and blue tits investigating the link between the phenotypic plasticity on their phenology and climate change -- published in *Nature Communications*.
-- @culina_connecting_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/culina_connecting_2021.pdf) is a paper announcing the creation of the SPI-Birds network and its database for long-term population studies on birds -- published in *Journal of Animal Ecology*.
-- @radchuk_adaptive_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/radchuk_adaptive_2019.pdf) is a meta-analysis quantifying precisely the extent to which animals (mostly birds) are adapting to changing climate -- published in *Nature Communications*.
-- @vullioud_social_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/vullioud_social_2019.pdf) is an in-depth study of social hierarchy in spotted hyenas revealing how social rank emerges from simple behavioural rules -- published in *Nature Ecology & Evolution*.
-- @corbett_transition_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/corbett_transition_2018.pdf) is a review of the causes and consequences of demographic transitions in humans, with an emphasis on human health -- published in *Nature Reviews Genetics*.
-- @lahdenpera_differences_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/lahdenpera_differences_2018.pdf) is a detailed study of how capture influences survival in Asian elephants -- published in *Nature Communications*.
-
-
 ## Most recent {#recent}
 
 Our publications from the last 2 years are:
@@ -108,6 +95,19 @@ Our publications from the last 2 years are:
 ```{r, echo=FALSE}
 maketab(tags = "recent", bib = bib, position = "center", title = TRUE)
 ```
+
+## Selection {#best}
+
+Here is a short selection of recent DZG publications we are particularly proud of and which best reflect our involvement and mindset.
+
+- @rickard_mothers_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/rickard_mothers_2022.pdf) is paper investigating the relationship between twinning and fertility in Humans and illustrating a new type of Simpson's paradox -- published in *Nature Communications*.
+- @bailey_bird_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/bailey_bird_2022.pdf) is a meta-analysis of 67 populations of great and blue tits investigating the link between the phenotypic plasticity on their phenology and climate change -- published in *Nature Communications*.
+- @culina_connecting_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/culina_connecting_2021.pdf) is a paper announcing the creation of the SPI-Birds network and its database for long-term population studies on birds -- published in *Journal of Animal Ecology*.
+- @radchuk_adaptive_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/radchuk_adaptive_2019.pdf) is a meta-analysis quantifying precisely the extent to which animals (mostly birds) are adapting to changing climate -- published in *Nature Communications*.
+- @vullioud_social_2019 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/vullioud_social_2019.pdf) is an in-depth study of social hierarchy in spotted hyenas revealing how social rank emerges from simple behavioural rules -- published in *Nature Ecology & Evolution*.
+- @corbett_transition_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/corbett_transition_2018.pdf) is a review of the causes and consequences of demographic transitions in humans, with an emphasis on human health -- published in *Nature Reviews Genetics*.
+- @lahdenpera_differences_2018 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/lahdenpera_differences_2018.pdf) is a detailed study of how capture influences survival in Asian elephants -- published in *Nature Communications*.
+
 
 ## Taxonomic groups {#taxon}
 

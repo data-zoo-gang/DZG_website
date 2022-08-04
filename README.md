@@ -14,6 +14,7 @@ if (!requireNamespace("distill"))    install.packages("distill")
 if (!requireNamespace("tibble"))     install.packages("tibble")
 if (!requireNamespace("tidyr"))      install.packages("tidyr")
 if (!requireNamespace("RefManageR")) install.packages("RefManageR")
+if (!requireNamespace("bibtex")) install.packages("bibtex")
 if (!requireNamespace("kableExtra")) install.packages("kableExtra")
 if (!requireNamespace("stringr"))    install.packages("stringr")
 ```
