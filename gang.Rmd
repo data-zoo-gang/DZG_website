@@ -48,7 +48,7 @@ He is also an artist who has started to include R in his projects.
 :::float-right
 <img src="images/elisa_donati.jpg" width="200px">
 Member 2020. 
-Elisa came to program virtual hyenas and to work on our R package {hyneaR}.
+Elisa came to program virtual hyenas and to work on our R package {hyenaR}.
 She did this between a master's thesis on lizards and a research project that involved setting up a complex simulation platform so as to model the coastal ecosystem of Venice, with a view to allowing sustainable exploitation by humans.
 She now continues modelling coastal ecosystems, this time as a PhD student in Trieste, Italy.
 :::
@@ -118,7 +118,7 @@ Ilja is a biologist colleague turned full time python programmer and Linux admin
 
 :::float-left
 <img src="images/zimai_li.jpg" width="200px">
-Zimai worked with us on our R package {hyneaR} while doing an internship with colleagues from the [hyena project](https://hyena-project.com) on mate choice in spotted hyenas.
+Zimai worked with us on our R package {hyenaR} while doing an internship with colleagues from the [hyena project](https://hyena-project.com) on mate choice in spotted hyenas.
 After his stay with us, he joined [Yuko Ulrich](https://www.ulrichlab.com/yuko-ulrich) to study interactions between infections and behaviour in clonal raider ants.
 :::
 
