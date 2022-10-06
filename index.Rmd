@@ -13,9 +13,18 @@ The Data Zoo Gang is [a small team of scientists](gang.html) (mostly biologists)
 
 We all love mammals, birds, computers and [R](https://www.r-project.org/).
 
-```{r, fig.align='center', out.width=200}
+```{r, eval=FALSE}
 knitr::include_graphics(path = "images/great_tit.jpg") # this is R code
 ```
+
+<!-- actually we don't run the R code here, to be able to have a caption without "Figure 1"... there may be a better way -->
+:::float-center
+<figure>
+<img src="images/great_tit.jpg">
+<figcaption>© Alexandre Courtiol</figcaption>
+</figure>
+:::
+
 
 We enjoy collaborating with people -- whoever they are -- as long as they want to discover something cool and not too obvious about their favorite species.
 

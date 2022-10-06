@@ -13,8 +13,8 @@ All courses are taught in English.
 
 ## Current teaching and workshops
 
-:::float-right
-<img src="images/FU.png" width="100px">
+:::float-right-teaching
+<img src="images/FU.png">
 
 ### Data science for biologists: Generalized linear modelling with R
 
@@ -34,8 +34,8 @@ They will also learn how to translate a concrete biological problem into a GLM.
 All that is done with the open source software R, which is the most popular software for data science in the world.
 :::
 
-:::float-right
-<img src="images/IZW.jpg" width="100px">
+:::float-right-teaching
+<img src="images/IZW.jpg">
 
 ### Introductory course: Solving problems in biostatistical analysis and experimental design in the Life Sciences
 
@@ -58,8 +58,8 @@ On days 3-4, he introduces several useful non-parametric tests.
 On days 4-5, he introduces linear models (LM, GLM) and a few other parametric tests that are good to know.
 :::
 
-:::float-right
-<img src="images/UP.jpg" width="100px">
+:::float-right-teaching
+<img src="images/UP.jpg">
 
 ### Conservation Genetics {#teaching_conservation_genetics}
 
@@ -70,8 +70,8 @@ Alex teaches a 1-day course on R for genetics and genomics with [Daniel Förster
 Liam teaches an introduction to R.
 :::
 
-:::float-right
-<img src="images/IZW.jpg" width="100px">
+:::float-right-teaching
+<img src="images/IZW.jpg">
 
 ### International summer school on stable isotopes in Animal Ecology
 
@@ -80,8 +80,8 @@ Every other year, [Christian Voigt](https://www.izw-berlin.de/en/christian-voigt
 In this context, Alex gives a 1-day course on how to use [IsoriX](packages.html#main_packages), an R package that can be used to infer the origin of migratory lifeforms based on their isotopic signatures.
 :::
 
-:::float-right
-<img src="images/NCAA_logo.png" width="70px">
+:::float-right-teaching
+<img src="images/NCAA_logo.png">
 
 ### Working with weather station data in Ngorongoro Crater
 
@@ -94,8 +94,8 @@ knitr::include_graphics(path = "images/NCAA_workshop.jpg")
 
 ## Former teaching
 
-:::float-right
-<img src="images/IZW.jpg" width="100px">
+:::float-right-teaching
+<img src="images/IZW.jpg">
 
 ### Advanced course: Solving problems in biostatistical analysis and experimental design in the Life Sciences
 
@@ -108,20 +108,22 @@ The course is no longer running since it became redundant with the fortnightly s
 
 ### Other former courses
 
-:::float-right
-<img src="images/FU.png" width="70px">
+:::float-right-teaching
+<img src="images/FU.png">
 - In Berlin (Germany), Alex has taught the course **Current and classic topics in Evolution and Ecology** at the Freie Universität, to replace [Jens Rolff](https://www.bcp.fu-berlin.de/en/biologie/arbeitsgruppen/zoologie/ag_rolff/index.html) who was on sabbatical.
 :::
-:::float-right
-<img src="images/USh.png" width="70px">
+:::float-right-teaching
+<img src="images/USh.png">
 - In Sheffield (UK), during his postdoc, Alex taught an introduction to R with [Andrew Beckerman](https://andbeck.github.io/beckslab/).
 :::
-:::float-right
-<img src="images/UM.png" width="70px">
+:::float-right-teaching
+<img src="images/UM.png">
 - In Montpellier (France), during his PhD, Alex taught population genetics and various practicals in ecology.
 :::
 
-```{r, fig.align='center', out.width=200, echo=FALSE}
-knitr::include_graphics(path = "images/african_elephant.jpg")
-```
-
+:::float-center
+<figure>
+<img src="images/african_elephant.jpg">
+<figcaption>© Alexandre Courtiol</figcaption>
+</figure>
+:::

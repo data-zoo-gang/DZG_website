@@ -116,7 +116,10 @@ We mostly work on birds and mammals (including humans) but sometimes venture to 
 ### Arthropods {#taxon_arthropod}
 
 :::float-right
-<img src="images/droso.jpg" width="200px">
+<figure>
+<img src="images/droso.jpg">
+<figcaption>© Alain Debelle</figcaption>
+</figure>
 ```{r, echo=FALSE}
 maketab(tags = "taxon_arthropod", bib = bib, position = "left")
 ```
@@ -126,7 +129,10 @@ maketab(tags = "taxon_arthropod", bib = bib, position = "left")
 ### Bats {#taxon_bat}
 
 :::float-left
-<img src="images/bat_costarica.jpg" width="200px">
+<figure>
+<img src="images/bat_costarica.jpg">
+<figcaption>© Alexandre Courtiol</figcaption>
+</figure>
 ```{r, echo=FALSE}
 maketab(tags = "taxon_bat", bib = bib, position = "right")
 ```
@@ -135,7 +141,10 @@ maketab(tags = "taxon_bat", bib = bib, position = "right")
 ### Birds {#taxon_bird}
 
 :::float-right
-<img src="images/flamingo.jpg" width="200px">
+<figure>
+<img src="images/flamingo.jpg">
+<figcaption>© Alexandre Courtiol</figcaption>
+</figure>
 ```{r, echo=FALSE}
 maketab(tags = "taxon_bird", bib = bib, position = "left")
 ```
@@ -143,7 +152,10 @@ maketab(tags = "taxon_bird", bib = bib, position = "left")
 
 ### Carnivores {#taxon_carnivore}
 :::float-left
-<img src="images/hyena_portrait.jpg" width="200px">
+<figure>
+<img src="images/hyena_portrait.jpg">
+<figcaption>© Alexandre Courtiol</figcaption>
+</figure>
 ```{r, echo=FALSE}
 maketab(tags = "taxon_carnivore", bib = bib, position = "right")
 ```
@@ -152,7 +164,10 @@ maketab(tags = "taxon_carnivore", bib = bib, position = "right")
 ### Elephants {#taxon_elephant}
 
 :::float-right
-<img src="images/asian_elephant_working.jpg" width="200px">
+<figure>
+<img src="images/asian_elephant_working.jpg">
+<figcaption>© Alexandre Courtiol</figcaption>
+</figure>
 ```{r, echo=FALSE}
 maketab(tags = "taxon_elephant", bib = bib, position = "left")
 ```
@@ -167,7 +182,10 @@ maketab(tags = "taxon_marsupial", bib = bib, position = "right")
 ### Plants {#taxon_plant}
 
 :::float-right
-<img src="images/leucadendron_rubrum.jpg" width="200px">
+<figure>
+<img src="images/leucadendron_rubrum.jpg">
+<figcaption>© Alexandre Courtiol</figcaption>
+</figure>
 ```{r, echo=FALSE}
 maketab(tags = "taxon_plant", bib = bib, position = "left")
 ```
@@ -175,7 +193,10 @@ maketab(tags = "taxon_plant", bib = bib, position = "left")
 
 ### Primates (including humans) {#taxon_primate}
 :::float-left
+<figure>
 <img src="images/baboon_tsaobis.jpg" width="200px">
+<figcaption>© Alexandre Courtiol</figcaption>
+</figure>
 ```{r, echo=FALSE}
 maketab(tags = "taxon_primate", bib = bib, position = "right")
 ```
@@ -184,7 +205,10 @@ maketab(tags = "taxon_primate", bib = bib, position = "right")
 ### Rodents {#taxon_rodent}
 
 :::float-right
-<img src="images/porcupine.jpg" width="200px">
+<figure>
+<img src="images/porcupine.jpg">
+<figcaption>© Alexandre Courtiol</figcaption>
+</figure>
 ```{r, echo=FALSE}
 maketab(tags = "taxon_rodent", bib = bib, position = "left")
 ```
@@ -192,7 +216,10 @@ maketab(tags = "taxon_rodent", bib = bib, position = "left")
 
 ### Ungulates {#taxon_ungulate}
 :::float-left
-<img src="images/zebra_southafrica.jpg" width="200px">
+<figure>
+<img src="images/zebra_southafrica.jpg">
+<figcaption>© Alexandre Courtiol</figcaption>
+</figure>
 ```{r, echo=FALSE}
 maketab(tags = "taxon_ungulate", bib = bib, position = "right")
 ```
@@ -200,9 +227,15 @@ maketab(tags = "taxon_ungulate", bib = bib, position = "right")
 
 ### Viruses {#taxon_virus}
 
+:::float-right
+<figure>
+<img src="images/virus.jpg">
+<figcaption>© Zimai Li</figcaption>
+</figure>
 ```{r, echo=FALSE}
 maketab(tags = "taxon_virus", bib = bib, position = "left")
 ```
+:::
 
 ### All & none (purely theoretical) {#taxon_none}
 
