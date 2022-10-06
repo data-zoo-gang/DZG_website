@@ -2054,14 +2054,46 @@
     }
 
 
-  .float-left img {
-      float:left;
-      padding: 5px 10px 0px 0px;
+  .float-center > img, .float-center figure {
+      text-align:center;
+      width:200px;
+      padding-top:0;
+      margin: auto;
   }
 
-  .float-right img {
+  .float-left > img, .float-left figure {
+      float:left;
+      width:200px;
+      padding-top:0;
+      margin:0;
+  }
+
+  .float-right > img, .float-right figure {
       float:right;
-      padding: 5px 10px 0px 0px;
+      width:200px;
+      padding-top:0;
+      margin:0;
+  }
+
+  .float-right figcaption {
+    text-align:right;
+  }
+
+  .float-right-gang img{
+    padding: 5px 10px 0px 0px;
+    float:right;
+    width:200px;
+  }
+
+  .float-left-gang img{
+    padding: 5px 10px 0px 0px;
+    float:left;
+    width:200px;
+  }
+
+  .float-right-teaching img{
+    float:right;
+    width:90px;
   }
 
   .tippy-box[data-theme~='light-border'] {

@@ -2132,14 +2132,46 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     }
 
 
-  .float-left img {
-      float:left;
-      padding: 5px 10px 0px 0px;
+  .float-center > img, .float-center figure {
+      text-align:center;
+      width:200px;
+      padding-top:0;
+      margin: auto;
   }
 
-  .float-right img {
+  .float-left > img, .float-left figure {
+      float:left;
+      width:200px;
+      padding-top:0;
+      margin:0;
+  }
+
+  .float-right > img, .float-right figure {
       float:right;
-      padding: 5px 10px 0px 0px;
+      width:200px;
+      padding-top:0;
+      margin:0;
+  }
+
+  .float-right figcaption {
+    text-align:right;
+  }
+
+  .float-right-gang img{
+    padding: 5px 10px 0px 0px;
+    float:right;
+    width:200px;
+  }
+
+  .float-left-gang img{
+    padding: 5px 10px 0px 0px;
+    float:left;
+    width:200px;
+  }
+
+  .float-right-teaching img{
+    float:right;
+    width:90px;
   }
 
   .tippy-box[data-theme~='light-border'] {
@@ -2228,7 +2260,15 @@ href="https://www.r-project.org/">R</a>.</p>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>knitr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/knitr/man/include_graphics.html'>include_graphics</a></span><span class='op'>(</span>path <span class='op'>=</span> <span class='st'>"images/great_tit.jpg"</span><span class='op'>)</span> <span class='co'># this is R code</span></span></code></pre>
 </div>
-<p><img src="images/great_tit.jpg" width="200" style="display: block; margin: auto;" /></p>
+</div>
+<!-- actually we don't run the R code here, to be able to have a caption without "Figure 1"... there may be a better way -->
+<div class="float-center">
+<figure>
+<img src="images/great_tit.jpg">
+<figcaption>
+© Alexandre Courtiol
+</figcaption>
+</figure>
 </div>
 <p>We enjoy collaborating with people – whoever they are – as long as
 they want to discover something cool and not too obvious about their

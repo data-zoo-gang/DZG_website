@@ -2163,14 +2163,46 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     }
 
 
-  .float-left img {
-      float:left;
-      padding: 5px 10px 0px 0px;
+  .float-center > img, .float-center figure {
+      text-align:center;
+      width:200px;
+      padding-top:0;
+      margin: auto;
   }
 
-  .float-right img {
+  .float-left > img, .float-left figure {
+      float:left;
+      width:200px;
+      padding-top:0;
+      margin:0;
+  }
+
+  .float-right > img, .float-right figure {
       float:right;
-      padding: 5px 10px 0px 0px;
+      width:200px;
+      padding-top:0;
+      margin:0;
+  }
+
+  .float-right figcaption {
+    text-align:right;
+  }
+
+  .float-right-gang img{
+    padding: 5px 10px 0px 0px;
+    float:right;
+    width:200px;
+  }
+
+  .float-left-gang img{
+    padding: 5px 10px 0px 0px;
+    float:left;
+    width:200px;
+  }
+
+  .float-right-teaching img{
+    float:right;
+    width:90px;
   }
 
   .tippy-box[data-theme~='light-border'] {
@@ -2570,7 +2602,12 @@ elephants – published in <em>Nature Communications</em>.</li>
 venture to study other lifeforms, as well as viruses.</p>
 <h3 id="taxon_arthropod">Arthropods</h3>
 <div class="float-right">
-<img src="images/droso.jpg" width="200px">
+<figure>
+<img src="images/droso.jpg">
+<figcaption>
+© Alain Debelle
+</figcaption>
+</figure>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table" style>
 <thead>
@@ -2599,7 +2636,12 @@ href="pdfs/debelle_mate_2017.pdf"><img src="images/pdf.png" width="20px" style="
 </div>
 <h3 id="taxon_bat">Bats</h3>
 <div class="float-left">
-<img src="images/bat_costarica.jpg" width="200px">
+<figure>
+<img src="images/bat_costarica.jpg">
+<figcaption>
+© Alexandre Courtiol
+</figcaption>
+</figure>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table" style="margin-right: 0; margin-left: auto">
 <thead>
@@ -2708,7 +2750,12 @@ href="pdfs/schneeberger_immune_2014.pdf"><img src="images/pdf.png" width="20px" 
 </div>
 <h3 id="taxon_bird">Birds</h3>
 <div class="float-right">
-<img src="images/flamingo.jpg" width="200px">
+<figure>
+<img src="images/flamingo.jpg">
+<figcaption>
+© Alexandre Courtiol
+</figcaption>
+</figure>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table" style>
 <thead>
@@ -2845,7 +2892,12 @@ href="pdfs/renoult_novel_2013.pdf"><img src="images/pdf.png" width="20px" style=
 </div>
 <h3 id="taxon_carnivore">Carnivores</h3>
 <div class="float-left">
-<img src="images/hyena_portrait.jpg" width="200px">
+<figure>
+<img src="images/hyena_portrait.jpg">
+<figcaption>
+© Alexandre Courtiol
+</figcaption>
+</figure>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table" style="margin-right: 0; margin-left: auto">
 <thead>
@@ -2992,7 +3044,12 @@ href="pdfs/wilting_planning_2015.pdf"><img src="images/pdf.png" width="20px" sty
 </div>
 <h3 id="taxon_elephant">Elephants</h3>
 <div class="float-right">
-<img src="images/asian_elephant_working.jpg" width="200px">
+<figure>
+<img src="images/asian_elephant_working.jpg">
+<figcaption>
+© Alexandre Courtiol
+</figcaption>
+</figure>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table" style>
 <thead>
@@ -3100,7 +3157,12 @@ href="pdfs/alfano_variation_2015.pdf"><img src="images/pdf.png" width="20px" sty
 </div>
 <h3 id="taxon_plant">Plants</h3>
 <div class="float-right">
-<img src="images/leucadendron_rubrum.jpg" width="200px">
+<figure>
+<img src="images/leucadendron_rubrum.jpg">
+<figcaption>
+© Alexandre Courtiol
+</figcaption>
+</figure>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table" style>
 <thead>
@@ -3129,7 +3191,12 @@ href="pdfs/tonnabel_sexspecific_2021.pdf"><img src="images/pdf.png" width="20px"
 </div>
 <h3 id="taxon_primate">Primates (including humans)</h3>
 <div class="float-left">
+<figure>
 <img src="images/baboon_tsaobis.jpg" width="200px">
+<figcaption>
+© Alexandre Courtiol
+</figcaption>
+</figure>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table" style="margin-right: 0; margin-left: auto">
 <thead>
@@ -3258,7 +3325,12 @@ href="pdfs/rickard_intergenerational_2012.pdf"><img src="images/pdf.png" width="
 </div>
 <h3 id="taxon_rodent">Rodents</h3>
 <div class="float-right">
-<img src="images/porcupine.jpg" width="200px">
+<figure>
+<img src="images/porcupine.jpg">
+<figcaption>
+© Alexandre Courtiol
+</figcaption>
+</figure>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table" style>
 <thead>
@@ -3308,7 +3380,12 @@ href="pdfs/sommer_mhc_2013.pdf"><img src="images/pdf.png" width="20px" style="fl
 </div>
 <h3 id="taxon_ungulate">Ungulates</h3>
 <div class="float-left">
-<img src="images/zebra_southafrica.jpg" width="200px">
+<figure>
+<img src="images/zebra_southafrica.jpg">
+<figcaption>
+© Alexandre Courtiol
+</figcaption>
+</figure>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table" style="margin-right: 0; margin-left: auto">
 <thead>
@@ -3379,6 +3456,13 @@ href="pdfs/speck_cationic_2014.pdf"><img src="images/pdf.png" width="20px" style
 </div>
 </div>
 <h3 id="taxon_virus">Viruses</h3>
+<div class="float-right">
+<figure>
+<img src="images/virus.jpg">
+<figcaption>
+© Zimai Li
+</figcaption>
+</figure>
 <div class="layout-chunk" data-layout="l-body">
 <table class="table" style>
 <thead>
@@ -3414,6 +3498,7 @@ href="pdfs/numberger_recovery_2019.pdf"><img src="images/pdf.png" width="20px" s
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 <h3 id="taxon_none">All &amp; none (purely theoretical)</h3>
 <div class="layout-chunk" data-layout="l-body">

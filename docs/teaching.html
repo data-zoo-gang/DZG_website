@@ -2132,14 +2132,46 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     }
 
 
-  .float-left img {
-      float:left;
-      padding: 5px 10px 0px 0px;
+  .float-center > img, .float-center figure {
+      text-align:center;
+      width:200px;
+      padding-top:0;
+      margin: auto;
   }
 
-  .float-right img {
+  .float-left > img, .float-left figure {
+      float:left;
+      width:200px;
+      padding-top:0;
+      margin:0;
+  }
+
+  .float-right > img, .float-right figure {
       float:right;
-      padding: 5px 10px 0px 0px;
+      width:200px;
+      padding-top:0;
+      margin:0;
+  }
+
+  .float-right figcaption {
+    text-align:right;
+  }
+
+  .float-right-gang img{
+    padding: 5px 10px 0px 0px;
+    float:right;
+    width:200px;
+  }
+
+  .float-left-gang img{
+    padding: 5px 10px 0px 0px;
+    float:left;
+    width:200px;
+  }
+
+  .float-right-teaching img{
+    float:right;
+    width:90px;
   }
 
   .tippy-box[data-theme~='light-border'] {
@@ -2218,8 +2250,8 @@ href="consulting.html#external">consulting</a>. All courses are taught
 in English.</p>
 <h2 id="current-teaching-and-workshops">Current teaching and
 workshops</h2>
-<div class="float-right">
-<p><img src="images/FU.png" width="100px"></p>
+<div class="float-right-teaching">
+<p><img src="images/FU.png"></p>
 <h3
 id="data-science-for-biologists-generalized-linear-modelling-with-r">Data
 science for biologists: Generalized linear modelling with R</h3>
@@ -2248,8 +2280,8 @@ datasets. They will also learn how to translate a concrete biological
 problem into a GLM. All that is done with the open source software R,
 which is the most popular software for data science in the world.</p>
 </div>
-<div class="float-right">
-<p><img src="images/IZW.jpg" width="100px"></p>
+<div class="float-right-teaching">
+<p><img src="images/IZW.jpg"></p>
 <h3
 id="introductory-course-solving-problems-in-biostatistical-analysis-and-experimental-design-in-the-life-sciences">Introductory
 course: Solving problems in biostatistical analysis and experimental
@@ -2289,8 +2321,8 @@ p-values, statistical power, multiple testing, replications… On days
 introduces linear models (LM, GLM) and a few other parametric tests that
 are good to know.</p>
 </div>
-<div class="float-right">
-<p><img src="images/UP.jpg" width="100px"></p>
+<div class="float-right-teaching">
+<p><img src="images/UP.jpg"></p>
 <h3 id="teaching_conservation_genetics">Conservation Genetics</h3>
 <p>Alex and Liam perform some of the teaching of a course on
 Conservation Genetics (Naturschutzgenetik) organised by <a
@@ -2302,8 +2334,8 @@ href="https://www.izw-berlin.de/en/daniel-foerster-en.html">Daniel
 Förster</a>.</p>
 <p>Liam teaches an introduction to R.</p>
 </div>
-<div class="float-right">
-<p><img src="images/IZW.jpg" width="100px"></p>
+<div class="float-right-teaching">
+<p><img src="images/IZW.jpg"></p>
 <h3
 id="international-summer-school-on-stable-isotopes-in-animal-ecology">International
 summer school on stable isotopes in Animal Ecology</h3>
@@ -2317,8 +2349,8 @@ href="packages.html#main_packages">IsoriX</a>, an R package that can be
 used to infer the origin of migratory lifeforms based on their isotopic
 signatures.</p>
 </div>
-<div class="float-right">
-<p><img src="images/NCAA_logo.png" width="70px"></p>
+<div class="float-right-teaching">
+<p><img src="images/NCAA_logo.png"></p>
 <h3 id="working-with-weather-station-data-in-ngorongoro-crater">Working
 with weather station data in Ngorongoro Crater</h3>
 <p>Liam teaches how to work with data from our network of weather
@@ -2334,8 +2366,8 @@ use weather data for their conservation goals.</p>
 <p><img src="images/NCAA_workshop.jpg" width="200" style="display: block; margin: auto;" /></p>
 </div>
 <h2 id="former-teaching">Former teaching</h2>
-<div class="float-right">
-<p><img src="images/IZW.jpg" width="100px"></p>
+<div class="float-right-teaching">
+<p><img src="images/IZW.jpg"></p>
 <h3
 id="advanced-course-solving-problems-in-biostatistical-analysis-and-experimental-design-in-the-life-sciences">Advanced
 course: Solving problems in biostatistical analysis and experimental
@@ -2351,25 +2383,29 @@ fortnightly statistical seminars at the IZW, which we co-organise with
 Heitlinger</a>.</p>
 </div>
 <h3 id="other-former-courses">Other former courses</h3>
-<div class="float-right">
-<p><img src="images/FU.png" width="70px"> - In Berlin (Germany), Alex
-has taught the course <strong>Current and classic topics in Evolution
-and Ecology</strong> at the Freie Universität, to replace <a
+<div class="float-right-teaching">
+<p><img src="images/FU.png"> - In Berlin (Germany), Alex has taught the
+course <strong>Current and classic topics in Evolution and
+Ecology</strong> at the Freie Universität, to replace <a
 href="https://www.bcp.fu-berlin.de/en/biologie/arbeitsgruppen/zoologie/ag_rolff/index.html">Jens
 Rolff</a> who was on sabbatical.</p>
 </div>
-<div class="float-right">
-<p><img src="images/USh.png" width="70px"> - In Sheffield (UK), during
-his postdoc, Alex taught an introduction to R with <a
+<div class="float-right-teaching">
+<p><img src="images/USh.png"> - In Sheffield (UK), during his postdoc,
+Alex taught an introduction to R with <a
 href="https://andbeck.github.io/beckslab/">Andrew Beckerman</a>.</p>
 </div>
-<div class="float-right">
-<p><img src="images/UM.png" width="70px"> - In Montpellier (France),
-during his PhD, Alex taught population genetics and various practicals
-in ecology.</p>
+<div class="float-right-teaching">
+<p><img src="images/UM.png"> - In Montpellier (France), during his PhD,
+Alex taught population genetics and various practicals in ecology.</p>
 </div>
-<div class="layout-chunk" data-layout="l-body">
-<p><img src="images/african_elephant.jpg" width="200" style="display: block; margin: auto;" /></p>
+<div class="float-center">
+<figure>
+<img src="images/african_elephant.jpg">
+<figcaption>
+© Alexandre Courtiol
+</figcaption>
+</figure>
 </div>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
