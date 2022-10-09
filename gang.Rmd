@@ -16,18 +16,26 @@ output:
 
 ### [Alexandre Courtiol](https://www.izw-berlin.de/en/alex-courtiol-en.html) 🇫🇷
 
-:::float-left-gang
+:::float-right-gang
 <img src="images/alex_courtiol.jpg">
-Member since 2012. [<i class='fa fa-twitter'></i> <i class='fa fa-flask'></i>](https://twitter.com/alexcourtiol), [<i class='fa fa-twitter'></i> <i class='fab fa-r-project'></i>](https://twitter.com/rdataberlin).
+Member and boss of the DZG since 2012. [<i class='fa fa-twitter'></i> <i class='fa fa-flask'></i>](https://twitter.com/alexcourtiol), [<i class='fa fa-twitter'></i> <i class='fab fa-r-project'></i>](https://twitter.com/rdataberlin).
 Senior researcher, lecturer. Initially trained as an evolutionary biologist with an additional emphasis on applied statistics, Alex has adopted ecology and demography after his PhD. He is mostly interested in humans, wild mammals and birds. His favorite research projects are those revealing unexpected outcomes. His focus is on questions related to life history and behaviour, but he is always open to new exciting collaborations. He likes programming and teaching R.
 :::
 
 ### [Liam Bailey](https://www.liamdbailey.com) 🇦🇺
 
-:::float-right-gang
+:::float-left-gang
 <img src="images/liam_bailey.jpg">
 Member since 2018. [<i class='fa fa-twitter'></i>](https://twitter.com/ldbailey255).
-Postdoc. Liam is interested in understanding how ecosystems are affected by and respond to environmental change, particularly in the context of climate change. His research often involves long-term demographic datasets, and he loves using R and his experience as a data scientist to work with these data and answer scientific questions. While he started his research with birds, Liam has now branched out to include research with wild mammals. He also enjoys data visualization and teaching others how to visually communicate their ideas and scientific findings. 
+Liam is a postdoc interested in understanding how ecosystems are affected by and respond to environmental change, particularly in the context of climate change. His research often involves long-term demographic datasets, and he loves using R and his experience as a data scientist to work with these data and answer scientific questions. While he started his research with birds, Liam has now branched out to include research with wild mammals. He also enjoys data visualization and teaching others how to visually communicate their ideas and scientific findings. 
+:::
+
+### Leonie Walter 🇩🇪
+
+:::float-right-gang
+<img src="images/leonie_walter.jpg">
+Member since October 2022.
+After discovering her weird (yet unrequited) love towards stats and data science, Leonie joined the team for an internship during her Master in biology. She is planing to find out how mate choice impacts the distribution of relatedness in our favourite population of spotted hyena. She may also use agent-based simulations to look at the consequences of inbreeding onto genetic diversity.
 :::
 
 ## Former members
