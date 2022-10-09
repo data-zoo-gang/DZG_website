@@ -30,6 +30,7 @@ Member since 2018. [<i class='fa fa-twitter'></i>](https://twitter.com/ldbailey2
 Liam is a postdoc interested in understanding how ecosystems are affected by and respond to environmental change, particularly in the context of climate change. His research often involves long-term demographic datasets, and he loves using R and his experience as a data scientist to work with these data and answer scientific questions. While he started his research with birds, Liam has now branched out to include research with wild mammals. He also enjoys data visualization and teaching others how to visually communicate their ideas and scientific findings. 
 :::
 
+<!--
 ### Leonie Walter 🇩🇪
 
 :::float-right-gang
@@ -37,6 +38,7 @@ Liam is a postdoc interested in understanding how ecosystems are affected by and
 Member since October 2022.
 After discovering her weird (yet unrequited) love towards stats and data science, Leonie joined the team for an internship during her Master in biology. She is planing to find out how mate choice impacts the distribution of relatedness in our favourite population of spotted hyenas. She may also use individual-based simulations to look at the consequences of inbreeding onto genetic diversity.
 :::
+-->
 
 ## Former members
 
