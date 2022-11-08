@@ -788,6 +788,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1860,15 +1861,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2067,7 +2074,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2225,9 +2232,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>DZG</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Welcome to the website of the Data Zoo Gang! A research group on
-wildlife quantitative biology from the Leibniz IZW, Berlin,
-Germany.</p></p>
+<p><p>Welcome to the website of the Data Zoo Gang!
+A research group on wildlife quantitative biology from the Leibniz IZW, Berlin, Germany.</p></p>
 </div>
 
 
@@ -2237,25 +2243,17 @@ Germany.</p></p>
 <h3>Contents</h3>
 <ul>
 <li><a href="#who-are-we" id="toc-who-are-we">Who are we?</a></li>
-<li><a href="#what-do-we-do" id="toc-what-do-we-do">What do we
-do?</a></li>
-<li><a href="#where-are-we-based" id="toc-where-are-we-based">Where are
-we based?</a></li>
-<li><a href="#why-are-we-called-data-zoo-gang"
-id="toc-why-are-we-called-data-zoo-gang">Why are we called <em>Data Zoo
-Gang</em>?</a></li>
-<li><a href="#how-to-join-us" id="toc-how-to-join-us">How to join
-us?</a></li>
+<li><a href="#what-do-we-do" id="toc-what-do-we-do">What do we do?</a></li>
+<li><a href="#where-are-we-based" id="toc-where-are-we-based">Where are we based?</a></li>
+<li><a href="#why-are-we-called-data-zoo-gang" id="toc-why-are-we-called-data-zoo-gang">Why are we called <em>Data Zoo Gang</em>?</a></li>
+<li><a href="#how-to-join-us" id="toc-how-to-join-us">How to join us?</a></li>
 </ul>
 </nav>
 </div>
 <script src="js/for_toc.js"></script>
 <h2 id="who-are-we">Who are we?</h2>
-<p>The Data Zoo Gang is <a href="gang.html">a small team of
-scientists</a> (mostly biologists) with a slightly geeky data-driven
-take on wildlife and humans.</p>
-<p>We all love mammals, birds, computers and <a
-href="https://www.r-project.org/">R</a>.</p>
+<p>The Data Zoo Gang is <a href="gang.html">a small team of scientists</a> (mostly biologists) with a slightly geeky data-driven take on wildlife and humans.</p>
+<p>We all love mammals, birds, computers and <a href="https://www.r-project.org/">R</a>.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>knitr</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/pkg/knitr/man/include_graphics.html'>include_graphics</a></span><span class='op'>(</span>path <span class='op'>=</span> <span class='st'>"images/great_tit.jpg"</span><span class='op'>)</span> <span class='co'># this is R code</span></span></code></pre>
@@ -2270,64 +2268,30 @@ href="https://www.r-project.org/">R</a>.</p>
 </figcaption>
 </figure>
 </div>
-<p>We enjoy collaborating with people – whoever they are – as long as
-they want to discover something cool and not too obvious about their
-favorite species.</p>
-<p>We hate demonstrating the obvious, and strongly dislike low quality
-datasets and proprietary software (although we sometimes use both).</p>
+<p>We enjoy collaborating with people – whoever they are – as long as they want to discover something cool and not too obvious about their favorite species.</p>
+<p>We hate demonstrating the obvious, and strongly dislike low quality datasets and proprietary software (although we sometimes use both).</p>
 <h2 id="what-do-we-do">What do we do?</h2>
-<p>We embrace eclecticsm and draw concepts from ecology, evolution,
-demography and conservation to tackle our questions.</p>
-<p>At the technical level, we mix statistics and programming (with an
-occasional dash of mathematical modeling) to analyse data collected in
-the wild so as to solve puzzles about wildlife conservation, the ecology
-and evolution of life history traits, animal behaviour, as well as to
-better understand various aspects of health in wildlife populations
-(check out our <a href="publications.html">publications</a> for more
-details).</p>
-<p>We also create open source tools (<a href="packages.html">R
-packages</a>) for researchers from these communities, <a
-href="teaching.html">teach</a> stats, experimental design, and R
-programming, and offer <a href="consulting.html">consulting and
-training</a> both within and outside academia.</p>
+<p>We embrace eclecticsm and draw concepts from ecology, evolution, demography and conservation to tackle our questions.</p>
+<p>At the technical level, we mix statistics and programming (with an occasional dash of mathematical modeling) to analyse data collected in the wild so as to solve puzzles about wildlife conservation, the ecology and evolution of life history traits, animal behaviour, as well as to better understand various aspects of health in wildlife populations (check out our <a href="publications.html">publications</a> for more details).</p>
+<p>We also create open source tools (<a href="packages.html">R packages</a>) for researchers from these communities, <a href="teaching.html">teach</a> stats, experimental design, and R programming, and offer <a href="consulting.html">consulting and training</a> both within and outside academia.</p>
 <h2 id="where-are-we-based">Where are we based?</h2>
-<p>We are based at the Leibniz Institute for Zoo and Wildlife Research
-in Berlin, Germany (or <a
-href="https://www.izw-berlin.de/en/home.html">IZW</a> for short). Some
-of us occasionally do field work in Tanzania as members of the <a
-href="https://hyena-project.com">hyena project</a>, so as not to lose
-track of the real world.</p>
-<h2 id="why-are-we-called-data-zoo-gang">Why are we called <em>Data Zoo
-Gang</em>?</h2>
-<p>We call our team, the <em>Data Zoo Gang</em> or DZG (pronounced
-“deezeegee”) for short.</p>
-<p><strong>Data</strong> because that is the raw material for almost
-everything we do.</p>
-<p><strong>Zoo</strong> because we work on animals and are also based
-next to an <a href="https://www.tierpark-berlin.de/en">animal
-park</a>.</p>
-<p><strong>Gang</strong> because there is a nicer rhythm to it than
-<em>group</em> or <em>team</em> and because we are almost rebels:</p>
+<p>We are based at the Leibniz Institute for Zoo and Wildlife Research in Berlin, Germany (or <a href="https://www.izw-berlin.de/en/home.html">IZW</a> for short).
+Some of us occasionally do field work in Tanzania as members of the <a href="https://hyena-project.com">hyena project</a>, so as not to lose track of the real world.</p>
+<h2 id="why-are-we-called-data-zoo-gang">Why are we called <em>Data Zoo Gang</em>?</h2>
+<p>We call our team, the <em>Data Zoo Gang</em> or DZG (pronounced “deezeegee”) for short.</p>
+<p><strong>Data</strong> because that is the raw material for almost everything we do.</p>
+<p><strong>Zoo</strong> because we work on animals and are also based next to an <a href="https://www.tierpark-berlin.de/en">animal park</a>.</p>
+<p><strong>Gang</strong> because there is a nicer rhythm to it than <em>group</em> or <em>team</em> and because we are almost rebels:</p>
 <ul>
-<li>we think that developing methods is a scientific activity in its own
-right, which should be better recognized and funded as such.</li>
+<li>we think that developing methods is a scientific activity in its own right, which should be better recognized and funded as such.</li>
 <li>we think that most null hypothesis testing is dull.</li>
-<li>we show no mercy to data, flimsy ideas (no matter how established)
-or computers.</li>
-<li>there is also a somewhat anti-capitalist vibe within the group; but
-we remain tolerant and professional, especially since we consult for
-profit companies under a <a href="consulting.html#robinhood">Robin Hood
-model</a>.</li>
+<li>we show no mercy to data, flimsy ideas (no matter how established) or computers.</li>
+<li>there is also a somewhat anti-capitalist vibe within the group; but we remain tolerant and professional, especially since we consult for profit companies under a <a href="consulting.html#robinhood">Robin Hood model</a>.</li>
 </ul>
 <h2 id="how-to-join-us">How to join us?</h2>
-<p>We love collaborating with field biologists, NGOs, or geeks from any
-background.</p>
-<p>If you would like to join us and are a motivated scientist with
-overlapping interests, no matter your skills, origin, age, sex &amp;
-gender, please do <a href="mailto:%20courtiol@izw-berlin.de">contact
-us</a> and we will figure out the details together.</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>We love collaborating with field biologists, NGOs, or geeks from any background.</p>
+<p>If you would like to join us and are a motivated scientist with overlapping interests, no matter your skills, origin, age, sex &amp; gender, please do <a href="mailto:%20courtiol@izw-berlin.de">contact us</a> and we will figure out the details together.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

@@ -788,6 +788,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -1860,15 +1861,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
-          var fn = $(this).children()[0]
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
           $(this).html(fn.shadowRoot.querySelector("sup"))
           $(this).id = fn.id
           fn.remove()
         }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -2067,7 +2074,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2235,94 +2242,42 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h3>Contents</h3>
 <ul>
 <li><a href="#open-source" id="toc-open-source">Open source</a></li>
-<li><a href="#private-for-now" id="toc-private-for-now">Private (for
-now)</a></li>
+<li><a href="#private-for-now" id="toc-private-for-now">Private (for now)</a></li>
 </ul>
 </nav>
 </div>
 <script src="js/for_toc.js"></script>
 <p>Here we list our main contributions.</p>
-<p>We also contribute to many other R packages, but our contributions
-are not as crucial or the projects are small and experiemental. For more
-details, you can check our GitHub pages:</p>
+<p>We also contribute to many other R packages, but our contributions are not as crucial or the projects are small and experiemental.
+For more details, you can check our GitHub pages:</p>
 <ul>
-<li><a href="https://github.com/courtiol"><i class='fa fa-github'></i>
-Alexandre Courtiol</a></li>
-<li><a
-href="https://github.com/LiamDBailey"><i class='fa fa-github'></i> Liam
-Bailey</a></li>
+<li><a href="https://github.com/courtiol"><i class='fa fa-github'></i> Alexandre Courtiol</a></li>
+<li><a href="https://github.com/LiamDBailey"><i class='fa fa-github'></i> Liam Bailey</a></li>
 </ul>
 <h2 id="open-source">Open source</h2>
 <h3 id="main_packages">For natural scientists</h3>
 <ul>
-<li>{climwin} <a
-href="https://github.com/LiamDBailey/climwin"><i class='fa fa-github'></i></a>
-<a
-href="https://cran.r-project.org/web/packages/climwin/index.html"><i class='fab fa-r-project'></i></a>
-is a package designed to detect and visualise periods of climate
-sensitivity (climate windows) for a given biological response. Created
-and maintained by Liam.</li>
-<li>{IsoriX} <a
-href="https://github.com/courtiol/IsoriX"><i class='fa fa-github'></i></a>
-<a
-href="https://cran.r-project.org/web/packages/IsoriX/index.html"><i class='fab fa-r-project'></i></a>
-to build isoscapes using mixed models and infer the geographic origin of
-organisms based on their isotopic ratios. Created and maintained by
-Alex.</li>
-<li>{torpor} <a
-href="https://github.com/vullioud/torpor"><i class='fa fa-github'></i></a>
-to fit thermoregulatory curves in heterothermic endotherm species, while
-assigning metabolic rates to the correct physiological state. Created
-and maintained by Colin.</li>
-<li>{camtrapR} <a
-href="https://github.com/jniedballa/camtrapR"><i class='fa fa-github'></i></a>
-<a
-href="https://cran.r-project.org/web/packages/camtrapR/index.html"><i class='fab fa-r-project'></i></a>
-to manage camera trap photographs in wildlife studies. We helped its
-maintainer – Jürgen Niedballa – to set it up while he was still a PhD
-student.</li>
+<li>{climwin} <a href="https://github.com/LiamDBailey/climwin"><i class='fa fa-github'></i></a> <a href="https://cran.r-project.org/web/packages/climwin/index.html"><i class='fab fa-r-project'></i></a> is a package designed to detect and visualise periods of climate sensitivity (climate windows) for a given biological response. Created and maintained by Liam.</li>
+<li>{IsoriX} <a href="https://github.com/courtiol/IsoriX"><i class='fa fa-github'></i></a> <a href="https://cran.r-project.org/web/packages/IsoriX/index.html"><i class='fab fa-r-project'></i></a> to build isoscapes using mixed models and infer the geographic origin of organisms based on their isotopic ratios. Created and maintained by Alex.</li>
+<li>{torpor} <a href="https://github.com/vullioud/torpor"><i class='fa fa-github'></i></a> to fit thermoregulatory curves in heterothermic endotherm species, while assigning metabolic rates to the correct physiological state. Created and maintained by Colin.</li>
+<li>{camtrapR} <a href="https://github.com/jniedballa/camtrapR"><i class='fa fa-github'></i></a> <a href="https://cran.r-project.org/web/packages/camtrapR/index.html"><i class='fab fa-r-project'></i></a> to manage camera trap photographs in wildlife studies. We helped its maintainer – Jürgen Niedballa – to set it up while he was still a PhD student.</li>
 </ul>
 <h3 id="for-all-data-scientists">For all data scientists</h3>
 <ul>
-<li>{spaMM} <a
-href="https://gitlab.mbb.univ-montp2.fr/francois/spamm-ref"><i class='fa fa-gitlab'></i></a>
-<a
-href="https://cran.r-project.org/web/packages/spaMM/index.html"><i class='fab fa-r-project'></i></a>
-to efficiently fit linear models of varying complexity, including mixed
-models with spatial autocorrelation. We contribute to its development
-mostly by using this package a lot, debugging it and suggesting new
-features. Maintained by one very close collaborator (<a
-href="https://kimura.univ-montp2.fr/~rousset">François
-Rousset</a>).</li>
-<li>{ABMR6} <a
-href="https://github.com/LiamDBailey/ABMR6"><i class='fa fa-github'></i></a>
-an example of how to implement individual-based simulations using R6.
-Created by Alex, maintained by Liam.</li>
-<li>{timevarcorr} <a
-href="https://github.com/courtiol/timevarcorr"><i class='fa fa-github'></i></a>
-to estimate time varying correlation coefficients using non-parametric
-kernel smoothing. Created and maintained by Alex.</li>
+<li>{spaMM} <a href="https://gitlab.mbb.univ-montp2.fr/francois/spamm-ref"><i class='fa fa-gitlab'></i></a> <a href="https://cran.r-project.org/web/packages/spaMM/index.html"><i class='fab fa-r-project'></i></a> to efficiently fit linear models of varying complexity, including mixed models with spatial autocorrelation. We contribute to its development mostly by using this package a lot, debugging it and suggesting new features. Maintained by one very close collaborator (<a href="https://kimura.univ-montp2.fr/~rousset">François Rousset</a>).</li>
+<li>{ABMR6} <a href="https://github.com/LiamDBailey/ABMR6"><i class='fa fa-github'></i></a> an example of how to implement individual-based simulations using R6. Created by Alex, maintained by Liam.</li>
+<li>{timevarcorr} <a href="https://github.com/courtiol/timevarcorr"><i class='fa fa-github'></i></a> to estimate time varying correlation coefficients using non-parametric kernel smoothing. Created and maintained by Alex.</li>
 </ul>
 <h2 id="private-for-now">Private (for now)</h2>
 <ul>
-<li>{hyenaR} <a
-href="https://github.com/hyenaproject/hyenaR"><i class='fa fa-github'></i></a>
-to manage most of the data generated by the <a
-href="https://hyena-project.com">hyena project</a>. Created and
-maintained by Liam and Alex.</li>
-<li>{HyenaPopmod} <a
-href="https://github.com/hyenaproject/HyenaPopmod"><i class='fa fa-github'></i></a>
-to perform individual-based simulations mimicking the hyenas followed by
-the <a href="https://hyena-project.com">hyena project</a>. Created and
-maintained by Liam.</li>
+<li>{hyenaR} <a href="https://github.com/hyenaproject/hyenaR"><i class='fa fa-github'></i></a> to manage most of the data generated by the <a href="https://hyena-project.com">hyena project</a>. Created and maintained by Liam and Alex.</li>
+<li>{HyenaPopmod} <a href="https://github.com/hyenaproject/HyenaPopmod"><i class='fa fa-github'></i></a> to perform individual-based simulations mimicking the hyenas followed by the <a href="https://hyena-project.com">hyena project</a>. Created and maintained by Liam.</li>
 </ul>
-<p>These packages will become open when we judge them ready for others
-to use.</p>
+<p>These packages will become open when we judge them ready for others to use.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="images/R.jpg" width="100" style="display: block; margin: auto;" /></p>
 </div>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

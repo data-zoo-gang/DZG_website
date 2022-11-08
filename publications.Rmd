@@ -100,6 +100,7 @@ maketab(tags = "recent", bib = bib, position = "center", title = TRUE)
 
 Here is a short selection of recent DZG publications we are particularly proud of and which best reflect our involvement and mindset.
 
+- @appleton_protected_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/appleton_protected_2022.pdf) is an assessment of the current and future needs in terms of workforce involved in the protection of wild lands -- published in *Nature Sustainability*.
 - @rickard_mothers_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/rickard_mothers_2022.pdf) is paper investigating the relationship between twinning and fertility in Humans and illustrating a new type of Simpson's paradox -- published in *Nature Communications*.
 - @bailey_bird_2022 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/bailey_bird_2022.pdf) is a meta-analysis of 67 populations of great and blue tits investigating the link between the phenotypic plasticity on their phenology and climate change -- published in *Nature Communications*.
 - @culina_connecting_2021 [<img src="images/pdf.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>](pdfs/culina_connecting_2021.pdf) is a paper announcing the creation of the SPI-Birds network and its database for long-term population studies on birds -- published in *Journal of Animal Ecology*.
@@ -263,10 +264,10 @@ maketab(tags = "conservation_climate", bib = bib, position = "left", title = TRU
 maketab(tags = "conservation_degradation", bib = bib, position = "left", title = TRUE)
 ```
 
-#### Reproduction and management {#conservation_reproduction}
+#### Converation management (including reproduction) {#conservation_management}
 
 ```{r, echo=FALSE}
-maketab(tags = "conservation_reproduction", bib = bib, position = "left", title = TRUE)
+maketab(tags = "conservation_management", bib = bib, position = "left", title = TRUE)
 ```
 
 #### Effect of capture and captivity {#conservation_captivity}
