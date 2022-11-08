@@ -238,7 +238,7 @@ maketab(tags = "taxon_virus", bib = bib, position = "left")
 ```
 :::
 
-### All & none (purely theoretical) {#taxon_none}
+### All & none (theory & policy) {#taxon_none}
 
 ```{r, echo=FALSE}
 maketab(tags = "taxon_none", bib = bib, position = "right")
