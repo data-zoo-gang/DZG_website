@@ -90,7 +90,7 @@ For the full list of publications of a given team member, please refer to:
 
 ## Most recent {#recent}
 
-Our publications from the last 2 years are:
+Our publications from the years 2022 & 2023 are:
 
 ```{r, echo=FALSE}
 maketab(tags = "recent", bib = bib, position = "center", title = TRUE)
