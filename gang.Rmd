@@ -42,7 +42,7 @@ After discovering her weird (yet unrequited) love towards stats and data science
 
 :::float-right-gang
 <img src="images/alexis_verfaillie.jpg">
-Member since January 2023.
+Member since January 2023. [<i class='fa fa-twitter'></i>](https://twitter.com/alexisverf)
 Alexis is a French master student interested in all kinds of cats. He is with us to study the inclusive fitness consequences of "coups" (unexpected changes occurring in social hierarchy) in... spotted hyenas. This animal is not a cat, but we convinced him it is close enough since hyenas belong to the suborder *Feliformia*. Like all of us, Alexis' main pet won't be a hyena however, nor a cat, not even a mouse, but rather a keyboard. That said, since what is his doing is computationally intensive he may even end up using  [purrr](https://purrr.tidyverse.org/) & [furrr](https://furrr.futureverse.org/) which should definitely meet his expectations.
 :::
 
