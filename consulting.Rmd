@@ -24,9 +24,9 @@ Yet as long as we feel competent enough to be useful, we are happy to offer cons
 
 We always customise the content of training sessions to match the tasks and requirements of the client.
 
-Here are some representative examples of the training & consulting we are currently providing:
+Here are some representative examples of the training & consulting we were recently involved with:
 
-- workshop for data visualisation organised by XXX.
+- [workshop](https://github.com/LiamDBailey/NLSEB_Workshop) for data visualisation organised for [Netherlands Society for Evolutionary Biology](https://www.nlseb.nl) PhD/PostDoc meeting 2022.
 
 - development of R packages and advanced R training for all data scientists at [Factworks](https://www.factworks.com), a market research and analytics company.
 
