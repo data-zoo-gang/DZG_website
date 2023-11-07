@@ -25,10 +25,11 @@ For more details, you can check our GitHub pages:
 
 ### For all data scientists
 
+- {ABMR6} [<i class='fa fa-github'></i>](https://github.com/LiamDBailey/ABMR6) an example of how to implement individual-based simulations using R6. Created by Alex, maintained by Liam.
 - {lay} [<i class='fa fa-github'></i>](https://courtiol.github.io/lay/) [<i class='fab fa-r-project'></i>](https://cran.r-project.org/web/packages/lay/index.html) to perform simple but efficient rowwise jobs. Created together with [Romain François](https://github.com/romainfrancois) and maintained by Alex.
 - {spaMM} [<i class='fa fa-gitlab'></i>](https://gitlab.mbb.univ-montp2.fr/francois/spamm-ref) [<i class='fab fa-r-project'></i>](https://cran.r-project.org/web/packages/spaMM/index.html) to efficiently fit linear models of varying complexity, including mixed models with spatial autocorrelation. We contribute to its development mostly by using this package a lot, debugging it and suggesting new features. Maintained by one very close collaborator ([François Rousset](https://kimura.univ-montp2.fr/~rousset)).
-- {ABMR6} [<i class='fa fa-github'></i>](https://github.com/LiamDBailey/ABMR6) an example of how to implement individual-based simulations using R6. Created by Alex, maintained by Liam.
-- {timevarcorr} [<i class='fa fa-github'></i>](https://github.com/courtiol/timevarcorr) to estimate time varying correlation coefficients using non-parametric kernel smoothing. Created and maintained by Alex.
+- {timevarcorr} [<i class='fa fa-github'></i>](https://courtiol.github.io/timevarcorr) [<i class='fab fa-r-project'></i>](https://cran.r-project.org/web/packages/timevarcorr/index.html) to estimate time varying correlation coefficients using non-parametric kernel smoothing. Created and maintained by Alex.
+
 
 ## Private (for now)
 
