@@ -44,9 +44,8 @@ maketab <- function(tags, bib, position = "left", title = FALSE) {
   tab$Title <- stringr::str_replace_all(tab$Title, "\\{|\\}|\\\\textit", "") ## remove LaTeX code created by RefManageR
   tab$Title <- stringr::str_replace_all(tab$Title, "[[:blank:]]\\)", "\\)") ## remove extra spaces before )
   tab$Key <- paste0("@", tab$Key)
-  tab$pdf <- "[<img src='images/pdf.png' width=20px style='float:none; vertical-align:middle; padding:0 0 0 0'/>]"
-  tab$pdf <- paste0(tab$pdf, "(pdfs/", publis, ".pdf)")
-  
+  tab$pdf <- paste0("[<img src='images/pdf.png' width=20px style='float:none; vertical-align:middle; padding:0 0 0 0'/>](pdfs/", publis, ".pdf)")
+
   ## sorting
   tab$year <- as.numeric(stringr::str_extract(tab$Key, pattern = "[[:digit:]]{4}"))
   tab <- tab[order(-tab$year, tab$Key), ]
@@ -54,14 +53,14 @@ maketab <- function(tags, bib, position = "left", title = FALSE) {
   
   if (!title) {
     tab <- tab[, c("Key", "pdf")] ## Remove Title for now
-    tab <- kableExtra::kable(tab, col.names = c("", ""), escape = FALSE,  align = "rc")
-    tab <- kableExtra::column_spec(tab, column = 2, width = "20px")
+    tab <- knitr::kable(tab, col.names = c("", ""), escape = FALSE,  align = "rc", format = "html")
+    tab <- kableExtra::column_spec(tab, column = 2, width = "35px")
   } else {
     tab$pdf <- stringr::str_replace_all(tab$pdf, "20px", "100px")
-    tab <- kableExtra::kable(tab, col.names = c("", "", ""), escape = FALSE,  align = "lrc") 
+    tab <- knitr::kable(tab, col.names = c("", "", ""), escape = FALSE,  align = "lrc", format = "html") 
     tab <- kableExtra::column_spec(tab, column = 1, extra_css = "line-height: 1.3")
     tab <- kableExtra::column_spec(tab, column = 2, width = "200px")
-    tab <- kableExtra::column_spec(tab, column = 3, width = "20px")
+    tab <- kableExtra::column_spec(tab, column = 3, width = "35px")
   }
   
   tab <- kableExtra::kable_styling(tab, position = position)
