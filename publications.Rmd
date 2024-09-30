@@ -16,7 +16,7 @@ output:
 
 
 ```{r, echo=FALSE}
-#RefManageR::BibOptions(style = "text") ## no effect :-(
+RefManageR::BibOptions(style = "text") ## no effect :-(
 bib <- RefManageR::ReadBib("publications.bib")
 
 extract_tags <- function(bib) {
@@ -42,6 +42,10 @@ maketab <- function(tags, bib, position = "left", title = FALSE) {
   tab <- tibble::tibble(Title = selected$title, Key = names(selected))
   
   tab$Title <- stringr::str_replace_all(tab$Title, "\\{|\\}|\\\\textit", "") ## remove LaTeX code created by RefManageR
+  tab$Title <- stringr::str_replace_all(tab$Title, "\\\\textendash", "--") ## remove LaTeX code created by RefManageR
+  tab$Title <- stringr::str_replace_all(tab$Title, "\\\\textemdash", "---") ## remove LaTeX code created by RefManageR
+  tab$Title <- stringr::str_replace_all(tab$Title, "\\\\textquoteleft|\\\\textquoteright", "'") ## remove LaTeX code created by RefManageR
+  
   tab$Title <- stringr::str_replace_all(tab$Title, "[[:blank:]]\\)", "\\)") ## remove extra spaces before )
   tab$Key <- paste0("@", tab$Key)
   tab$pdf <- paste0("[<img src='images/pdf.png' width=20px style='float:none; vertical-align:middle; padding:0 0 0 0'/>](pdfs/", publis, ".pdf)")
