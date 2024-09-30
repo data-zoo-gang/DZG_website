@@ -28,7 +28,7 @@ Senior researcher, lecturer. Initially trained as an evolutionary biologist with
 :::float-right-gang
 <img src="images/leonie_walter.jpg">
 Member since October 2022.
-After discovering her weird (yet unrequited) love towards stats and data science, Leonie joined the team for an internship during her Master in biology. She has stayed for her master thesis and is planing to find out how mate choice impacts the distribution of relatedness in our favourite population of spotted hyenas. She may also use individual-based simulations to look at the consequences of inbreeding onto genetic diversity.
+After discovering her weird (yet unrequited) love towards stats and data science, Leonie joined the team for an internship during her Master in biology. She then stayed for her master thesis to find out the demographic cost of inbreeding depression in our favourite population of spotted hyenas. After that she became the gang's research assistant.
 :::
 
 ## Former members
