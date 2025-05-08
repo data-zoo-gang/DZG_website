@@ -267,7 +267,7 @@ maketab(tags = "conservation_climate", bib = bib, position = "left", title = TRU
 maketab(tags = "conservation_degradation", bib = bib, position = "left", title = TRUE)
 ```
 
-#### Converation management (including reproduction) {#conservation_management}
+#### Conservation management (including reproduction) {#conservation_management}
 
 ```{r, echo=FALSE}
 maketab(tags = "conservation_management", bib = bib, position = "left", title = TRUE)
