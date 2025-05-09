@@ -308,6 +308,12 @@ maketab(tags = "traits_demography", bib = bib, position = "left", title = TRUE)
 
 ### Behaviour {#behaviour}
 
+#### Ethology {#behaviour_ethology}
+
+```{r, echo=FALSE}
+maketab(tags = "behaviour_ethology", bib = bib, position = "left", title = TRUE)
+```
+
 #### Perception {#behaviour_perception}
 
 ```{r, echo=FALSE}
