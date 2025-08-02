@@ -20,8 +20,9 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -455,8 +456,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
 
   <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
   <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
@@ -2096,7 +2097,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="README_files/header-attrs-2.25/header-attrs.js"></script>
+  <script src="README_files/header-attrs-2.29/header-attrs.js"></script>
   <!--radix_placeholder_site_in_header-->
   <style type="text/css">
   /*adapted from Miletić (2022, April 18). The Distillery: A poor man's TOC in {distill}. Retrieved from https://radovan-miletic.github.io/distill-blog/ */
@@ -2282,7 +2283,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li>use <code>dzg_xxx</code> tags in Zotero library since those are used to create tables (<code>xxx</code> refers to markdown labels defined in <code>publications.Rmd</code>).</li>
 </ol></li>
 <li><ol start="3" type="1">
-<li>export the updated library using Zotero (Select all, then File -&gt; Export Library…) so as to overwrite the previous version of the BibTeX file <code>publications.bib</code>.</li>
+<li>export the updated library using Zotero (Select all, then File -&gt; Export Library…) so as to overwrite the previous version of the BibTeX file <code>publications.bib</code>. I add issues exporting using “UTF-8” encoding (missing authors), so I now use “western”.</li>
 </ol></li>
 <li><ol start="4" type="1">
 <li>add the PDFs in the folder <em>pdfs</em> and name them with the same bibtex keys as those referring to the corresponding publications.</li>
