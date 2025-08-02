@@ -18,7 +18,7 @@ output:
 
 :::float-left-gang
 <img src="images/alex_courtiol.jpg">
-Member and boss of the DZG since 2012. [<i class='fa fa-bluesky'></i> <i class='fa fa-flask'></i>](https://bsky.app/profile/datazoogang.de), [<i class='fa fa-twitter'></i> <i class='fab fa-r-project'></i>](https://twitter.com/rdataberlin)
+Member and boss of the DZG since 2012. [<i class='fa-brands fa-bluesky'></i> <i class='fa fa-flask'></i>](https://bsky.app/profile/datazoogang.de), [<i class='fa fa-twitter'></i> <i class='fab fa-r-project'></i>](https://twitter.com/rdataberlin)
 <!-- [<img class='icon' src="images/mastodon.png"/> <i class='fa fa-flask'></i>](https://ecoevo.social/@courtiol), [<img src="images/mastodon.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>  <i class='fab fa-r-project'></i>](https://fosstodon.org/@rdataberlin)-->.
 Senior researcher, lecturer. Initially trained as an evolutionary biologist with an additional emphasis on applied statistics, Alex has adopted ecology and demography after his PhD. He is mostly interested in humans, wild mammals and birds. His favorite research projects are those revealing unexpected outcomes. His focus is on questions related to life history and behaviour, but he is always open to new exciting collaborations. He likes programming and teaching R.
 :::
@@ -35,7 +35,7 @@ Member since 2024. Despite having a full time job as a curator looking after som
 
 :::float-left-gang
 <img src="images/ben_battersby.jpg">
-Member during the month of July 2025. Ben came for a short stay to strengthen his R skills and teach us about wildebeest (also known as gnu). He is running a long-term study on the movement of these wild beasts in Tanzania and he has published a beautiful picture book about them. If you visit us, you will also see one of Ben's painting in the office. Let several other members he is an accomplished artist as well as a scientist.
+Member during the month of July 2025. Ben came for a short stay to strengthen his R skills and teach us about wildebeest (also known as gnu). He is running a long-term study on the movement of these wild beasts in Tanzania and he has published a beautiful picture book about them. If you visit us, you will also see one of Ben's painting in the office. Like several other members he is an accomplished artist as well as a scientist.
 :::
 
 ### Leonie Walter 🇩🇪
@@ -69,7 +69,7 @@ Liam came to the group as a postdoc interested in understanding how ecosystems a
 Member 2017-2021.
 Colin came to us after getting fed up with social science research, learned R with us, and turned social behavior into algorithms.
 He also created the R package {torpor} and contributed to {hyenaR}.
-He left the DZG as a fully fledged data scientist currently working as a freelancer in Berlin, Germany.
+He left the DZG as a fully fledged data scientist and after spending a few years as a freelancer in Berlin, Colin is now doing a PhD in Freiburg, simulating forests use.
 He is also an artist who has started to include R in his projects.
 :::
 
