@@ -43,4 +43,5 @@ Once the Github actions have run (ca. 1 min), the site should be up to date!
 
 As an experiment, the repo is forked onto https://github.com/courtiol/DZG_website.com to deploy the website on .com domain as well.
 To update the .com pages, the fork must thus be updated after any change on the main original repo.
+Do that in GitHub directly using the sync fork button on the page of the forked repo.
 
