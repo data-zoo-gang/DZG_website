@@ -2,7 +2,7 @@
 
 This repository contains the material behind the Data Zoo Gang's website.
 
-Go to www.datazoogang.de to visit the website.
+Go to www.datazoogang.de or www.datazoogang.com to visit the website.
 
 ### for website maintainers
 
@@ -40,3 +40,7 @@ gert::git_push()                             # to push all changes on GitHub
 ```
 
 Once the Github actions have run (ca. 1 min), the site should be up to date!
+
+As an experiment, the repo is forked onto https://github.com/courtiol/DZG_website.com to deploy the website on .com domain as well.
+To update the .com pages, the fork must thus be updated after any change on the main original repo.
+
