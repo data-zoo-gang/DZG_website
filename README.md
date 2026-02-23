@@ -45,10 +45,13 @@ As an experiment, the repo is forked onto https://github.com/courtiol/DZG_websit
 To update the .com pages, the fork must thus be updated after any change on the main original repo.
 Do that in GitHub directly using the sync fork button on the page of the forked repo.
 
+
+#### Blogging
+
 For creating blogs, run the following in R:
 
 ```r
-distill::create_post("my_new_post", draft = TRUE, author = "Alexandre Courtiol")
+distill::create_post("my_new_post") # adjust the name used to name the Rmd file
 ```
 
 Then, edit the Rmd file newly created in `_post`.
@@ -71,15 +74,15 @@ repository_url: https://github.com/data-zoo-gang/DZG_website
 Blog content
 ```
 
-Then, you must knit this post.
-
-Render the website:
+Then, you must knit this post, and *then* render the website:
 
 ```r
 rmarkdown::render_site(encoding = 'UTF-8') 
 ```
 
-If you are not happy, rince and repeat, you can also update the internal name to match the blog title:
+If you are not happy, rince and repeat.
+
+You can also update the internal name to match the blog title:
 
 ```r
 rename_post_dir("_posts/2026-02-23-test") # adjust the data and name
@@ -95,4 +98,4 @@ gitcreds::gitcreds_set()                     # to load GH credentials (if using 
 gert::git_push()                             # to push all changes on GitHub
 ```
 
-For more details on blog, see [the documentation](https://rstudio.github.io/distill/blog.html).
+For more details about blogging using distill, see [the documentation](https://rstudio.github.io/distill/blog.html).
