@@ -4,7 +4,7 @@ This repository contains the material behind the Data Zoo Gang's website.
 
 Go to www.datazoogang.de or www.datazoogang.com to visit the website.
 
-### for website maintainers
+### Development requirements
 
 Check that you have all R packages required for building this website:
 
@@ -19,7 +19,7 @@ if (!requireNamespace("kableExtra")) install.packages("kableExtra")
 if (!requireNamespace("stringr"))    install.packages("stringr")
 ```
 
-For changing or updating references: 
+### Changing or updating publications
 
 - 1. do not alter the BibTeX file directly, but perform changes in the shared Zotero library DZG.
 - 2. use `dzg_xxx` tags in Zotero library since those are used to create tables (`xxx` refers to markdown labels defined in `publications.Rmd`).
@@ -46,7 +46,7 @@ To update the .com pages, the fork must thus be updated after any change on the 
 Do that in GitHub directly using the sync fork button on the page of the forked repo.
 
 
-#### Blogging
+### Blogging
 
 For creating blogs, run the following in R:
 
