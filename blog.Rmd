@@ -1,0 +1,6 @@
+---
+title: "Our blog (coming soon!)"
+editor_options: 
+  chunk_output_type: console
+listing: posts
+---

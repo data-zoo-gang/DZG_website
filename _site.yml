@@ -17,8 +17,11 @@ navbar:
       href: teaching.html
     - text: "Consulting"
       href: consulting.html
+    - text: "Blog"
+      href: blog.html
     - text: "About"
       href: about.html
+    - icon: fa fa-rss
     - icon: fab fa-github
       href: https://github.com/data-zoo-gang/DZG_website
 output:
@@ -27,3 +30,5 @@ output:
     toc_depth: 2
     css: [css/fixed_toc.css, css/placement_images.css, css/tippy_modif.css]
     self_contained: false
+rss:
+  full_content: true

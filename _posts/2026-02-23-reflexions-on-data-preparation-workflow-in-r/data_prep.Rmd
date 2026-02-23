@@ -1,0 +1,12 @@
+---
+title: "Reflexions on data preparation workflow in R"
+description: |
+  Here is an attempt at clarifying my thoughts with respect to coding in the context of preparing data for research projects.
+categories:
+  - R
+author: Alexandre Courtiol
+preview: great_tit.jpg
+output: distill::distill_article
+repository_url: https://github.com/data-zoo-gang/DZG_website
+draft: true
+---
