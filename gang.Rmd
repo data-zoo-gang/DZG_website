@@ -16,7 +16,7 @@ output:
 
 ### [Alexandre Courtiol](https://www.izw-berlin.de/en/alex-courtiol-en.html) 🇫🇷
 
-:::float-left-gang
+:::float-right-gang
 <img src="images/alex_courtiol.jpg">
 Member and boss of the DZG since 2012. [<i class='fa-brands fa-bluesky'></i> <i class='fa fa-flask'></i>](https://bsky.app/profile/datazoogang.de), [<i class='fa fa-twitter'></i> <i class='fab fa-r-project'></i>](https://twitter.com/rdataberlin)
 <!-- [<img class='icon' src="images/mastodon.png"/> <i class='fa fa-flask'></i>](https://ecoevo.social/@courtiol), [<img src="images/mastodon.png" width=20px style="float:none; vertical-align:middle; padding:0 0 0 0"/>  <i class='fab fa-r-project'></i>](https://fosstodon.org/@rdataberlin)-->.
@@ -24,12 +24,18 @@ Senior researcher, lecturer. Initially trained as an evolutionary biologist with
 :::
 
 ### Vladislav Marcuk 🇩🇪
-:::float-right-gang
+:::float-left-gang
 <img src="images/vladislav_marcuk.jpg">
 Member since 2024. Despite having a full time job as a curator looking after some of the most endangered parrots in the world, Vladi took on to do a PhD with us in his spare time. He is trying to figure out how science could help improve the ex-situ breeding of Spix's macaws in view of reintroducing the species successfully into the wild. Vladi is also an artist who creates beautiful hand-drawings of his beloved creatures.
 :::
 
 ## Former members
+
+### Diego De Panis 🇦🇷
+:::float-right-gang
+<img src="images/diego_depanis.jpg">
+Member April to May 2026. Avian genomics has little secret for Diego, who came briefly into our group to process a huge amount of genomics data on the parrots that are under Vladi's care. Diego fine-tuned and deployed the workflows he had developed for [ERGA](https://www.erga-biodiversity.eu/), paving the way for much future work on some of our favorite birds.
+:::
 
 ### Ben Battersby 🇦🇺
 
